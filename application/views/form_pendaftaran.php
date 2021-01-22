@@ -97,12 +97,17 @@
 						</td>
 					</tr>
 					<tr>
-						<th><label>Jurusan</label></th>
+						<th><label for="validationCustom04">Jurusan</label></th>
 					</tr>
 					<tr>
-						<td>
-							<input type="radio" name="jr" value="ipa" id="jr" class="jr"> IPA
-							<input type="radio" name="jr" value="ips" id="jr" class="jr"> IPS				</td>
+					<td>
+						<select class="custom-select col-md-6" id="validationCustom04" required>
+							<option selected disabled value="">---Pilih Jurusan---</option>
+							<option name="ipa" id="ipa"> IPA </option>
+							<option name="ips" id="ips"> IPS </option>
+						</select>
+
+					</td>
 					</tr>
 					</table>
 			</div>

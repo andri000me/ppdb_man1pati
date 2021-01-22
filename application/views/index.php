@@ -8,8 +8,8 @@
   <meta content="Pendaftaran Peserta Didik Baru 2019-2020 " name="description">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url();?>assets/img/Logo_swiksara.png" rel="icon">
-  <link href="<?php echo base_url();?>assets/img/Logo_swiksara.png" rel="icon">
+  <link href="<?php echo base_url();?>assets/img/logo-mobile.png" rel="icon">
+  <link href="<?php echo base_url();?>assets/img/logo-mobile.png" rel="icon">
 
   <!-- Google Fonts -->
   
@@ -44,7 +44,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url();?>assets/img/logo.png" width="50%"></a></h1>
+        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url();?>assets/img/logo-mobile.png" ></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -52,7 +52,7 @@
       <nav id="nav-menu-container" style="margin-top: 20px;">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Tentang Wikrama</a></li>
+          <li><a href="#about">Tentang MAN 2 Pati</a></li>
           <li><a href="#services">Persyaratan</a></li>
           <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li>
           <li><a href="#contact">Kontak Kami</a></li>
@@ -73,40 +73,40 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/1.jpg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man1.jpeg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
-                <h3 style="color: #fff;">MAN 1 PATI</h3>
+                <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/2.jpg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man2.jpeg" alt=""></div>
             <div class="carousel-container">
              <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
-                <h3 style="color: #fff;">MAN 1 PATI</h3>
+                <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/3.jpg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man3.jpeg" alt=""></div>
             <div class="carousel-container">
              <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
-                <h3 style="color: #fff;">MAN 1 PATI</h3>
+                <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/4.jpg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man4.jpeg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
@@ -174,7 +174,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 style="border-color: #3498db;">Tentang Wikrama</h3>
+          <h3 style="border-color: #3498db;">Tentang MAN 2 Pati</h3>
           <p>Ilmu yang Amaliah | Amal yang Ilmiah | Akhlakul Karimah</p>
         </header>
 
@@ -184,11 +184,11 @@
             <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI KEAHLIAN</h3>
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
-            <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. Rekayasa Perangkat Lunak</p>
-            <p style="color: #fff;margin-left: 10px;">2. Teknik Komputer dan Jaringan</p>
+            <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. IPA (Ilmu Pengetahuan Alam)</p>
+            <p style="color: #fff;margin-left: 10px;">2. IPS (Ilmu Pengetahuan Sosial)</p>
           </div>
           <div class="col-lg-4 box">
-            <a href="<?php echo base_url();?>assets/img/rpl.jpg"><img src="<?php echo base_url();?>assets/img/rpl.jpg" class="img-responsive" style="width:100%;height: 300px;">
+            <a href="<?php echo base_url();?>assets/img/man5.jpeg"><img src="<?php echo base_url();?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
           </div>
 
           <div class="col-lg-4 box">
