@@ -45,8 +45,11 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="radio" name="jk" value="L" id="jk" class="jk"> Laki - Laki
-							<input type="radio" name="jk" value="P" id="jk" class="jk"> Perempuan
+							<select class="custom-select" id="validationCustom04" required>
+								<option selected disabled value="">---Jenis Kelamin---</option>
+								<option name="jk" value="L" id="jk"> Laki-Laki </option>
+								<option name="jk" value="P" id="jk"> Perempuan </option>
+							</select>
 						</td>
 					</tr>
 					<tr>
@@ -92,8 +95,11 @@
 						<td><input type="text" name="asal_smp" id="asal_smp" class="form-control"></td>
 					</tr>
 					<tr>
+					<th><label  style="margin-top: 10px;">Input Paport</label></th>
+					</tr>
+					<tr>
 						<td>
-							<input type="file" style="margin-top: 20px;" class="btn btn-primary" name="">
+							<input type="file" class="btn btn-success col-md-12" name="">
 						</td>
 					</tr>
 					<tr>
@@ -101,7 +107,7 @@
 					</tr>
 					<tr>
 					<td>
-						<select class="custom-select col-md-6" id="validationCustom04" required>
+						<select class="custom-select" id="validationCustom04" required>
 							<option selected disabled value="">---Pilih Jurusan---</option>
 							<option name="ipa" id="ipa"> IPA </option>
 							<option name="ips" id="ips"> IPS </option>
@@ -111,8 +117,8 @@
 					</tr>
 					</table>
 			</div>
-			<form action="" class="col-md-12 table-center">
-				<table class="table table-bordered table-responsive" style="margin-top: 20px;">
+			<form action="" class="col-md-12 table-responsive">
+				<table class="table table-bordered" style="margin-top: 20px;">
 					<thead>
 						<tr>
 						<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>
@@ -148,7 +154,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<input type="button" class="btn btn-primary float-right" name="simpan" value="Simpan" onclick="valid()"></td>
+				<input type="button" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="valid()"></td>
 			</form>
 		</div>
 
