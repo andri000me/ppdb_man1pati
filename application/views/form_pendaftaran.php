@@ -13,9 +13,9 @@
   	<link href="<?php echo base_url();?>assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   	<link href="<?php echo base_url();?>assets/dist/sweetalert.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-success">
 	<div class="jdl">
-		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU <br> MAN 1 PATI</h1>
+		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU <br> MAN 2 PATI</h1>
 	</div>
 	<div class="container">
 		<div class="kotak">
@@ -106,10 +106,11 @@
 					</tr>
 					</table>
 			</div>
-				<table class="table table-bordered" style="margin-top: 20px;">
+			<form action="" class="col-md-12 table-center">
+				<table class="table table-bordered table-responsive" style="margin-top: 20px;">
 					<thead>
 						<tr>
-						<th scope="col">NIlai</th>
+						<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>
 						<th scope="col">Smester 3</th>
 						<th scope="col">Smester 4</th>
 						<th scope="col">Smester 5</th>
@@ -118,31 +119,32 @@
 					<tbody>
 						<tr>
 						<th scope="row">B.inggris</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">Matematika</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">IPA</th>
-						<td>Jacob</td>
-						<td>Larry the Bird</td>
-						<td>@twitter</td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">IPS</th>
-						<td>Jacob</td>
-						<td>Larry the Bird</td>
-						<td>@twitter</td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
 						</tr>
 					</tbody>
 				</table>
 				<input type="button" class="btn btn-primary float-right" name="simpan" value="Simpan" onclick="valid()"></td>
+			</form>
 		</div>
 
 		</div>
