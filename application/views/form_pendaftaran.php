@@ -95,7 +95,7 @@
 						<td><input type="text" name="asal_smp" id="asal_smp" class="form-control"></td>
 					</tr>
 					<tr>
-					<th><label  style="margin-top: 10px;">Input Paport</label></th>
+					<th><label  style="margin-top: 10px;">Upload Paport</label></th>
 					</tr>
 					<tr>
 						<td>
