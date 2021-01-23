@@ -8,8 +8,8 @@
   <meta content="Pendaftaran Peserta Didik Baru 2019-2020 " name="description">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url();?>assets/img/logo-mobile.png" rel="icon">
-  <link href="<?php echo base_url();?>assets/img/logo-mobile.png" rel="icon">
+  <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
+  <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
 
   <!-- Google Fonts -->
   
@@ -192,7 +192,7 @@
           </div>
 
           <div class="col-lg-4 box">
-            <a href="<?php echo base_url();?>assets/img/tkj.jpg"><img src="<?php echo base_url();?>assets/img/tkj.jpg" class="img-responsive" style="width:100%;height: 300px;"></a>
+            <a href="<?php echo base_url();?>assets/img/man1.jpg"><img src="<?php echo base_url();?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
           </div>
 
         </div>
@@ -200,7 +200,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-lg-7" style="background-color: #000;">
-                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/PJg5Jlpxp4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/f1P9BhxLH5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       <div class="col-lg-5" style="background-color: #e9c706;height: 400px;">
                         <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">PROFIL SEKOLAH</h3>
@@ -212,14 +212,14 @@
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-lg-5" style="background-color: #337ab7;height: 400px;">
-            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">APA KATA ALUMNI ?</h3>
+            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">beasiswa</h3>
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
-            <p style="color: #fff;margin-left: 10px;margin-top: 20px;">Padamu Negeri Kami Berjanji, Lulus Wikrama Siap Membangun Negeri</p>
-            <p style="color: #fff;margin-left: 10px;">Sekolahnya OKE, Gurunya OKE, Siswanya OKE, Orang Tuanya OKE dan Alumninya OKE OKE</p>
+            <p style="color: #fff;margin-left: 10px;">Padamu Negeri Kami Berjanji, Lulus Wikrama Siap Membangun Negeri</p>
+            <p style="color: #fff;margin-left: 10px;">Sekolahnya OKE, Gurunya OKE, Siswanya OKE, Ora  ng Tuanya OKE dan Alumninya OKE OKE</p>
           </div>
           <div class="col-lg-7" style="background-color: #000;">
-             <iframe width="100%" height="380" src="https://www.youtube.com/embed/ClXbv7B0hMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe width="100%" height="380" src="https://www.youtube.com/embed/0WAnmVBtmBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
         </div>
