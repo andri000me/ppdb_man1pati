@@ -393,7 +393,7 @@
         <a href="https://www.youtube.com/channel/UCDF_eIcMHER1B1zKKizRynA" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
       <div style="margin-top: 20px;">
-        &copy; Copyright <strong></strong>Alief Arrafi | Ahmad rouf| creative
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu">Alief Arrafi </a> | <a href="https://creativedev.id">creative</a>
       </div>
       </div>
     </div>
