@@ -388,12 +388,12 @@
       
       <div class="copyright">
         <div class="social-links">
-        <a href="https://web.facebook.com/Man2Pati/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/man2pati_official/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCDF_eIcMHER1B1zKKizRynA" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://web.facebook.com/Man2Pati/?_rdc=1&_rdr" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/man2pati_official/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCDF_eIcMHER1B1zKKizRynA" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
       <div style="margin-top: 20px;">
-        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu">Alief Arrafi </a> | <a href="https://creativedev.id">creative</a>
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
       </div>
       </div>
     </div>

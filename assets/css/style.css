@@ -645,7 +645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../img/bg1.jpeg") center top no-repeat fixed;
+  background: url("../img/man5.jpeg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -787,7 +787,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-man5.jpeg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -858,7 +858,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #facts {
-  background: url("../img/facts-bg.jpg") center top no-repeat fixed;
+  background: url("../img/facts-man5.jpeg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
