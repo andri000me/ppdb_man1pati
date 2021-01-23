@@ -289,7 +289,7 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a >Mengupload berkas pendaftaran</a></h4>
-            <p class="description">a.FC Raport Smester # s.d. 5 yang dilegalisir</p>
+            <p class="description">a.FC Raport Smester s.d. 5 yang dilegalisir</p>
             <p class="description">b.Akte Kelahiran</p>
             <p class="description">c.Kartu Keluarga (KK)</p>
             <p class="description">d.Foto berwara 3x4 2 Lembar</p>
@@ -351,7 +351,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Alamat</h3>
-              <address>Jl. Kelet Ploso Km. 36 Keling - Jepara 54954</address>
+              <address>Jl.Ratu kalinyamat Gang Melati ll Tayu kabupaten pati 59155</address>
             </div>
           </div>
 
@@ -368,7 +368,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a>smkwikrama1jepara@gmail.com</a></p>
+              <p><a>man2pati@yahoo.com</a></p>
             </div>
           </div>
 
@@ -388,12 +388,12 @@
       
       <div class="copyright">
         <div class="social-links">
-        <a href="https://www.facebook.com/smkwikrama1jepara" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/swiksara/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCRz3ziJqOKg4JN1TyQL8Kpg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://web.facebook.com/Man2Pati/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/man2pati_official/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCDF_eIcMHER1B1zKKizRynA" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
       <div style="margin-top: 20px;">
-        &copy; Copyright <strong></strong>. All Rights Reserved
+        &copy; Copyright <strong></strong>Alief Arrafi | Ahmad rouf| creative
       </div>
       </div>
     </div>
