@@ -210,20 +210,15 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 10px;">
-          <div class="col-lg-5" style="background-color: #337ab7;height: 400px;">
-            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">Beasiswa</h3>
+        <div class="row" style="margin-top: 10px; height:auto;">
+          <div class="col-lg-5" style="background-color: #337ab7; height: auto;">
+            <h3 style="color: #fff;font-size: 20px; margin-top:10px; margin-left: 10px;">Beasiswa</h3>
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
             <!-- Block level -->
-            <div class="row" style="color: #fff;">
-              <div class="col text-truncate text-responfive">
-                <p>1.Bagi yang mempunyai hafalan Al Qur'an :</p>
-              </div>
-            </div>
-
+            <p style="color: #fff; margin-left:5px;">1.Bagi yang mempunyai hafalan Al Qur'an :</p>
             <!-- Inline level -->
-            <div class="row" style="color: #fff; margin-left:10px; margin-top:-30px;">
+            <div style="color: #fff; margin-left:10px; margin-top:-30px;">
               <span class="d-inline-block text-truncate col-md-12">
                 a. 3 Jus bebas  SPP 6 bulan. 
               </span>
@@ -233,11 +228,29 @@
               <span class="d-inline-block text-truncate col-md-12">
                 a. 5 Jus bebas  SPP 18 bulan. 
               </span>
+            <p style="color: #fff;">
+              2.Peserta didik dengan Rengking 1 pada kelas 9 semester 5 bebas SPP 3 Bulan.
+                (Dengan menunjukkan foto raport asli dan foto copy yang dilegalisir Kepala MTS/SMP)
+            </p>
+           <p style="color: #fff; margin-top:-20px;">3.Bagi yang mempunyai hafalan Al Qur'an :</p>
+            <!-- Inline level -->
+            <div style="color: #fff; margin-left:10px; margin-top:-30px;">
+              <span class="d-inline-block text-truncate col-md-12">
+                > Juara 1 bebas SPP 3 bulan. 
+              </span>
+              <span class="d-inline-block text-truncate col-md-12">
+                > Juara 2 bebas SPP 2 bulan. 
+              </span><br>
+              <span class="d-inline-block text-truncate col-md-12">
+                > Juara 3 bebas SPP 1 bulan. 
+              </span>
+              <h6>(Dengan menunjukkan foto raport asli dan foto copy yang dilegalisir Kepala MTS/SMP)</h6>
             </div>
-            <p style="color: #fff;margin-left: 10px;">Sekolahnya OKE, Gurunya OKE, Siswanya OKE, Ora  ng Tuanya OKE dan Alumninya OKE OKE</p>
           </div>
+          </div>
+              
           <div class="col-lg-7" style="background-color: #000;">
-             <iframe width="100%" height="380" src="https://www.youtube.com/embed/DV1jEiS3yxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DV1jEiS3yxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
         </div>
@@ -260,23 +273,27 @@
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a>Fotocopy KTP ortu 1 lembar</a></h4>
-            <p class="description">Penyerahan dokumen dilakukan setelah anda berhasil mendaftar di , setiap hari Senin - Jumat pukul 07.00 - 16.00 WIB</p>
+            <h4 class="title"><a>Usia Siswwa</a></h4>
+            <p class="description">usia maksimal 17 Tahun pada 1 juli 2021</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a>Fotocopy akta kelahiran</a></h4>
-            <p class="description">Penyerahan dokumen dilakukan setelah anda berhasil mendaftar di , setiap hari Senin - Jumat pukul 07.00 - 16.00 WIB</p>
+            <h4 class="title"><a>Dokumen Sekolah Asal</a></h4>
+            <p class="description">Memiliki NISN yang terdaftar pada EMIS (bagi MTS) atau DAPODIK (bagi SMP)</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a>Fotocopy KK</a></h4>
-            <p class="description">Penyerahan dokumen dilakukan setelah anda berhasil mendaftar di , setiap hari Senin - Jumat pukul 07.00 - 16.00 WIB</p>
+            <h4 class="title"><a>link pendaftaran</a></h4>
+            <p class="description">Mengisi Form pendaftaran sekolah online</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a >Fotocopy raport semester 1-5</a></h4>
-            <p class="description">Penyerahan dokumen dilakukan setelah anda berhasil mendaftar di , setiap hari Senin - Jumat pukul 07.00 - 16.00 WIB</p>
+            <h4 class="title"><a >Mengupload berkas pendaftaran</a></h4>
+            <p class="description">a.FC Raport Smester # s.d. 5 yang dilegalisir</p>
+            <p class="description">b.Akte Kelahiran</p>
+            <p class="description">c.Kartu Keluarga (KK)</p>
+            <p class="description">d.Foto berwara 3x4 2 Lembar</p>
+
           </div>
         </div>
 
