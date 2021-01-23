@@ -23,6 +23,13 @@
 			<div class="col-md-6">
 				<table style="width: 100%;">
 					<tr>
+						<td><label>ID Pendaftaran *</label></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" disabled value="" class="form-control"></td>
+					</tr>
+
+					<tr>
 						<td><label>Nama Lengkap *</label></td>
 					</tr>
 					<tr>
@@ -59,10 +66,10 @@
 						<td><input type="text" name="agama" id="agama" class="form-control"></td>
 					</tr>
 					<tr>
-						<td><label>Alamat *</label></td>
+						<td><label>No Hp *</label></td>
 					</tr>
 					<tr>
-						<td><textarea class="form-control" name="alamat" id="alamat"></textarea></td>
+						<td><input type="text" name="no_hp" id="no_hp" class="form-control"></td>
 					</tr>
 					
 					
@@ -70,12 +77,6 @@
 			</div>
 			<div class="col-md-6">
 				<table style="width: 100%;">
-					<tr>
-						<td><label>No Hp *</label></td>
-					</tr>
-					<tr>
-						<td><input type="text" name="no_hp" id="no_hp" class="form-control"></td>
-					</tr>
 					<tr>
 						<td><label>Nama Orang Tua/Wali *</label></td>
 					</tr>
@@ -95,7 +96,13 @@
 						<td><input type="text" name="asal_smp" id="asal_smp" class="form-control"></td>
 					</tr>
 					<tr>
-					<th><label  style="margin-top: 10px;">Upload Paport</label></th>
+						<td><label>Alamat *</label></td>
+					</tr>
+					<tr>
+						<td><textarea class="form-control" name="alamat" id="alamat"></textarea></td>
+					</tr>
+					<tr>
+						<th><label  style="margin-top: 10px;">Upload Paport *</label></th>
 					</tr>
 					<tr>
 						<td>
@@ -103,7 +110,7 @@
 						</td>
 					</tr>
 					<tr>
-						<th><label for="validationCustom04">Jurusan</label></th>
+						<th><label for="validationCustom04">Jurusan *</label></th>
 					</tr>
 					<tr>
 					<td>
@@ -160,6 +167,7 @@
 
 		</div>
 	</div>
+	<footer style="height: 100px;"></footer>
 </body>
  <script src="<?php echo base_url();?>assets/lib/jquery/jquery.min.js"></script>
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>

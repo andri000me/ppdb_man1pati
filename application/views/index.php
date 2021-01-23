@@ -212,14 +212,32 @@
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-lg-5" style="background-color: #337ab7;height: 400px;">
-            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">beasiswa</h3>
+            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">Beasiswa</h3>
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
-            <p style="color: #fff;margin-left: 10px;">Padamu Negeri Kami Berjanji, Lulus Wikrama Siap Membangun Negeri</p>
+            <!-- Block level -->
+            <div class="row" style="color: #fff;">
+              <div class="col text-truncate text-responfive">
+                <p>1.Bagi yang mempunyai hafalan Al Qur'an :</p>
+              </div>
+            </div>
+
+            <!-- Inline level -->
+            <div class="row" style="color: #fff; margin-left:10px; margin-top:-30px;">
+              <span class="d-inline-block text-truncate col-md-12">
+                a. 3 Jus bebas  SPP 6 bulan. 
+              </span>
+              <span class="d-inline-block text-truncate col-md-12">
+                a. 4 Jus bebas  SPP 12 bulan. 
+              </span><br>
+              <span class="d-inline-block text-truncate col-md-12">
+                a. 5 Jus bebas  SPP 18 bulan. 
+              </span>
+            </div>
             <p style="color: #fff;margin-left: 10px;">Sekolahnya OKE, Gurunya OKE, Siswanya OKE, Ora  ng Tuanya OKE dan Alumninya OKE OKE</p>
           </div>
           <div class="col-lg-7" style="background-color: #000;">
-             <iframe width="100%" height="380" src="https://www.youtube.com/embed/0WAnmVBtmBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe width="100%" height="380" src="https://www.youtube.com/embed/DV1jEiS3yxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
         </div>
