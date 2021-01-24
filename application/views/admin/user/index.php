@@ -1,3 +1,4 @@
+
 <section class="content-header">
                     <h1>
                         Siswa
@@ -19,8 +20,8 @@
                                      <div class="panel-heading">Pilihan</div>
                                      <div class="panel-body">
                                          <ol class="breadcrumb pull-right">
-                                        <a href="<?php echo site_url('Control/sws');?>"><button class="btn btn-danger" type="button"><i class="fa fa-cloud-download"></i> Export</button></a>
-                                        <a href="<?php echo site_url('Control/page/f_siswa');?>"><button class="btn btn-success" type="button"><i class="fa fa-plus"></i> Tambah Data</button></a>
+                                        <!-- <a href="<?php echo site_url('Control/sws');?>"><button class="btn btn-danger" type="button"><i class="fa fa-cloud-download"></i> Export</button></a> -->
+                                        <a href="<?php echo site_url('User/create');?>"><button class="btn btn-success" type="button"><i class="fa fa-plus"></i> Tambah Data</button></a>
                                       </ol>
                                      </div>
                                 </div>  
@@ -29,46 +30,29 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Tgl Daftar</th>
-                                                <th>Nama Lengkap</th>
-                                                <th>Tempat Lahir</th>
-                                                <th>Tanggal Lahir</th>
-                                                <th>Jenis Kelamin</th>
-                                                <th>Agama</th>
-                                                <th>Alamat</th>
-                                                <th>No Hp</th>
-                                                <th>Nama Ortu</th>
-                                                <th>No Hp Ortu</th>
-                                                <th>Asal SMP</th>
+                                                <th>username</th>
+                                                <th>level</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php
-                                                // $no=0;
-                                                // foreach($tamp_sis as $tampil){
-                                                // $no++;
+                                                $no=0;
+                                                foreach($User as $row){
+                                                $no++;
                                             ?>  
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td><?= $no; ?></td>
+                                                <td><?= $row['username']; ?></td>
+                                                <td><?= $row['level']; ?></td>
                                                 <td>
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
                                                     <a href="" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>
                                             <?php
-                                                // }
+                                                // endforeach;
+                                            }
                                             ?>
                                         </tbody>
                                     </table>
