@@ -45,30 +45,30 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                                $no=0;
-                                                foreach($tamp_sis as $tampil){
-                                                $no++;
+                                                // $no=0;
+                                                // foreach($tamp_sis as $tampil){
+                                                // $no++;
                                             ?>  
                                             <tr>
-                                                <td><?php echo $no;?></td>
-                                                <td><?php echo $tampil->tgl_daftar;?></td>
-                                                <td><?php echo $tampil->nama_lengkap;?></td>
-                                                <td><?php echo $tampil->tempat_lahir;?></td>
-                                                <td><?php echo $tampil->tanggal_lahir;?></td>
-                                                <td><?php echo $tampil->jenis_kelamin;?></td>
-                                                <td><?php echo $tampil->agama;?></td>
-                                                <td><?php echo $tampil->alamat;?></td>
-                                                <td><?php echo $tampil->no_hp;?></td>
-                                                <td><?php echo $tampil->nama_ortu;?></td>
-                                                <td><?php echo $tampil->no_hportu;?></td>
-                                                <td><?php echo $tampil->asal_smp;?></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td>
-                                                    <a href="<?php echo site_url('Control/page/f_siswa');?>/<?php echo $tampil->id_pendaftaran;?>" class="btn btn-sm btn-warning">Edit</a>
-                                                    <a href="<?php echo site_url('Control/hapus_siswa');?>/<?php echo $tampil->id_pendaftaran;?>" class="btn btn-sm btn-danger">Hapus</a>
+                                                    <a href="" class="btn btn-sm btn-warning">Edit</a>
+                                                    <a href="" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>
                                             <?php
-                                                }
+                                                // }
                                             ?>
                                         </tbody>
                                     </table>
