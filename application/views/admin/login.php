@@ -10,6 +10,7 @@
         <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url();?>assets/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,12 +22,12 @@
     <body style="background-color: #ddd;">
 
         <div class="form-box" id="login-box">
-            <div class="header" style="background-color: #3c8dbc;">
-              <img src="<?php echo base_url();?>assets/img/Logo_swiksara.png" width="80" height="80">
+            <div class="header" style="background-color: #377b41;">
+              <img src="<?php echo base_url();?>assets/img/logo1.png" width="80" height="80">
               <p style="margin-top: 10px;">Sig In PPDB</p>
             </div>
            <?php echo form_open('login/aksi_login');?>
-                <div class="body bg-gray">
+                <div class="body bg-success">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="User ID"/>
                     </div>
@@ -34,10 +35,10 @@
                         <input type="password" name="password" class="form-control" placeholder="Password"/>
                     </div>          
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Login" name="login" style="width: 100%;" class="form-control"/>
+                        <input type="submit" class="btn btn-success" value="Login" name="login" style="width: 100%;" class="form-control"/>
                     </div>
                     <div class="form-group">
-                      <p style="text-align: center;">Copyright &copy 2018 SMK Wikrama 1 Jepara</p>
+                    &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
                     </div>
                 </div>
           <?php echo form_close();?>
