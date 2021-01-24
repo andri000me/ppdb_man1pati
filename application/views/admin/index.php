@@ -117,7 +117,7 @@
                         </li>
                         <li>
                             <a href="<?php echo site_url('user/index');?>">
-                                <i class="fa fa-file"></i><span>Data Gelombang</span>
+                                <i class="fa fa-file"></i><span>Data User</span>
                             </a>
                         </li>
                     </ul>
