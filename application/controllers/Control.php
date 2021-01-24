@@ -92,5 +92,7 @@
 			$this->Model_sekolah->hapus_siswa('pendaftaran',$id);
 			redirect('Control/page/siswa');
 		}
+		// user
+		// 
 	}
 ?>
