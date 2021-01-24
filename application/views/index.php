@@ -145,16 +145,19 @@
 
           <div class="col-lg-4 box" style="background-color: #3598db;">
             <i class="ion-ios-stopwatch-outline" style="color:#fff;"></i>
-            <h4 class="title"><a href="">Gelombang 1</a></h4>
-            <p class="description">Pendaftaran : 25 Februari 2019 - 29 Maret 2019</p>
-            <p class="description">Pengumuman  : 01 April 2019</p>
+            <h4 class="title"><a href="">Waktu Pendftaran Kelas Unggulan</a></h4>
+            <p class="description">Pendaftaran   : 8 Februari 2021 - 27 Februari 2021</p>
+            <p class="description">Seleksi/Test  : 01 Mart 2021 Di MAN 2 Pati</p>
+            <p class="description">Pengumuman    : 04 Mart 2021</p>
+            <p class="description">Dafter Ulang  : 05 s.d 10 Mart 2021</p>
+            <p class="description">Waktu         : 08:00 s.d 13:00 WIB di MAN 2 Pati</p>
           </div>
 
           <div class="col-lg-4 box box-bg" style="background: #f87f52;">
             <i class="ion-ios-stopwatch-outline" style="color:#fff;"></i>
-            <h4 class="title"><a href="">Gelombang 2</a></h4>
-            <p class="description">Pendaftaran : 02 April 2019 - 22 Juni 2019</p>
-            <p class="description">Pengumuman  : 24 Juni 2019</p>
+            <h4 class="title"><a href="">waktu Pendaftaran Kelas Reguler</a></h4>
+            <p class="description">Pendaftaran : 17 Mart 2021</p>
+            <p class="description">Setelah Daftar Silahkan lagsung Daftar Ulang di MAN 2 PAti Pukul 08:00-13:00 WIB Karena Kuota yang terbatas </p>
           </div>
 
           <div class="col-lg-4 box" style="background-color: #1abc9c;">
@@ -288,7 +291,20 @@
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a >Mengupload berkas pendaftaran</a></h4>
+            <h4 class="title"><a >Mengupload berkas pendaftaran Kelas Unggulan</a></h4>
+            <p class="description">
+              a.FC Raport Smester s.d. 5 yang dilegalisir dengan 
+                ketentuan : Minimal Nilai Rata-Rata 80 (Matematika,IPA dan B.inggris) Program IPA,
+                                                       (Matematika,IPS dan B.inggris) Program IPS
+            </p>
+            <p class="description">b.Akte Kelahiran</p>
+            <p class="description">c.Kartu Keluarga (KK)</p>
+            <p class="description">d.Foto berwara 3x4 2 Lembar</p>
+
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a >Mengupload berkas pendaftaran Kelas Reguler</a></h4>
             <p class="description">a.FC Raport Smester s.d. 5 yang dilegalisir</p>
             <p class="description">b.Akte Kelahiran</p>
             <p class="description">c.Kartu Keluarga (KK)</p>

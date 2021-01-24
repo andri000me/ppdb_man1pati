@@ -5,7 +5,9 @@
 	<title>Form Pendaftaran</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ppdb MAN 1 PATI" name="keywords">
-    <meta content="Pendaftaran Peserta Didik Baru 2019-2020 MAN 1 PATI" name="description">
+	<meta content="Pendaftaran Peserta Didik Baru 2019-2020 MAN 1 PATI" name="description">
+	<link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
+  	<link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
 	<link href="<?php echo base_url();?>assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
