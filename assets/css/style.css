@@ -737,6 +737,50 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
+
+/* informasi */
+#informasi {
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+
+#informasi .box {
+  margin-bottom: 30px;
+}
+
+#informasi .icon {
+  float: left;
+}
+
+#informasi .icon i {
+  color: #3598db;
+  font-size: 36px;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+#informasi .title {
+  margin-left: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#informasi .title a {
+  color: #111;
+}
+
+#informasi .box:hover .title a {
+  color: #3598db;
+}
+
+#informasi .description {
+  font-size: 14px;
+  margin-left: 60px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
 /* Services Section
 --------------------------------*/
 

@@ -53,6 +53,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Tentang MAN 2 Pati</a></li>
+          <li><a href="#informasi">Informasi</a></li>
           <li><a href="#services">Persyaratan</a></li>
           <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li>
           <li><a href="#contact">Kontak Kami</a></li>
@@ -260,7 +261,39 @@
 
       </div>
     </section><!-- #about -->
+    <section id="informasi">
+      <div class="container">
 
+        <header class="section-header wow fadeInUp">
+          <h3>Informasi</h3>
+          <p>Informasi yang perlu di ketahui </p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a>Peserta didik Unggulan</a></h4>
+            <p class="description">Kuota Peserta didik unggulan ada 72 (Program IPA:36 Siswa, Program IPS:36 Siswa)</p>
+            <p>Bagi yang tidak lolos Kelas Unggulan secara oromatis DITERIMA Kelas Reguler</p>
+            <p>Daftar Ulang Tanggal 12 s.d 12 Maret 2021 di MAN 2 Pati Pukul 08:00 - 13:00 WIB, (bagi yang tidak Daftar Ulang di anggap Mengundurkan diri)</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a>Peserta didik Reguler</a></h4>
+            <p class="description">Kuota peserta didik kelas Reguler ada 280 (Apabila Kuota Sudah Terpenuhi Maka Pendaftaran Akan Di Tutup)</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a>Berkas Daftar Ulang</a></h4>
+            <p class="description">1. Menyerahkan Fotocopy Raport yang dilegalisir</p>
+            <p class="description">2. Menyerahkan Fotocopy Akte dan KK</p>
+            <p class="description">3. Menyerahkan Fotocopy Piagam Penghargaan (bagi yang memiliki)</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
     <!--==========================
       Services Section
     ============================-->
@@ -276,7 +309,7 @@
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a>Usia Siswwa</a></h4>
+            <h4 class="title"><a>Usia Siswa</a></h4>
             <p class="description">usia maksimal 17 Tahun pada 1 juli 2021</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
