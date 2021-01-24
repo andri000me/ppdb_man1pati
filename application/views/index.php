@@ -409,7 +409,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>No Hp / WA</h3>
-              <p><a>0895614720008 (Pak Qoid)</a></p>
+              <p><a>0895614720008</a></p>
             </div>
           </div>
 
