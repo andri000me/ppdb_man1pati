@@ -55,7 +55,6 @@
           <li><a href="#about">Tentang MAN 2 Pati</a></li>
           <li><a href="#informasi">Informasi</a></li>
           <li><a href="#services">Persyaratan</a></li>
-          
           <li><a href="#call-to-action">Pendaftaran</a></li>
           <!-- <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li> -->
           <li><a href="#contact">Kontak Kami</a></li>
