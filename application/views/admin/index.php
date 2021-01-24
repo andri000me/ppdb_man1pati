@@ -115,6 +115,11 @@
                                 <i class="fa fa-user"></i> <span>Data Siswa</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-file"></i><span>Data Gelombang</span>
+                            </a>
+                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
