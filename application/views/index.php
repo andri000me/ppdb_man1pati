@@ -55,7 +55,9 @@
           <li><a href="#about">Tentang MAN 2 Pati</a></li>
           <li><a href="#informasi">Informasi</a></li>
           <li><a href="#services">Persyaratan</a></li>
-          <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li>
+          
+          <li><a href="#call-to-action">Pendaftaran</a></li>
+          <!-- <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li> -->
           <li><a href="#contact">Kontak Kami</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -275,8 +277,8 @@
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
             <h4 class="title"><a>Peserta didik Unggulan</a></h4>
             <p class="description">Kuota Peserta didik unggulan ada 72 (Program IPA:36 Siswa, Program IPS:36 Siswa)</p>
-            <p>Bagi yang tidak lolos Kelas Unggulan secara oromatis DITERIMA Kelas Reguler</p>
-            <p>Daftar Ulang Tanggal 12 s.d 12 Maret 2021 di MAN 2 Pati Pukul 08:00 - 13:00 WIB, (bagi yang tidak Daftar Ulang di anggap Mengundurkan diri)</p>
+            <p class="description">Bagi yang tidak lolos Kelas Unggulan secara oromatis DITERIMA Kelas Reguler</p>
+            <p class="description">Daftar Ulang Tanggal 12 s.d 12 Maret 2021 di MAN 2 Pati Pukul 08:00 - 13:00 WIB, (bagi yang tidak Daftar Ulang di anggap Mengundurkan diri)</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
