@@ -1,12 +1,12 @@
 
 <section class="content-header">
                     <h1>
-                        Siswa
-                        <small>Data Siswa</small>
+                        User
+                        <small>Data User</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('control/page/siswa');?>">Siswa</a></li>
+                        <li><a href="<?php echo site_url('control/page/siswa');?>">User</a></li>
                         <li class="active">Data User</li>
                     </ol>
                 </section>
@@ -62,14 +62,14 @@
                     </div>
 
                 </section><!-- /.content -->
-     <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+     <!-- <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog"> -->
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Import Data Siswa</h4>
+          <h4 class="modal-title">Import Data User</h4>
         </div>
         <div class="modal-body">
           <div class="form-group">
@@ -90,4 +90,4 @@
       </div>
       
     </div>
-  </div>
+  </div> -->
