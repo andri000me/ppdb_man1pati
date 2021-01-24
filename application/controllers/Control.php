@@ -3,7 +3,7 @@
 		function __construct(){
 			parent:: __construct();
 			$this->load->model('Model_sekolah');
-			$this->load->library(array('PHPExcel','PHPExcel/IOFactory'));
+			// $this->load->library(array('PHPExcel','PHPExcel/IOFactory'));
 		}
 		function index(){
 			redirect('Login');
