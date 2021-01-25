@@ -41,5 +41,13 @@ class User extends CI_Controller {
         $this->session->set_flashdata('flash','sudah di hapus');
         redirect('User/index');
     }
+
+    public function detail($id)
+    {
+        $data['user_detail'] = $this->User_model->getUserById($id);
+        $this->load->view('admin/layouts/header');
+        $this->load->view('admin/user/detail', $data);
+        $this->load->view('admin/layouts/footer');
+    }
 }
 ?>
