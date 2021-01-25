@@ -22,6 +22,12 @@ class User_model extends CI_model{
         ];
         $this->db->insert('user', $data);
     }
+
+    public function destroyUser($id)
+    {
+        $this->db->where('id','$id');
+        $this->db->delete('user');
+    }
 }
 
 

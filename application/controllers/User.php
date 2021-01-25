@@ -29,10 +29,17 @@ class User extends CI_Controller {
         } else {
             $this->User_model->StoreUser();
             $this->session->set_flashdata('flash','Berhasil di tambah');
-            redirect('User');
+            redirect('User/index');
             // echo "berhasil";
         }
+        
+    }
+
+    public function destroy($id)
+    {
+        $this->User_model->destroyUser($id);
+        $this->session->set_flashdata('flash','sudah di hapus');
+        redirect('User/index');
     }
 }
-
 ?>

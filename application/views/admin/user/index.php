@@ -11,24 +11,26 @@
                     </ol>
                 </section>
 
-                <!-- Main content -->
-                <section class="content">
+<!-- alert -->
                     <?php 
-                        if(  $this->session->flashdata() ){
+                        if($this->session->flashdata('flash')){
                     ?>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                <strong>Data</strong> <?= $this->session->flashdata(); ?>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="close">
-                                    <span arial-hidden="true">&times;</span>
+                    
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                        </div>
-                    </div>
+                       
                     <?php
                         }
                     ?>
+<!-- ./alert -->
+
+                <!-- Main content -->
+                <section class="content">
+
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="box">
@@ -63,7 +65,7 @@
                                                 <td><?= $row['level']; ?></td>
                                                 <td>
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
-                                                    <a href="" class="btn btn-sm btn-danger">Hapus</a>
+                                                    <a href="<?= base_url('User/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>
                                             <?php
