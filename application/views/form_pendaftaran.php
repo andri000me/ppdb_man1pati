@@ -23,12 +23,19 @@
 		<div class="kotak">
 			<div class="row">
 			<div class="col-md-6">
+			<form action="" class="col-md-12 table-responsive" method="post" enctype="multipart/form-data">
 				<table style="width: 100%;">
+				<?php 
+				$hr="PENDF";
+				$no=0001;
+
+				$why = $hr.$no++;
+				?>
 					<tr>
 						<td><label>ID Pendaftaran *</label></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" disabled value="" class="form-control"></td>
+						<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $why; ?>" class="form-control"></td>
 					</tr>
 
 					<tr>
@@ -54,7 +61,7 @@
 					</tr>
 					<tr>
 						<td>
-							<select class="custom-select" id="validationCustom04" required>
+							<select class="custom-select" name="jenis_kelamin" id="validationCustom04" required>
 								<option selected disabled value="">---Jenis Kelamin---</option>
 								<option name="jk" value="L" id="jk"> Laki-Laki </option>
 								<option name="jk" value="P" id="jk"> Perempuan </option>
@@ -108,7 +115,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload" value="adsfjasdf">
 						</td>
 					</tr>
 					<tr>
@@ -116,7 +123,7 @@
 					</tr>
 					<tr>
 					<td>
-						<select class="custom-select" id="validationCustom04" required>
+						<select class="custom-select" name="jurusan" id="validationCustom04" required>
 							<option selected disabled value="">---Pilih Jurusan---</option>
 							<option name="ipa" id="ipa"> IPA </option>
 							<option name="ips" id="ips"> IPS </option>
@@ -126,7 +133,8 @@
 					</tr>
 					</table>
 			</div>
-			<form action="" class="col-md-12 table-responsive">
+
+			<div class="col-md-12 table-responsive"></div>
 				<table class="table table-bordered" style="margin-top: 20px;">
 					<thead>
 						<tr>
@@ -139,31 +147,33 @@
 					<tbody>
 						<tr>
 						<th scope="row">B.inggris</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">Matematika</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">IPA</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl3" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl3" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl3" style="border: #fff;"></td>
 						</tr>
 						<tr>
 						<th scope="row">IPS</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl4" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl4" style="border: #fff;"></td>
+						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl4" style="border: #fff;"></td>
 						</tr>
 					</tbody>
 				</table>
-				<input type="button" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="valid()"></td>
+				<a href="<?= site_url() ?>" class="btn btn-primary float-right">Kembali</a>
+				<button type="submit" class="btn btn-success float-right">Simpan</button>
+				<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"></td> -->
 			</form>
 		</div>
 
@@ -175,69 +185,7 @@
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert-dev.js"></script>
-<script type="text/javascript">
-    function pnd(){
-        document.location='../Mastercontrol';
-    }
-	function simpan_pdf(){
-	 $.ajax({
-  	 	url:"<?php echo site_url('Mastercontrol/simpan_pdf');?>",
-  	 	type:"POST",
-  	 	data:{
-  	 		nama_lengkap:$("#nama_lengkap").val(),
-  	 		tempat_lahir:$("#tempat_lahir").val(),
-  	 		tanggal_lahir:$("#tanggal_lahir").val(),
-  	 		jk:$(".jk:checked").val(),
-  	 		agama:$("#agama").val(),
-  	 		alamat:$("#alamat").val(),
-  	 		no_hp:$("#no_hp").val(),
-  	 		nama_ortu:$("#nama_ortu").val(),
-  	 		no_hportu:$("#no_hportu").val(),
-  	 		asal_smp:$("#asal_smp").val()
-  	 	},
-  	 	success:function(hasil){
-  	 		if(hasil=="Berhasil"){
-  	 			swal({
-                  type: 'success',
-                  title: 'Pendaftaran',
-                  text: 'Anda Sudah Berhasil Mendafatar, langkah selanjutnya silahkan untuk mengumpulkan berkas persyaratan yang telah ditentukan'
-                  
-                })
-                setTimeout(pnd, 5000);
-  	 		}else{
-  	 			swal({
-                  type: 'error',
-                  title: 'Pendaftaran',
-                  text: 'Gagal'
-                })
-                window.reload();
-  	 		}
-  	 		
-  	 	}
-  	  });
-	}
-		function valid(){
-		nama_lengkap=$("#nama_lengkap").val();
-  	 	tempat_lahir=$("#tempat_lahir").val();
-  	 	tanggal_lahir=$("#tanggal_lahir").val();
-  	 	jk=$(".jk:checked").val();
-  	 	agama=$("#agama").val();
-  	 	alamat=$("#alamat").val();
-  	 	no_hp=$("#no_hp").val();
-  	 	nama_ortu=$("#nama_ortu").val();
-  	 	no_hportu=$("#no_hportu").val();
-  	 	asal_smp=$("#asal_smp").val();
-  	 	if(nama_lengkap == '' || tempat_lahir == '' || tanggal_lahir == '' || jk == '' || agama == '' || alamat == '' || no_hp == '' || nama_ortu == '' || no_hportu == '' || asal_smp == ''){
-			swal({
-                  type: 'error',
-                  title: 'Pendaftaran',
-                  text: 'Anda harus mengisi data dengan lengkap !'
-            })
-		}else{
-			simpan_pdf();
-		}
-	}
-</script>
+
 </html>	
 <style type="text/css">
 	body{

@@ -2,13 +2,22 @@
 	class Mastercontrol extends CI_Controller{
 		function __construct(){
 			parent:: __construct();
-			$this->load->model('Model_mastercontrol');
+			// $this->load->model('Model_mastercontrol');
+			$this->load->model('Model_pendaftaran');
+			$this->load->library('form_validation');
 		}
 		function index(){
 			$this->load->view('index');
 		}
 		function fpd(){
-			$this->load->view('form_pendaftaran');
+			$this->form_validation->set_rules('jurusan','jurusan','required');
+			if($this->form_validation->run() == FALSE){
+				$this->load->view('form_pendaftaran');
+			} else{
+				$this->Model_pendaftaran->StorePendaftaran1();
+				$this->session->set_flashdata('flash','Berhasil di tambah');
+				redirect('Mastercontrol/fpd');
+			}
 		}
 		function simpan_pdf(){
 			$ar=array(

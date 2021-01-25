@@ -120,6 +120,11 @@
                                 <i class="fa fa-file"></i><span>Data User</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="<?php echo site_url('Pendaftaran/index') ?>">
+                                <i class="fa fa-file"></i><span>Data Pendaftaran</span>
+                            </a>
+                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
