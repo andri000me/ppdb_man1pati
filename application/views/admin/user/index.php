@@ -13,6 +13,22 @@
 
                 <!-- Main content -->
                 <section class="content">
+                    <?php 
+                        if(  $this->session->flashdata() ){
+                    ?>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>Data</strong> <?= $this->session->flashdata(); ?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                    <span arial-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        }
+                    ?>
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="box">
