@@ -45,9 +45,28 @@ class User extends CI_Controller {
     public function detail($id)
     {
         $data['user_detail'] = $this->User_model->getUserById($id);
+
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/user/detail', $data);
         $this->load->view('admin/layouts/footer');
     }
+
+    public function edit($id)
+    {
+        $data['data'] = $this->User_model->getUserById($id);
+        $this->form_validation->set_rules('username','Username','required');
+        if($this->form_validation->run() == FALSE) {
+            $this->load->view('admin/layouts/header');
+            $this->load->view('admin/user/edit', $data);
+            $this->load->view('admin/layouts/footer');
+        } else {
+            $this->User_model->StoreUser();
+            $this->session->set_flashdata('flash','Berhasil di edit');
+            redirect('User/index');
+            // echo "berhasil";
+        }
+    }
+
+
 }
 ?>

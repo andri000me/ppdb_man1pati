@@ -33,6 +33,19 @@ class User_model extends CI_model{
     {
         return $this->db->get_where('user', ['id' => $id])->row_array();
     }
+
+    public function update()
+    {
+        // true untuk menghindari sqlinject
+        $data = [
+            "username" => $this->input->post('username', true),
+            "level" => $this->input->post('level', true),
+            "password" => $this->input->post('password', true)
+        ];
+        $this->db->where('id', $this->input->post('id'));
+        $this->db->update('user', $data);
+    }
+
 }
 
 

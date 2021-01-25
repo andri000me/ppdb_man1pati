@@ -64,8 +64,8 @@
                                                 <td><?= $row['username']; ?></td>
                                                 <td><?= $row['level']; ?></td>
                                                 <td>
-                                                    <a href="<?= base_url('User/detail'); ?><?= $row['id'] ?>" class="btn btn-sm btn-primary">Detail</a>
-                                                    <a href="" class="btn btn-sm btn-warning">Edit</a>
+                                                    <a href="<?= base_url('User/detail/'); ?><?= $row['id'] ?>" class="btn btn-sm btn-primary">Detail</a>
+                                                    <a href="<?= base_url('User/edit/'); ?><?= $row['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
                                                     <a href="<?= base_url('User/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>

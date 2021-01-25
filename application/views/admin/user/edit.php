@@ -45,25 +45,27 @@
 
                                 <div role="form">
                                     <form action="" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="id" value="<?= $data['id'] ?>">
                                         <div class="box-body">
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Username</label>
-                                                    <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                                                    <input type="text" class="form-control" value="<?= $data['username'] ?>" name="username" id="username" placeholder="Username">
                                                     <small class="form-text text-danger"><?= form_error('username'); ?></small>
                                                 </div>                                        
                                                 <div class="form-group">
                                                     <label>Level</label>
-                                                    <input type="text" class="form-control"  name="level" id="level" placeholder="Level">
+                                                    <input type="text" class="form-control"  name="level" id="level" value="<?= $data['level'] ?>" placeholder="Level">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Pawword</label>
-                                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                                    <label>Password</label>
+                                                    <input type="password" class="form-control"  name="password" id="password" value="<?= $data['password'] ?>" placeholder="Password">
                                                 </div>
+
 
                                             </div>
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                                <button type="submit" class="btn btn-primary">Save Edit </button>
                                             </div>
                                         </div>
                                     <!-- /.box-body -->
