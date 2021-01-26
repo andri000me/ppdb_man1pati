@@ -51,6 +51,11 @@ class Model_pendaftaran extends CI_model{
         $this->db->where('id',$id);
         $this->db->delete('pendaftaran1');
     }
+
+    // public function cekkode()
+    // {
+    //     $query = $this->db->query("SELECT MAX(id_pendaftaran) as ")
+    // }
     // paling bawah
     
     private function _uploadFile()

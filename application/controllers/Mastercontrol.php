@@ -10,13 +10,19 @@
 			$this->load->view('index');
 		}
 		function fpd(){
+			// $dariDB = $this->Model_pendaftaran->cekkode();
+			// $nourut = substr($db,3,4);
+			// $kodeid = $nourut + 1;
+			// $data = array('id_pendaftaran' => $kodeid);
 			$this->form_validation->set_rules('jurusan','jurusan','required');
 			if($this->form_validation->run() == FALSE){
 				$this->load->view('form_pendaftaran');
+				// $this->load->view('form_pendaftaran', $data);
 			} else{
 				$this->Model_pendaftaran->StorePendaftaran1();
 				$this->session->set_flashdata('flash','Berhasil di tambah');
 				redirect('Mastercontrol/fpd');
+				// redirect('Mastercontrol/fpd', $data);
 			}
 		}
 		function simpan_pdf(){

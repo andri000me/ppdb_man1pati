@@ -26,7 +26,7 @@
 			<form action="" class="col-md-12 table-responsive" method="post" enctype="multipart/form-data">
 				<table style="width: 100%;">
 				<?php 
-				$hr="PENDF";
+				$hr="U2021";
 				$no=0001;
 
 				$why = $hr.$no++;
