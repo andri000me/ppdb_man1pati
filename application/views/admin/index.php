@@ -23,7 +23,6 @@
         <link href="<?php echo base_url();?>assets/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url();?>assets/css/AdminLTE.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -117,8 +116,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fa fa-file"></i><span>Data Gelombang</span>
+                            <a href="<?php echo site_url('user/index');?>">
+                                <i class="fa fa-file"></i><span>Data User</span>
                             </a>
                         </li>
                         <li>

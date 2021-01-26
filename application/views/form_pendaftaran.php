@@ -25,16 +25,16 @@
 			<div class="col-md-6">
 				<table style="width: 100%;">
 				<?php 
-				$hr="PENDF";
-				$no=0001;
+				// $hr="PENDF";
+				// $no=0001;
 
-				$why = $hr.$no++;
+				// $why = $hr.$no++;
 				?>
 					<tr>
 						<td><label>ID Pendaftaran *</label></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $why; ?>" class="form-control"></td>
+						<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $kode; ?>" readonly class="form-control"></td>
 					</tr>
 
 					<tr>

@@ -5,21 +5,13 @@ class User extends CI_Controller {
     function __construct()
     {
         parent:: __construct();
-<<<<<<< HEAD
-=======
         $this->load->model('User_model');
         $this->load->library('form_validation');
->>>>>>> a6a890b4c84d9a53445e2c037dc1a8a4d5809ba5
     }
 
     public function index()
     {
         // $data['user']
-<<<<<<< HEAD
-    }
-}
-
-=======
         $data['User'] = $this->User_model->getAllUser();
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/user/index', $data);
@@ -77,5 +69,4 @@ class User extends CI_Controller {
 
 
 }
->>>>>>> a6a890b4c84d9a53445e2c037dc1a8a4d5809ba5
 ?>

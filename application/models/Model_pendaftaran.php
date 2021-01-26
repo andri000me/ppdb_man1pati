@@ -51,7 +51,27 @@ class Model_pendaftaran extends CI_model{
         $this->db->where('id',$id);
         $this->db->delete('pendaftaran1');
     }
-    // paling bawah
+
+    public function kode()
+    {
+        $this->db->select('RIGHT(pendaftaran1.id_pendaftaran,2) as id_pendaftaran', FALSE);
+        $this->db->order_by('id_pendaftaran','DESC');
+        $this->db->limit(1);
+        $query = $this->db->get('pendaftaran1');
+        if($query->num_rows() <> 0){
+            $data = $query->row();
+            $kode = intval($data->id_pendaftaran) + 1;
+        } 
+        else{
+            $kode = 1;
+        }
+       
+        $batas = str_pad($kode, 3, "0", STR_PAD_LEFT);
+        $kodetampil = "U"."2021".$batas;
+        return $kodetampil;
+    }
+
+
     
     private function _uploadFile()
     {
