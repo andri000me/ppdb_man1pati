@@ -127,6 +127,11 @@
                                 <i class="fa fa-file"></i><span>Data Pendaftaran</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="<?php echo site_url('gelombang/index') ?>">
+                                <i class="fa fa-file"></i><span>Data gelombang</span>
+                            </a>
+                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->

@@ -1,13 +1,13 @@
 
 <section class="content-header">
                     <h1>
-                        Glombang
-                        <small>Data Glombang</small>
+                        Gelombang
+                        <small>Data Gelombang</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('control/page/glombang');?>">Glombang</a></li>
-                        <li class="active">Data Glombang</li>
+                        <li><a href="<?php echo site_url('control/page/gelombang');?>">Gelombang</a></li>
+                        <li class="active">Data Gelombang</li>
                     </ol>
                 </section>
 
@@ -64,7 +64,7 @@
                                                 <td>
                                                     <a href="" class="btn btn-sm btn-primary">Detail</a>
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
-                                                    <a href="<?= base_url('glombang/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
+                                                    <a href="<?= base_url('gelombang/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>
                                             <?php

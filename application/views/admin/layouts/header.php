@@ -127,6 +127,11 @@
                                 <i class="fa fa-file"></i><span> Data Pendaftar</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="<?php echo site_url('glombang/index'); ?>">
+                                <i class="fa fa-file"></i><span> Data Glombang</span>
+                            </a>
+                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
