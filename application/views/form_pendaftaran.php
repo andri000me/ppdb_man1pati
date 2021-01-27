@@ -21,6 +21,7 @@
 	</div>
 	<div class="container">
 		<div class="kotak">
+		<form action="" method="post" enctype="multipart/form-data">
 			<div class="row">
 			<div class="col-md-6">
 				<table style="width: 100%;">
@@ -156,7 +157,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_raport" id="file_upload_raport" value="adsfjasdf">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload_raport" value="adsfjasdf">
 						</td>
 					</tr>
 					
@@ -164,10 +165,8 @@
 					</table>
 			</div>
 
-			<div class="col-md-12 table-responsive"></div>
-			<form action="" class="col-md-12 table-responsive" method="post" enctype="multipart/form-data">
-
-				<table class="table table-bordered" style="margin-top: 20px;">
+			<div class="col-md-12 table-responsive">
+			<table class="table table-bordered" style="margin-top: 20px;">
 					<thead>
 						<tr>
 						<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>
@@ -206,10 +205,12 @@
 				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
 				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"></td>
 				<a href="<?= site_url() ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
-			</form>
+
+			</div>
+			
 	
 		</div>
-
+		</form>
 		</div>
 	</div>
 	<footer style="height: 100px;"></footer>
