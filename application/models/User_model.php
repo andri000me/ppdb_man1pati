@@ -9,8 +9,8 @@ class User_model extends CI_model{
     {
         // echo "ok";
         // return $this->db->get('user')->result_array();
-        $query = $this->db->get('user');
-        return $query->result_array();
+        $query = $this->db->get('user'); //mengambil data dari database
+        return $query->result_array(); //menampilkan data dari database
     }
     public function StoreUser()
     {
@@ -31,7 +31,7 @@ class User_model extends CI_model{
 
     public function getUserById($id)
     {
-        return $this->db->get_where('user', ['id' => $id])->row_array();
+        return $this->db->get_where('user', ['id' => $id])->row_array(); //menampilkan data berdasarkan id
     }
 
     public function update()
