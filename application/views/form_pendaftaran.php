@@ -79,13 +79,8 @@
 					<tr>
 						<td><input type="text" name="no_hp" id="no_hp" class="form-control"></td>
 					</tr>
-					
-					
-				</table>
-			</div>
-			<div class="col-md-6">
-				<table style="width: 100%;">
-					<tr>
+				
+						<tr>
 						<td><label>Nama Orang Tua/Wali *</label></td>
 					</tr>
 					<tr>
@@ -97,6 +92,11 @@
 					<tr>
 						<td><input type="text" name="no_hportu" id="no_hportu" class="form-control"></td>
 					</tr>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<table style="width: 100%;">
+				
 					<tr>
 						<td><label>Asal SMP/MTs *</label></td>
 					</tr>
@@ -108,14 +108,6 @@
 					</tr>
 					<tr>
 						<td><textarea class="form-control" name="alamat" id="alamat"></textarea></td>
-					</tr>
-					<tr>
-						<th><label  style="margin-top: 10px;">Upload Paport *</label></th>
-					</tr>
-					<tr>
-						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload" value="adsfjasdf">
-						</td>
 					</tr>
 					<tr>
 						<th><label for="validationCustom04">Jurusan *</label></th>
@@ -130,6 +122,40 @@
 
 					</td>
 					</tr>
+					<tr>
+						<th><label  style="margin-top: 10px;">Upload KK *</label></th>
+					</tr>
+					<tr>
+						<td>
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_kk" id="file_upload_kk" value="adsfjasdf">
+						</td>
+					</tr>
+					<tr>
+						<th><label  style="margin-top: 10px;">Upload Akte Kelahiran *</label></th>
+					</tr>
+					<tr>
+						<td>
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_ak" id="file_upload_ak" value="adsfjasdf">
+						</td>
+					</tr>
+					<tr>
+						<th><label  style="margin-top: 10px;">Upload Foto 3x4 *</label></th>
+					</tr>
+					<tr>
+						<td>
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_foto" id="file_upload_foto" value="adsfjasdf">
+						</td>
+					</tr>
+					<tr>
+						<th><label  style="margin-top: 10px;">Upload Raport *</label></th>
+					</tr>
+					<tr>
+						<td>
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_raport" id="file_upload_raport" value="adsfjasdf">
+						</td>
+					</tr>
+					
+					
 					</table>
 			</div>
 
@@ -140,9 +166,9 @@
 					<thead>
 						<tr>
 						<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>
-						<th scope="col">Smester 3</th>
-						<th scope="col">Smester 4</th>
-						<th scope="col">Smester 5</th>
+						<th scope="col">Semester 3</th>
+						<th scope="col">Semester 4</th>
+						<th scope="col">Semester 5</th>
 						</tr>
 					</thead>
 					<tbody>

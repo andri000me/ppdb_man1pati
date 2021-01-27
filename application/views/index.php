@@ -80,7 +80,7 @@
               <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
-                <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
+                <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
              <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
-                <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
+                <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
              <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
-                <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
+                <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
               <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;"></h3>
-                <h3 style="color: #fff;">TAHUN PELAJARAN 2020-2021</h3>
+                <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
               </div>
             </div>
           </div>
@@ -147,26 +147,23 @@
 
           <div class="col-lg-4 box" style="background-color: #3598db;">
             <i class="ion-ios-stopwatch-outline" style="color:#fff;"></i>
-            <h4 class="title"><a href="">Glombang 1</a></h4>
-            <h4 class="title"><a href="">Waktu Pendftaran Kelas Unggulan</a></h4>
+            <h4 class="title"><a href="">Waktu Pendaftaran Kelas Unggulan</a></h4>
             <p class="description">Pendaftaran   : 8 Februari 2021 - 27 Februari 2021</p>
-            <p class="description">Seleksi/Test  : 01 Mart 2021 Di MAN 2 Pati</p>
-            <p class="description">Pengumuman    : 04 Mart 2021</p>
-            <p class="description">Dafter Ulang  : 05 s.d 10 Mart 2021</p>
+            <p class="description">Seleksi/Test  : 01 Maret 2021 Di MAN 2 Pati</p>
+            <p class="description">Pengumuman    : 04 Maret 2021</p>
+            <p class="description">Dafter Ulang  : 05 s.d 10 Maret 2021</p>
             <p class="description">Waktu         : 08:00 s.d 13:00 WIB di MAN 2 Pati</p>
           </div>
 
           <div class="col-lg-4 box box-bg" style="background: #f87f52;">
             <i class="ion-ios-stopwatch-outline" style="color:#fff;"></i>
-            <h4 class="title"><a href="">Gelombang 2</a></h4>
             <h4 class="title"><a href="">waktu Pendaftaran Kelas Reguler</a></h4>
-            <p class="description">Pendaftaran : 17 Mart 2021</p>
+            <p class="description">Pendaftaran : 17 Maret 2021</p>
             <p class="description">Setelah Daftar Silahkan lagsung Daftar Ulang di MAN 2 Pati Pukul 08:00-13:00 WIB Karena Kuota yang terbatas </p>
           </div>
 
           <div class="col-lg-4 box" style="background-color: #1abc9c;">
             <i class="ion-ios-stopwatch-outline" style="color:#fff;"></i>
-            <h4 class="title"><a href="">Gelombang 3</a></h4>
             <p class="description">-</p>
           </div>
 
@@ -182,7 +179,6 @@
 
         <header class="section-header">
           <h3 style="border-color: #3498db;">Tentang MAN 2 Pati</h3>
-          <p>Humanis | Aqidh Islamiyah | Raja | Akhlaqul Karimah | Populis | Adil | Normatif | Kualitas | Ukhuwah</p>
         </header>
 
         <div class="row">
@@ -214,7 +210,7 @@
                         <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100%;margin-top: -5px;">
                           <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Nama : MAN 2 Pati</p>
                           <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">NPSN : 20363139</p>
-                          <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Alamat : Jl.Ratu kalinyamat Gang Melati ll Tayu kabupaten pati </p>
+                          <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Alamat : Jl.Ratu Kalinyamat Kabupaten Pati </p>
                           <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Kode Pos : 59155</p>
                           <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Desa : Tayu Wetan</p>
                           <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Kecamatan : Tayu</p>
@@ -233,23 +229,23 @@
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
             <!-- Block level -->
-            <p style="color: #fff; margin-left:5px;">1.Bagi yang mempunyai hafalan Al Qur'an :</p>
+            <p style="color: #fff; margin-left:5px;">1.Bagi yang mempunyai hafalan Al-quran :</p>
             <!-- Inline level -->
             <div style="color: #fff; margin-left:10px; margin-top:-30px;">
               <span class="d-inline-block text-truncate col-md-12">
                 a. 3 Jus bebas  SPP 6 bulan. 
               </span>
               <span class="d-inline-block text-truncate col-md-12">
-                a. 4 Jus bebas  SPP 12 bulan. 
+                b. 4 Jus bebas  SPP 12 bulan. 
               </span><br>
               <span class="d-inline-block text-truncate col-md-12">
-                a. 5 Jus bebas  SPP 18 bulan. 
+                c. 5 Jus bebas  SPP 18 bulan. 
               </span>
             <p style="color: #fff;">
-              2.Peserta didik dengan Rengking 1 pada kelas 9 semester 5 bebas SPP 3 Bulan.
+              2.Peserta didik dengan Rengking 1 MTS/SMP bebas SPP 3 Bulan.
                 (Dengan menunjukkan foto raport asli dan foto copy yang dilegalisir Kepala MTS/SMP)
             </p>
-           <p style="color: #fff; margin-top:-20px;">3.Bagi yang mempunyai hafalan Al Qur'an :</p>
+           <p style="color: #fff; margin-top:-20px;">3.Peserta didik berprestasi Tk. Kabupaten Bidang Olahraga & Seni :</p>
             <!-- Inline level -->
             <div style="color: #fff; margin-left:10px; margin-top:-30px;">
               <span class="d-inline-block text-truncate col-md-12">
@@ -291,7 +287,7 @@
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
             <h4 class="title"><a>Peserta didik Unggulan</a></h4>
             <p class="description">Kuota Peserta didik unggulan ada 72 (Program IPA:36 Siswa, Program IPS:36 Siswa)</p>
-            <p class="description">Bagi yang tidak lolos Kelas Unggulan secara oromatis DITERIMA Kelas Reguler</p>
+            <p class="description">Bagi yang tidak lolos Kelas Unggulan secara otomatis DITERIMA Kelas Reguler</p>
             <p class="description">Daftar Ulang Tanggal 12 s.d 12 Maret 2021 di MAN 2 Pati Pukul 08:00 - 13:00 WIB, (bagi yang tidak Daftar Ulang di anggap Mengundurkan diri)</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
@@ -343,22 +339,22 @@
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a >Mengupload berkas pendaftaran Kelas Unggulan</a></h4>
             <p class="description">
-              a.FC Raport Smester s.d. 5 yang dilegalisir dengan 
+              a.FC Raport Semester s.d. 5 yang dilegalisir dengan 
                 ketentuan : Minimal Nilai Rata-Rata 80 (Matematika,IPA dan B.inggris) Program IPA,
                                                        (Matematika,IPS dan B.inggris) Program IPS
             </p>
             <p class="description">b.Akte Kelahiran</p>
             <p class="description">c.Kartu Keluarga (KK)</p>
-            <p class="description">d.Foto berwara 3x4 2 Lembar</p>
+            <p class="description">d.Foto berwarna 3x4 2 Lembar</p>
 
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a >Mengupload berkas pendaftaran Kelas Reguler</a></h4>
-            <p class="description">a.FC Raport Smester s.d. 5 yang dilegalisir</p>
+            <p class="description">a.FC Raport Semester s.d. 5 yang dilegalisir</p>
             <p class="description">b.Akte Kelahiran</p>
             <p class="description">c.Kartu Keluarga (KK)</p>
-            <p class="description">d.Foto berwara 3x4 2 Lembar</p>
+            <p class="description">d.Foto berwarna 3x4 2 Lembar</p>
 
           </div>
         </div>
@@ -417,7 +413,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Alamat</h3>
-              <address>Jl.Ratu kalinyamat Gang Melati ll Tayu kabupaten pati 59155</address>
+              <address>Jl.Ratu Kalinyamat Kabupaten Pati 59155</address>
             </div>
           </div>
 
