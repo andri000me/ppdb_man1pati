@@ -96,7 +96,12 @@
 			</div>
 			<div class="col-md-6">
 				<table style="width: 100%;">
-				
+					<tr>
+						<td><label>Email *</label></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="gmail" id="gmail" class="form-control"></td>
+					</tr>
 					<tr>
 						<td><label>Asal SMP/MTs *</label></td>
 					</tr>
