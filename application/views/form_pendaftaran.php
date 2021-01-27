@@ -203,6 +203,7 @@
 						</tr>
 					</tbody>
 				</table>
+				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
 				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"></td>
 				<a href="<?= site_url() ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
 			</form>
