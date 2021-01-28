@@ -21,7 +21,8 @@
 	</div>
 	<div class="container">
 		<div class="kotak">
-		<form action="" method="post" enctype="multipart/form-data">
+		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
+		<?= form_open_multipart('Mastercontrol/upload_tambah'); ?>
 			<div class="row">
 			<div class="col-md-6">
 				<table style="width: 100%;">
@@ -101,7 +102,7 @@
 						<td><label>Email *</label></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="gmail" id="gmail" class="form-control"></td>
+						<td><input type="text" name="email" id="email" class="form-control"></td>
 					</tr>
 					<tr>
 						<td><label>Asal SMP/MTs *</label></td>
@@ -133,7 +134,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_kk" id="file_upload_kk" value="adsfjasdf">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_kk" id="file_upload_kk">
 						</td>
 					</tr>
 					<tr>
@@ -141,7 +142,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_ak" id="file_upload_ak" value="adsfjasdf">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_ak" id="file_upload_ak">
 						</td>
 					</tr>
 					<tr>
@@ -149,7 +150,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_foto" id="file_upload_foto" value="adsfjasdf">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload_foto" id="file_upload_foto">
 						</td>
 					</tr>
 					<tr>
@@ -157,7 +158,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload_raport" value="adsfjasdf">
+							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload">
 						</td>
 					</tr>
 					
@@ -210,7 +211,8 @@
 			
 	
 		</div>
-		</form>
+		<?= form_close(); ?>
+		<!-- </form> -->
 		</div>
 	</div>
 	<footer style="height: 100px;"></footer>

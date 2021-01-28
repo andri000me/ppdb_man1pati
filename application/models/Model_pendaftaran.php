@@ -6,29 +6,22 @@ class Model_pendaftaran extends CI_model{
         parent:: __construct();
     }
 
+    // ===================================================
+    // menampilkan data
+    // ===================================================
     public function getAlldata()
     {
         $query = $this->db->get('pendaftaran1');
         return $query->result_array();
     }
+    // ===================================================
 
+
+    // ===================================================
+    // simpan data
+    // ===================================================    
     public function StorePendaftaran1()
     {
-        // $berkas = $_FILES['file_upload'];
-        // if($berkas = ''){}else{
-        //     $config['upload_path'] = './upload/';
-        //     $config['allowed_type'] = 'pdf|img|png|excl';
-        //     $config['file_name'] = $this->id;
-        //     $config['overwrite'] = true;
-        //     $config['max_size'] = 100024;
-
-        //     $this->load->library('upload', $config);
-        //     if(! $this->upload->do_upload('file_upload')){
-        //         echo "<script>alert('upload batal')</script>"; die();
-        //     }else{
-        //         $berkas=$this->upload->data('file_name');
-        //     }
-        // }
         $data = [
             "id_pendaftaran" => $this->input->post('id_pendaftaran',true),
             "nm_lengkap" => $this->input->post('nama_lengkap',true),
@@ -61,13 +54,23 @@ class Model_pendaftaran extends CI_model{
         ];
         $this->db->insert('pendaftaran1', $data);
     }
+    // ===================================================
 
+
+    // ===================================================
+    // hapus data
+    // ===================================================
     public function destroyPendaftaran($id)
     {
         $this->db->where('id',$id);
         $this->db->delete('pendaftaran1');
     }
+    // ===================================================
 
+
+    // ===================================================
+    // kode otomatis
+    // ===================================================
     public function kode()
     {
         $this->db->select('RIGHT(pendaftaran1.id_pendaftaran,2) as id_pendaftaran', FALSE);
@@ -81,31 +84,42 @@ class Model_pendaftaran extends CI_model{
         else{
             $kode = 1;
         }
-       
         $batas = str_pad($kode, 3, "0", STR_PAD_LEFT);
         $kodetampil = "U"."2021".$batas;
         return $kodetampil;
     }
+    // ===================================================
 
 
     
+    // ===================================================
+    // upload file
+    // ===================================================
     public function _uploadFile()
     {
-        $config['upload_path'] = './upload/';
+        $config['upload_path'] = './assets/uploads/';
         $config['allowed_type'] = 'pdf|img|png|excl';
         $config['file_name'] = $this->id;
-        $config['overwrite'] = true;
-        $config['max_size'] = 10002400;
+        // $config['overwrite'] = true;
+        $config['max_size'] = 50000;
 
         $this->load->library('upload', $config);
 
-        if($this->upload->do_upload('nm_file')){
-            return $this->upload->data("file_upload");
+        if($this->upload->do_upload('file_upload')){
+            return $this->upload->data('file_name');
         }else{
-            return "default.pdf";
+            return $this->upload->data('file_name');
         }
-
+    //     if(! $this->upload->do_upload('nm_file')){
+    //         echo "gagal input"; die();
+    //     }else{
+    //         return $this->upload->data('file_upload');
+    //     }
     }
+    // ===================================================
+
+
+
 
 }
 
