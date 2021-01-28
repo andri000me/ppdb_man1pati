@@ -34,8 +34,12 @@ class Model_pendaftaran extends CI_model{
             "no_hp_ortu" => $this->input->post('no_hportu',true),
             "asl_sekolah" => $this->input->post('asal_smp',true),
             "almt" => $this->input->post('alamat',true),
+            "email" => $this->input->post('email', true),
             // "nm_file" => $this->input->post('file_upload',true),
             "nm_file" => $this->_uploadFile(),
+            "nm_file_kk" => $this->__uploadFile_kk(),
+            "nm_file_ak" => $this->__uploadFile_ak(),
+            "nm_file_foto" => $this->__uploadFile_foto(),
             // "nm_file" => $berkas,
             "jurusan" => $this->input->post('jurusan',true),
             "sem3_nl1" => $this->input->post('sem3_nl1',true),
@@ -111,7 +115,7 @@ class Model_pendaftaran extends CI_model{
     public function _uploadFile()
     {
         $config['upload_path'] = './assets/uploads/';
-        $config['allowed_type'] = 'pdf|img|png|excl';
+        $config['allowed_type'] = 'pdf|img|png';
         $config['file_name'] = $this->id;
         // $config['overwrite'] = true;
         $config['max_size'] = 50000;
@@ -128,6 +132,48 @@ class Model_pendaftaran extends CI_model{
     //     }else{
     //         return $this->upload->data('file_upload');
     //     }
+    }
+
+    public function __uploadFile_kk()
+    {
+        $config['upload_path'] = './assets/uploads/';
+        $config['allowed_type'] = 'pdf|img|png';
+        $config['max_size'] = 50000;
+
+        $this->load->library('upload', $config);
+
+        if($this->upload->do_upload('file_upload_kk')){
+            return $this->upload->data('file_name');
+        }else{
+            return $this->upload->data('file_name');
+        }
+    }
+
+    public function __uploadFile_ak()
+    {
+        $config['upload_path'] = './assets/uploads/';
+        $config['allowed_type'] = 'pdf|img|png';
+        $config['max_size'] = 50000;
+
+        $this->load->library('upload',$config);
+        if($this->upload->do_upload('file_upload_ak')){
+            return $this->upload->data('file_name');
+        }else{
+            return $this->upload->data('file_name');
+        }
+    }
+
+    public function __uploadFile_foto(){
+        $config['upload_path'] = './assets/uploads/';
+        $config['allowed_type'] = 'pdf|img|png';
+        $config['max_size'] = 50000;
+
+        $this->load->library('upload',$config);
+        if($this->upload->do_upload('file_upload_foto')){
+            return $this->upload->data('file_name');
+        }else{
+            return $this->upload->data('file_name');
+        }
     }
     // ===================================================
 
