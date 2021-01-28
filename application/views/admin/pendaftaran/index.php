@@ -1,13 +1,13 @@
 
 <section class="content-header">
                     <h1>
-                        User
-                        <small>Data User</small>
+                        Pendaftaran
+                        <small>Data Pendaftaran</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('control/page/siswa');?>">User</a></li>
-                        <li class="active">Data User</li>
+                        <li><a href="<?php echo site_url('control/page/siswa');?>">Pendaftaran</a></li>
+                        <li class="active">Data Pendaftaran</li>
                     </ol>
                 </section>
 
@@ -68,7 +68,7 @@
                                                 <td><?= $row['no_hp'] ?></td>
                                                 <td><?= $row['asl_sekolah'] ?></td>
                                                 <td>
-                                                    <a href="" class="btn btn-sm btn-primary">Detail</a>
+                                                    <a href="<?php echo site_url('/pendaftaran/detail'); ?>" class="btn btn-sm btn-primary">Detail</a>
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
                                                     <a href="<?= base_url('Pendaftaran/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
@@ -92,7 +92,7 @@
       <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Import Data User</h4>
+          <h4 class="modal-title">Import Data Pendaftaran</h4>
         </div>
         <div class="modal-body">
           <div class="form-group">

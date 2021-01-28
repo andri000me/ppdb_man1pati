@@ -128,8 +128,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('glombang/index'); ?>">
-                                <i class="fa fa-file"></i><span> Data Glombang</span>
+                            <a href="<?php echo site_url('gelombang/index'); ?>">
+                                <i class="fa fa-file"></i><span> Data Gelombang</span>
                             </a>
                         </li>
                     </ul>

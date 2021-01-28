@@ -61,6 +61,7 @@ class Model_pendaftaran extends CI_model{
         ];
         $this->db->insert('pendaftaran1', $data);
     }
+    
 
     public function destroyPendaftaran($id)
     {
