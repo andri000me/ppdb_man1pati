@@ -68,7 +68,8 @@
                                                 <td><?= $row['no_hp'] ?></td>
                                                 <td><?= $row['asl_sekolah'] ?></td>
                                                 <td>
-                                                    <a href="<?php echo site_url('/pendaftaran/detail'); ?>" class="btn btn-sm btn-primary">Detail</a>
+                                                    <a href="<?php echo site_url('/pendaftaran/detail/'); ?><?= $row['id'] ?>" class="btn btn-sm btn-primary">Detail</a>
+                                                    <!-- anda lupa menaru id jadi error -->
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
                                                     <a href="<?= base_url('Pendaftaran/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>

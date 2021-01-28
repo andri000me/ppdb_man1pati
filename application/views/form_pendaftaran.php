@@ -22,7 +22,7 @@
 	<div class="container">
 		<div class="kotak">
 		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
-		<?= form_open_multipart('Mastercontrol/upload_tambah'); ?>
+		<?= form_open_multipart(); ?>
 			<div class="row">
 			<div class="col-md-6">
 				<table style="width: 100%;">

@@ -18,7 +18,8 @@ class Pendaftaran extends CI_Controller {
 
     public function detail($id)
     {
-        $data['data'] = $this->Model_pendaftaran->getPendaftaran1ById($id);
+        $data['pendaftaran_data'] = $this->Model_pendaftaran->getPendaftarById($id); // bagian ini iku ogk getPendaftaran1Byid,
+        // itu hanya class jadi jangan terpatok, class itu haru sama seperti yang di model 
 
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/pendaftaran/detail', $data);

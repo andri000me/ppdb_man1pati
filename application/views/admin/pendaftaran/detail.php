@@ -17,10 +17,10 @@
                 Detail Data pendaftaran
             </div>
             <div class="card-body">
-                <h5 class="card-title"><?= $data['id_pendaftaran'] ?></h5>
-                <h6 class="card-subtitle mb-2 text-muted"><?= $data['nm_lengkap'] ?></h6>
-                <h6 class="card-subtitle mb-2 text-muted"><?= $data['no_hp'] ?></h6>
-                <h6 class="card-subtitle mb-2 text-muted"><?= $data['asl_sekolah'] ?></h6>
+                <h5 class="card-title"><?= $pendaftaran_data['id_pendaftaran'] ?></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><?= $pendaftaran_data['nm_lengkap'] ?></h6>
+                <h6 class="card-subtitle mb-2 text-muted"><?= $pendaftaran_data['no_hp'] ?></h6>
+                <h6 class="card-subtitle mb-2 text-muted"><?= $pendaftaran_data['asl_sekolah'] ?></h6>
                 <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary">Kembali</a>
             </div>
         </div>

@@ -68,6 +68,19 @@ class Model_pendaftaran extends CI_model{
     // ===================================================
 
 
+
+    // ===================================================
+    // mengambil data berdasarkan id
+    // ===================================================
+    public function getPendaftarById($id) 
+    {
+        //public function getPendaftaranById nah itu yang di panggil ke controller
+        return $this->db->get_where('pendaftaran1',['id' => $id])->row_array();
+    }
+    // ===================================================
+
+
+
     // ===================================================
     // kode otomatis
     // ===================================================
