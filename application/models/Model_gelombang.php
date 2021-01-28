@@ -7,9 +7,10 @@ class Model_gelombang extends CI_model{
     {
         parent:: __construct();
     }
-    public function getAll()
+    public function getAlldata()
     {
-        return $this->db->get($this->_table)->result();
+        $query = $this->db->get('gelombang');
+        return $query->result_array();
     }
     
     public function getById($id)
@@ -27,12 +28,12 @@ class Model_gelombang extends CI_model{
     {
         $post = $this->input->post();
         $this->date_gelombang = $post["date_gelombang"];
-        return $this->db->update($this->_table, $this, array('product_id' => $post['id']));
+        return $this->db->update($this->_table, $this, array('id' => $post['id']));
     }
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table, array("product_id" => $id));
+        return $this->db->delete($this->_table, array("id" => $id));
     }
 
 }
