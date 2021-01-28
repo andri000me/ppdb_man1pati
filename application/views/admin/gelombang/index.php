@@ -1,13 +1,13 @@
 
 <section class="content-header">
                     <h1>
-                        Pendaftaran
-                        <small>Data Pendaftaran</small>
+                        Gelombang
+                        <small>Data Gelombang</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('control/page/siswa');?>">Pendaftaran</a></li>
-                        <li class="active">Data Pendaftaran</li>
+                        <li><a href="<?php echo site_url('control/page/gelombang');?>">Gelombang</a></li>
+                        <li class="active">Data Gelombang</li>
                     </ol>
                 </section>
 
@@ -48,10 +48,7 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>id Pendaftaran</th>
-                                                <th>Nama Lengkap</th>
-                                                <th>no hp</th>
-                                                <th>asal sekolah</th>
+                                                <th>Data Glombang</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
@@ -63,14 +60,11 @@
                                             ?>  
                                             <tr>
                                                 <td><?= $no; ?></td>
-                                                <td><?= $row['id_pendaftaran']; ?></td>
-                                                <td><?= $row['nm_lengkap']; ?></td>
-                                                <td><?= $row['no_hp'] ?></td>
-                                                <td><?= $row['asl_sekolah'] ?></td>
+                                                <td><?= $row['date_glombang']; ?></td>
                                                 <td>
-                                                    <a href="<?php echo site_url('/pendaftaran/detail'); ?>" class="btn btn-sm btn-primary">Detail</a>
+                                                    <a href="" class="btn btn-sm btn-primary">Detail</a>
                                                     <a href="" class="btn btn-sm btn-warning">Edit</a>
-                                                    <a href="<?= base_url('Pendaftaran/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
+                                                    <a href="<?= base_url('gelombang/destroy/') ?><?= $row['id'] ?>" onclick="return confirm('anda yakin ingin menghapus data ini?');" class="btn btn-sm btn-danger">Hapus</a>
                                                 </td>
                                             </tr>
                                             <?php
@@ -92,7 +86,7 @@
       <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Import Data Pendaftaran</h4>
+          <h4 class="modal-title">Import Data User</h4>
         </div>
         <div class="modal-body">
           <div class="form-group">

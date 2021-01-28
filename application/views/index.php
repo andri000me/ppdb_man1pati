@@ -413,7 +413,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Alamat</h3>
-              <address>Jl.Ratu Kalinyamat Kabupaten Pati 59155</address>
+              <address><p><a>Jl.Ratu Kalinyamat Kabupaten Pati 59155</a></p></address>
             </div>
           </div>
 
