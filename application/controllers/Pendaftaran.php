@@ -18,12 +18,27 @@ class Pendaftaran extends CI_Controller {
 
     public function detail($id)
     {
-        $data['pendaftaran_data'] = $this->Model_pendaftaran->getPendaftarById($id); // bagian ini iku ogk getPendaftaran1Byid,
-        // itu hanya class jadi jangan terpatok, class itu haru sama seperti yang di model 
+        $data['data'] = $this->Model_pendaftaran->getpendaftaran1ById($id);
 
         $this->load->view('admin/layouts/header');
         $this->load->view('admin/pendaftaran/detail', $data);
         $this->load->view('admin/layouts/footer');
+    }
+
+    public function edit($id)
+    {
+        $data['data'] = $this->Model_pendaftaran->getpendaftaran1ById($id);
+        $this->form_validation->set_rules('id_pendaftaran','nm_lengkap','no_hp','as_sekolah');
+        if($this->form_validation->run() == FALSE) {
+            $this->load->view('admin/layouts/header');
+            $this->load->view('admin/pendaftaran/edit', $data);
+            $this->load->view('admin/layouts/footer');
+        } else {
+            $this->Model_pendaftaran->StorePendaftaran();
+            $this->session->set_flashdata('flash','Berhasil di edit');
+            redirect('pendaftaran/index');
+            // echo "berhasil";
+        }
     }
 
     public function destroy($id)

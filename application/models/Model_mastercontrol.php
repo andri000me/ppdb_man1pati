@@ -44,5 +44,6 @@
 			$this->db->where('id_seragam',$where);
 			return $this->db->delete($table);
 		}
+		
 	}
 ?>

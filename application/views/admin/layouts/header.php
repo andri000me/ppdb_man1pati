@@ -112,16 +112,16 @@
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo site_url('Control/page/siswa');?>">
                                 <i class="fa fa-user"></i> <span>Data Siswa</span>
                             </a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="<?php echo site_url('user/index'); ?>">
                                 <i class="fa fa-file"></i><span>Data User</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="<?php echo site_url('Pendaftaran/index'); ?>">
                                 <i class="fa fa-file"></i><span> Data Pendaftar</span>
