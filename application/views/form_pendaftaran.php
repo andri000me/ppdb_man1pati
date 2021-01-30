@@ -19,6 +19,23 @@
 	<div class="jdl">
 		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU JALUR PRESTASI<br> MAN 2 PATI</h1>
 	</div>
+	<!--  -->
+	<?php 
+                        if($this->session->flashdata('flash')){
+                    ?>
+                    
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak 
+								<a href="<?= base_url() ?>/Mastercontrol/pdf">Cetak</a>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                       
+                    <?php
+                        }
+                    ?>
+	<!--  -->
 	<div class="container">
 		<div class="kotak">
 		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
