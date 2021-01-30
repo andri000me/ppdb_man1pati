@@ -19,7 +19,7 @@
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <?php
-                                        $htg=$this->Model_sekolah->qw("*","pendaftaran","")->num_rows();
+                                        $htg=$this->Model_sekolah->qw("*","pendaftaran1","")->num_rows();
                                     ?>
                                     <h3>
                                         <?php echo $htg;?>
@@ -31,7 +31,7 @@
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
-                                <a href="<?php echo site_url('Control/page/siswa');?>" class="small-box-footer">
+                                <a href="<?php echo site_url('../pendaftaran/');?>" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>

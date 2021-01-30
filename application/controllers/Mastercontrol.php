@@ -27,6 +27,19 @@
 			}
 		}
 		
+<<<<<<< HEAD
+=======
+		// pdf
+		public function pdf()
+		{
+			$this->load->library('generate');
+
+			$data = '';
+			$html = $this->load->view('kartu', $data, true);
+			$this->generate->generate($html, 'contoh_saja.pdf');
+
+		}
+>>>>>>> efdcecde6b1c88bf4d03d1a3234eeed6f247bf7b
 
 		// function fpd(){
 		// 	$data['kode'] = $this->Model_pendaftaran->kode();
