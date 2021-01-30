@@ -44,12 +44,12 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url();?>assets/img/logo-mobile.png" ></a></h1>
+        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url();?>assets/img/logo_MAN2PATI.png" style="width: 100px;" ></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
-      <nav id="nav-menu-container" style="margin-top: 20px;">
+      <nav id="nav-menu-container" style="margin-top: 30px;">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Tentang MAN 2 Pati</a></li>

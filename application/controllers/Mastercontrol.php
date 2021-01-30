@@ -30,11 +30,11 @@
 		// pdf
 		public function pdf()
 		{
-			$this->load->library('PDFgenerator');
+			$this->load->library('generate');
 
 			$data = '';
 			$html = $this->load->view('kartu', $data, true);
-			$this->PDFgenerator->generate($html, 'contoh_saja.pdf');
+			$this->generate->generate($html, 'contoh_saja.pdf');
 
 		}
 
