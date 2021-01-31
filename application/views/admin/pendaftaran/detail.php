@@ -195,7 +195,7 @@
                         </tr>
 					</tbody>
 				</table>
-                <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary" style="margin-bottom: 20px;">Kembali</a>
+                <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary " style="margin-bottom: 20px;">Kembali</a>
 
 			</div>
 			
