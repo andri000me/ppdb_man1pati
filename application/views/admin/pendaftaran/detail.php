@@ -23,49 +23,49 @@
 
 				// $why = $hr.$no++;
 				?>
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>ID Pendaftaran : <?= $data['id_pendaftaran'] ?></label></td>
-					</tr>
+					</tr style="margin-top:20px;">
 
 					<tr>
 						<td><label>Nama Lengkap : <?= $data['nm_lengkap'] ?></label></td>
-					</tr>
+					</tr style="margin-top:20px;">
 					
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Tempat Lahir : <?= $data['tmp_lahir'] ?></label></td>
-					</tr>
+					</tr style="margin-top:20px;">
 				
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Tanggal Lahir : <?= $data['tgl_lahir'] ?></label></td>
 					</tr>
 					
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Jenis Kelamin : <?= $data['jns_kelamin'] ?></label></td>
 					</tr>
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Agama : <?= $data['agm'] ?></label></td>
 					</tr>
 					
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>No Hp : <?= $data['no_hp'] ?></label></td>
 					</tr>
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Nama Orang Tua/Wali : <?= $data['nm_ortu'] ?></label></td>
 					</tr>
 					
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>No Hp Ortu : <?= $data['no_hp_ortu'] ?></label></td>
 					</tr>
-                    <tr>
+                    <tr style="margin-top:20px;">
 						<td><label>Asal SMP/MTs : <?= $data['asl_sekolah'] ?></label></td>
 					</tr>
-					<tr>
+					<tr style="margin-top:20px;">
 						<td><label>Alamat : <?= $data['almt'] ?></label></td>
 					</tr>
-					<tr>
+					<tr style="margin-top:20px;">
 						<th><label for="validationCustom04">Jurusan : <?= $data['jurusan'] ?></label></th>
 					</tr>
-                    <tr>
+                    <tr style="margin-top:20px;">
 						<td><label>Email : <?= $data['email'] ?></label></td>
 					</tr>
 				</table>
@@ -235,7 +235,6 @@
 </section> -->
 
 <style>
-tr {
-    margin-top: 100px;
+.table tr td {	
 }
 </style>
