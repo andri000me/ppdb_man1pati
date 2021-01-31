@@ -14,7 +14,7 @@ class Model_pendaftaran extends CI_model{
 
     public function StorePendaftaran1()
     {
-        // $berkas = $_FILES['file_upload'];
+        // $berkas = $_FILES['file_name'];
         // if($berkas = ''){}else{
         //     $config['upload_path'] = './upload/';
         //     $config['allowed_type'] = 'pdf|img|png|excl';
@@ -23,7 +23,7 @@ class Model_pendaftaran extends CI_model{
         //     $config['max_size'] = 100024;
 
         //     $this->load->library('upload', $config);
-        //     if(! $this->upload->do_upload('file_upload')){
+        //     if(! $this->upload->do_upload('file_name')){
         //         echo "<script>alert('upload batal')</script>"; die();
         //     }else{
         //         $berkas=$this->upload->data('file_name');
@@ -78,8 +78,12 @@ class Model_pendaftaran extends CI_model{
             "asl_sekolah" => $this->input->post('asal_smp',true),
             "email" => $this->input->post('email',true),
             "almt" => $this->input->post('alamat',true),
-            // "nm_file" => $this->input->post('file_upload',true),
-            "nm_file" => $this->_uploadFile(),
+            "email" => $this->input->post('email', true),
+            // "nm_file" => $this->input->post('file_name',true),
+            "nm_file" => $this-> _uploadFile(),
+            "nm_file_kk" => $this-> _uploadFile_kk(),
+            "nm_file_ak" => $this-> _uploadFile_ak(),
+            "nm_file_foto" => $this-> _uploadFile_foto(),
             // "nm_file" => $berkas,
             "jurusan" => $this->input->post('jurusan',true),
             "sem3_nl1" => $this->input->post('sem3_nl1',true),
@@ -134,20 +138,69 @@ class Model_pendaftaran extends CI_model{
     
     public function _uploadFile()
     {
-        $config['upload_path'] = './upload/';
+        $config['upload_path'] = './upload/data';
         $config['allowed_type'] = 'pdf|img|png|excl';
         $config['file_name'] = $this->id;
         $config['overwrite'] = true;
-        $config['max_size'] = 10002400;
+        $config['max_size'] = 15000;
 
         $this->load->library('upload', $config);
 
-        if($this->upload->do_upload('nm_file')){
-            return $this->upload->data("file_upload");
+        if($this->upload->do_upload('file_name')){
+            return $this->upload->data("file_name");
+        }else{
+            return "default.pdf";
+        };
+
+    }
+
+    public function _uploadFile_kk()
+    {
+        $config['upload_path'] = './upload/data';
+        $config['allowed_type'] = 'pdf|img|png|excl';
+        $config['file_name'] = $this->id;
+        $config['overwrite'] = true;
+        $config['max_size'] = 15000;
+
+        $this->load->library('upload', $config);
+
+        if($this->upload->do_upload('file_name_kk')){
+            return $this->upload->data("file_name");
         }else{
             return "default.pdf";
         }
+    }
+    public function _uploadFile_ak()
+    {
+        $config['upload_path'] = './upload/data';
+        $config['allowed_type'] = 'pdf|img|png|excl';
+        $config['file_name'] = $this->id;
+        $config['overwrite'] = true;
+        $config['max_size'] = 15000;
 
+        $this->load->library('upload', $config);
+
+        if($this->upload->do_upload('file_name_ak')){
+            return $this->upload->data("file_name");
+        }else{
+            return "default.pdf";
+        }
+    }
+    public function _uploadFile_foto()
+    {
+        $config['upload_path'] = './upload/data';
+        $config['allowed_type'] = 'pdf|img|png|excl';
+        $config['file_name'] = $this->id;
+        $config['overwrite'] = true;
+        $config['max_size'] = 15000;
+
+        $this->load->library('upload', $config);
+        if($this->upload->do_upload('file_name_foto')){
+            return $this->upload->data("file_name");
+        }else{
+            return "default.pdf";
+
+        }
     }
 
 }

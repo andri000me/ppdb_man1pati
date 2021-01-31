@@ -1,20 +1,18 @@
-<?php 
 
-Class PDFgenerator
+<?php
+ 
+class PDFGenerator
 {
-
-    public function generate($html, $filename)
-    {
-        define('DOMPDF_ENABLE_AUTOLOAD', false);
-        require_once("./vendor/dompdf/dompdf/dompdf_config.inc.php");
-
-        $dompdf = new DOMPDF();
-        $dompdf->set_option('enable_html5_parser', true);
-        $dompdf->load_html($html);
-        $dompdf->render();
-        $dompdf->stream($filename.'.pdf', array("Attachment"=>0));
-    }
-
+  public function generate($html,$filename)
+  {
+    define('DOMPDF_ENABLE_AUTOLOAD', false);
+    require_once("./application/libraries/PHPExcel/Writer/PDF/DomPDF.php");
+ 
+    $dompdf = new DOMPDF();
+    $dompdf->load_html($html);
+    $dompdf->render();
+    $dompdf->stream($filename.'.pdf',array("Attachment"=>0));
+  }
 }
 
 ?>

@@ -26,7 +26,7 @@
                     
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                 <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak 
-								<a href="<?= base_url() ?>/Mastercontrol/pdf">Cetak</a>
+								<a href="">Cetak</a>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -137,14 +137,14 @@
 						<th><label for="validationCustom04">Jurusan *</label></th>
 					</tr>
 					<tr>
-					<td>
-						<select class="custom-select" name="jurusan" id="validationCustom04" required>
-							<option selected disabled value="">---Pilih Jurusan---</option>
-							<option name="ipa" id="ipa"> IPA </option>
-							<option name="ips" id="ips"> IPS </option>
-						</select>
+						<td>
+							<select class="custom-select" name="jurusan" id="validationCustom04" required>
+								<option selected disabled value="">---Pilih Jurusan---</option>
+								<option name="ipa" id="ipa"> IPA </option>
+								<option name="ips" id="ips"> IPS </option>
+							</select>
 
-					</td>
+						</td>
 					</tr>
 					<tr>
 						<th><label  style="margin-top: 10px;">Upload KK *</label></th>
@@ -222,7 +222,7 @@
 				</table>
 				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
 				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"></td>
-				<a href="<?= site_url() ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
+				<a href="" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
 
 			</div>
 			
