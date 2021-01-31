@@ -11,7 +11,7 @@
 </section>
 
 <div class="container">
-		<div class="kotak">
+		<div class="kotak" style="margin-top:20px;">
 		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
 		<?= form_open_multipart(); ?>
 			<div class="row">
