@@ -228,6 +228,26 @@
 			
 	
 		</div>
+		<?php
+      if ($_POST)
+      {
+        $sem3_nl2 = $_POST['sem3_nl2'];
+        if ($sem3_nl2 >= 80)
+        {
+          $keterangan = "LULUS";
+        }
+        else
+        {
+          $keterangan = "TIDAK LULUS";
+        }
+        echo "Hasil Kelulusan";
+        echo "<br>";
+        echo "sem3_nl2 : " . $sem3_nl2;
+        echo "<br>";
+        echo "Keterangan : " . $keterangan;
+      }
+	?>
+		
 		<?= form_close(); ?>
 		<!-- </form> -->
 		</div>
@@ -265,3 +285,37 @@
 		color: #333;
 	}
 </style>
+<!-- semester 3 nilai 1 -->
+<?php 
+$nilai = 80;
+if($nilai > 75)
+{
+	echo "Selamat Anda Lulus";
+}
+else
+{
+	echo "Maaf Anda Tidak Lulus";
+}
+?>
+	
+	<!-- Semester 3 Nilai2 -->
+	<?php
+      if ($_POST)
+      {
+        $sem3_nl2 = $_POST['sem3_nl2'];
+        if ($sem3_nl2 >= 80)
+        {
+          $keterangan = "LULUS";
+        }
+        else
+        {
+          $keterangan = "TIDAK LULUS";
+        }
+        echo "Hasil Kelulusan";
+        echo "<br>";
+        echo "sem3_nl2 : " . $sem3_nl2;
+        echo "<br>";
+        echo "Keterangan : " . $keterangan;
+      }
+	?>
+		<!-- Semester 3 Nilai3 -->
