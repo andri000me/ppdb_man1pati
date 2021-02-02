@@ -26,7 +26,7 @@
                     
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                 <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak 
-								<a href="">Cetak</a>
+								<a href="<?= base_url('Mastercontrol/simpan_pdf')?><?= $kodtampil1 ?>">Cetak</a>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -38,8 +38,8 @@
 	<!--  -->
 	<div class="container">
 		<div class="kotak">
-		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
-		<?= form_open_multipart(); ?>
+		<form action="" method="post" enctype="multipart/form-data">
+		
 			<div class="row">
 			<div class="col-md-6">
 				<table style="width: 100%;">
@@ -221,35 +221,18 @@
 					</tbody>
 				</table>
 				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
-				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"></td>
+				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  ></td>
 				<a href="" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
 
 			</div>
 			
 	
 		</div>
-		<?php
-      if ($_POST)
-      {
-        $sem3_nl2 = $_POST['sem3_nl2'];
-        if ($sem3_nl2 >= 80)
-        {
-          $keterangan = "LULUS";
-        }
-        else
-        {
-          $keterangan = "TIDAK LULUS";
-        }
-        echo "Hasil Kelulusan";
-        echo "<br>";
-        echo "sem3_nl2 : " . $sem3_nl2;
-        echo "<br>";
-        echo "Keterangan : " . $keterangan;
-      }
-	?>
 		
 		<?= form_close(); ?>
 		<!-- </form> -->
+
+		</form>
 		</div>
 	</div>
 	<footer id="footer">
@@ -270,6 +253,7 @@
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert-dev.js"></script>
+
 
 </html>	
 <style type="text/css">

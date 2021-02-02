@@ -181,6 +181,8 @@ class Model_pendaftaran extends CI_model{
         return $kodetampil;
     }
     // close get code
+    
+    // get
 
 
     // save upload close
