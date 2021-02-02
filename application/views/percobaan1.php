@@ -1,1 +1,1 @@
-<pre><?php print_r($dataku); ?></pre>
+<?= $data['id_pendaftaran']; ?>

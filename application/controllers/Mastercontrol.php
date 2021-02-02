@@ -26,17 +26,20 @@
 				redirect('Mastercontrol/fpd', $data);
 			}
 		}
-		public function kartu_pdf()
+
+
+
+		public function simpan_pdf($id)
 		{
-			$data = array(
-				"dataku" => array(
-					"nama" => "alief Arrafi",
-					"url" => "crativedev.id",
-				)
-				);
+			// $data = array(
+			// 	'nama_lengkap' => $this->input->post('nama_lengkap'),
+			// 	'id_pendaftaran' => $this->input->post('id_pendaftaran')
+			// 	);
+			$data['data'] = $this->Model_pendaftaran->getpendaftaran1ById($id);
 				$this->load->library('pdf');
 				$this->pdf->setPaper('A4','potrait');
 				$this->filename = "percobaan.pdf";
+				// $this->pdf->load_view('percobaan1, $data');
 				$this->pdf->load_view('percobaan1', $data);
 		}
 		// function fpd(){

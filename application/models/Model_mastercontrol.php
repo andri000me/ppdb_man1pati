@@ -28,7 +28,8 @@
 		function edit_isi($table,$where,$value){
 			$this->db->where('id_isi',$where);
 			return $this->db->update($table,$value);
-		}function edit_seragam($table,$where,$value){
+		}
+		function edit_seragam($table,$where,$value){
 			$this->db->where('id_seragam',$where);
 			return $this->db->update($table,$value);
 		}
