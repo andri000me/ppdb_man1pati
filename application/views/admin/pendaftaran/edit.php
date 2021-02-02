@@ -50,12 +50,11 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Nama Lengkap</label>
-                                                    <input type="text" class="form-control" value="<?= $data['nm_lengkap'] ?>" name="nm_lengkap" id="nm_lengkap" placeholder="nm_lengkap">
-                                                    <small class="form-text text-danger"><?= form_error('nm_lengkap'); ?></small>
+                                                    <input type="text" class="form-control" value="<?= $data['nm_lengkap'] ?>" name="nm_lengkap" id="nm_lengkap" >
                                                 </div>                                        
                                                 <div class="form-group">
                                                     <label>NO HP</label>
-                                                    <input type="text" class="form-control"  name="no_hp" id="no_hp" value="<?= $data['no_hp'] ?>" placeholder="no_hp">
+                                                    <input type="text" class="form-control"  name="no_hp" id="no_hp" value="<?= $data['no_hp'] ?>">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Asal Sekolah</label>
