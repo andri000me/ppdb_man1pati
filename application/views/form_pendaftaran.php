@@ -26,7 +26,7 @@
                     
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                 <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak 
-								<a href="<?= base_url('Mastercontrol/simpan_pdf')?><?= $kodtampil1 ?>">Cetak</a>
+								<a href="#">Cetak</a>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
