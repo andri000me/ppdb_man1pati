@@ -42,7 +42,6 @@
                                 <?php 
                                 // echo form_open($open);
                                 ?>
-
                                 <div role="form">
                                     <form action="" method="post" enctype="multipart/form-data">
                                         <input type="hidden" name="id_pendaftaran" value="<?= $data['id_pendaftaran'] ?>">
@@ -81,4 +80,5 @@
                         </div><!--/.col (left) -->
                         <!-- right column -->
                     </div>   <!-- /.row -->
+                    </div>
 </section><!-- /.content -->

@@ -3,7 +3,16 @@
         </div><!-- ./wrapper -->
 
         <!-- add new calendar event modal -->
-
+        <div class="container">
+      
+      <div class="copyright">
+       
+      <div style="margin-top: 50px; margin-left:40%;" >
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
+      </div>
+      </div>
+    </div>
+  </footer>
 
         <!-- jQuery 2.0.2 -->
         <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>

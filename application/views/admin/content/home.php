@@ -74,3 +74,12 @@
                     </div><!-- /.row (main row) -->
 
                 </section><!-- /.content -->
+                <div class="container">
+      
+      <div class="copyright">
+       
+      <div style="margin-top: 50px; margin-left:40%;" >
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
+      </div>
+      </div>
+    </div>

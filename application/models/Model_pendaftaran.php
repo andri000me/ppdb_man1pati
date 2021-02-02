@@ -126,7 +126,6 @@ class Model_pendaftaran extends CI_model{
             // "email" => $this->input->post('email', true),
             // "nm_file" => $this->input->post('file_name',true),
             "nm_file" => $this-> _uploadFile(),
-
             // "nm_file" => $berkas,
             "jurusan" => $this->input->post('jurusan',true),
             "sem3_nl1" => $this->input->post('sem3_nl1',true),

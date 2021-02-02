@@ -57,7 +57,7 @@
           <li><a href="#services">Persyaratan</a></li>
           <!-- <li><a href="#call-to-action">Pendaftaran</a></li> -->
           <li><a href="<?php echo site_url('Mastercontrol/fpd');?>">Pendaftaran</a></li>
-          <li><a href="#contact">Kontak Kami</a></li>
+          <li><a href="#contact">Kontak Kami</a></li> 
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -81,6 +81,7 @@
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
+                <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
               </div>
             </div>
           </div>
@@ -92,6 +93,7 @@
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
+                <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
               </div>
             </div>
           </div>
@@ -103,6 +105,7 @@
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
+                <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
               </div>
             </div>
           </div>
@@ -114,6 +117,7 @@
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
                 <h3 style="color: #fff;"></h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
+                <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
               </div>
             </div>
           </div>
@@ -184,7 +188,7 @@
         <div class="row">
           <div class="col-lg-4 box" style="background-color: #337ab7;height: 300px;">
             
-            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI KEAHLIAN</h3>
+            <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI PEMINATAN</h3>
             <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
             </div>
             <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. IPA (Ilmu Pengetahuan Alam)</p>
@@ -421,7 +425,8 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>No Hp / WA</h3>
-              <p><a>0895614720008</a></p>
+              <p><a>pak Sunarno : 081325651645</a></p>
+              <p><a>Bu Rizka : 0813867129696</a></p>
             </div>
           </div>
 

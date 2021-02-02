@@ -28,7 +28,7 @@ class Pendaftaran extends CI_Controller {
     public function edit($id)
     {
         $data['data'] = $this->Model_pendaftaran->getpendaftaran1ById($id);
-        $this->form_validation->set_rules('id_pendaftaran','nm_lengkap','no_hp','as_sekolah');
+        $this->form_validation->set_rules('id_pendaftaran');
         if($this->form_validation->run() == FALSE) {
             $this->load->view('admin/layouts/header');
             $this->load->view('admin/pendaftaran/edit', $data);

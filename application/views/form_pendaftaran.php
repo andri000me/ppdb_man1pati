@@ -17,7 +17,7 @@
 </head>
 <body class="bg-success">
 	<div class="jdl">
-		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU JALUR PRESTASI<br> MAN 2 PATI</h1>
+		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU JALUR PRESTASI<br> MAN 2 PATI <br> tahun ajaran 2021/2022</h1>
 	</div>
 	<!--  -->
 	<?php 
@@ -252,7 +252,19 @@
 		<!-- </form> -->
 		</div>
 	</div>
-	<footer style="height: 100px;"></footer>
+	<footer id="footer">
+    
+
+    <div class="container">
+      
+      <div class="copyright">
+       
+      <div style="margin-top: 50px; margin-left:40%;" >
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
+      </div>
+      </div>
+    </div>
+  </footer>
 </body>
  <script src="<?php echo base_url();?>assets/lib/jquery/jquery.min.js"></script>
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
