@@ -35,7 +35,7 @@ class Model_pendaftaran extends CI_model{
         $nm_file = $_FILES['file_upload'];
         if($nm_file=''){}else{
             $config['upload_path']          = './upload/rapot/';
-            $config['allowed_types']        = 'gif|jpg|png';
+            $config['allowed_types']        = 'pdf|jpg|png';
             // $config['file_name']            = $this->id_pendaftaran;
             $config['overwrite']			= true;
             $config['max_size']             = 5024; // 1MB
@@ -49,11 +49,59 @@ class Model_pendaftaran extends CI_model{
             }
         };
 
-        $nm_file_kk = '$this->input->post()';
-        $nm_file_ak = '$this->input->post()';
+        $nm_file_kk = $_FILES['file_upload_kk'];
+        if($nm_file_kk=''){}else{
+            $config['upload_path']          = './upload/kk/';
+            $config['allowed_types']        = 'pdf|jpg|png';
+            // $config['file_name']            = $this->id_pendaftaran;
+            $config['overwrite']			= true;
+            $config['max_size']             = 5024; // 1MB
+            // $config['max_width']            = 1024;
+            // $config['max_height']           = 768;
+            $this->load->library('upload',$config);
+            if(! $this->upload->do_upload('file_upload_kk')){
+                echo "gagal disimpan"; die();
+            }else{
+                $nm_file_kk=$this->upload->data('file_name');
+            }
+        };
 
-        $nm_file_foto = '$this->input->post()';
+        $nm_file_ak = $_FILES['file_upload_ak'];
+        if($nm_file_ak=''){}else{
+            $config['upload_path']          = './upload/ak/';
+            $config['allowed_types']        = 'pdf|jpg|png';
+            // $config['file_name']            = $this->id_pendaftaran;
+            $config['overwrite']			= true;
+            $config['max_size']             = 5024; // 1MB
+            // $config['max_width']            = 1024;
+            // $config['max_height']           = 768;
+            $this->load->library('upload',$config);
+            if(! $this->upload->do_upload('file_upload_ak')){
+                echo "gagal disimpan"; die();
+            }else{
+                $nm_file_ak=$this->upload->data('file_name');
+            }
+        };
+
+        $nm_file_foto = $_FILES['file_upload_foto'];
+        if($nm_file_foto=''){}else{
+            $config['upload_path']          = './upload/foto/';
+            $config['allowed_types']        = 'pdf|jpg|png';
+            // $config['file_name']            = $this->id_pendaftaran;
+            $config['overwrite']			= true;
+            $config['max_size']             = 5024; // 1MB
+            // $config['max_width']            = 1024;
+            // $config['max_height']           = 768;
+            $this->load->library('upload',$config);
+            if(! $this->upload->do_upload('file_upload_foto')){
+                echo "gagal disimpan"; die();
+            }else{
+                $nm_file_foto=$this->upload->data('file_name');
+            }
+        };
+
         // close save file(upload)
+
         $jurusan = $this->input->post('jurusan');
         $sem3_nl1 = $this->input->post('sem3_nl1');
         $sem3_nl2 =$this->input->post('sem3_nl2');
