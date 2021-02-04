@@ -204,7 +204,8 @@
 						<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
-						<button type="submit" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="open_kartu()">Daftar</button>
+						<button type="button" id="pre-daftar" class="btn btn-success float-right">Daftar</button>
+						<button hidden="" id="daftar" type="submit" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="open_kartu()">Daftar</button>
 
 						</td>
 						<a href="<?= site_url(); ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
@@ -237,9 +238,51 @@
 <!-- <script src="<?php echo base_url(); ?>assets/lib/jquery/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="<?php echo base_url(); ?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/dist/sweetalert.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/dist/sweetalert-dev.js"></script>
+<!-- <script src="<?php echo base_url(); ?>assets/dist/sweetalert.min.js"></script> -->
+<!-- <script src="<?php echo base_url(); ?>assets/dist/sweetalert-dev.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
+	$('#pre-daftar').on('click', function() {
+		var phone = $('#no_hp').val();
+		var nama = $('#nama_lengkap').val();
+		var id_pendaftaran = $('#id_pendaftaran').val();
+
+		var message = 'Halo dek '+nama+', \n Saya ucapkan selamat bergabung di keluarga besar MAN 1 PATI \n\n Jangan lupa ya ID Pendaftaran kamu '+id_pendaftaran+' berikut juga kakak lampirkan link kartu seleksi kamu yah, kamu bisa klik link di bawah untuk melihat kartu kamu \n\n <?php echo base_url(); ?>Mastercontrol/cetak_kartu/'+id_pendaftaran+'\n\n Sekali lagi selamat bergabung, nanti kalau ada pertanyaan bisa tanyakan lewat whatsapp ini yah ^_^';
+		swal.queue([{
+            title: 'Konfirmasi',
+            text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+            icon: 'warning',
+            confirmButtonText: 'Proses',
+            showLoaderOnConfirm: true,
+            preConfirm: async function () {
+                $('#swal2-title').text('Proccessing...');
+                $('#swal2-content').text('Please wait, this progress will take a few minutes');
+                
+				await $.ajax({
+					url: 'http://206.189.46.208/waapi/sendMessage?token=asdHusa37',
+					type: 'POST',
+					data: {
+						type: 'chat',
+						phone: phone,
+						message: message
+					},
+					success: function(result){
+						
+							$("#daftar").trigger("click");
+						
+					},
+					error: function(error){
+						
+							$("#daftar").trigger("click");
+						
+	                }
+	            });
+
+
+            }
+        }]);
+	});
+
 	$('.jurusan').on('change', function() {
 		var valueNilai = $(this).val();
 		if (valueNilai == 'ips') {
