@@ -17,6 +17,39 @@ class Model_pendaftaran extends CI_model{
     // input data
     public function StorePendaftaran1()
     {
+        //  /* Endpoint */
+        // $url = 'http://206.189.46.208:8001/waapi/sendMessage?token=asdHusa37';
+   
+        // /* Data */
+        // $data = [
+        //     'type' => 'chat', // type: chat/group
+        //     'phone' => '089506373551', // receiver chat number
+        //     'message' =>'Test API By WaCenter'
+        // ];
+
+        // /* eCurl */
+        // $curl = curl_init();
+   
+        // /* Set JSON data to POST */
+        // curl_setopt_array($curl, [
+        //     CURLOPT_RETURNTRANSFER => true,
+        //     CURLOPT_URL            => $url,
+        //     CURLOPT_POST           => 1,
+        //     CURLOPT_POSTFIELDS     => $data
+        // ]);
+            
+        // /* Define content type */
+        // curl_setopt($curl, CURLOPT_HTTPHEADER, array(''));
+            
+        // /* Return json */
+        // // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            
+        // /* make request */
+        // $result = curl_exec($curl);
+             
+        // /* close curl */
+        // // curl_close($curl);
+
         // vardat
         $id_pendaftaran = $this->input->post('id_pendaftaran');
         $nm_lengkap = $this->input->post('nama_lengkap');
