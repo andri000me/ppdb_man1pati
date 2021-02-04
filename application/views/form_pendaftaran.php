@@ -27,8 +27,7 @@
 	?>
 
 		<div class="alert alert-warning alert-dismissible fade show" role="alert">
-			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak
-			<a href="">Cetak</a> <button click="open_kartu()">Cetak</button>
+			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -255,18 +254,11 @@
 	function open_kartu() {
 		var id = $('#id_pendaftaran').val();
 		// var id = document.getElementById("id_pendaftaran");
-
+		window.open('<?= base_url('Mastercontrol/cetak_kartu/'); ?>' + id);
 		// buka_struk();x
 		// window.open(''+id1);
 
 
-		var yakin = confirm("Anda sudah terdaftar, click ok untuk mencetak kartu");
-
-		if (yakin) {
-			window.open('<?= base_url('Mastercontrol/cetak_kartu/'); ?>' + id);
-		} else {
-			document.write("Baiklah, tetap di sini saja ya :)");
-		}
 
 	}
 
