@@ -190,6 +190,18 @@
 
 						</div>
 						<p id="note" style="color:red"></p>
+						<p id="note2" style="color:red"></p>
+						<p id="note3" style="color:red"></p>
+						<p id="note4" style="color:red"></p>
+						<p id="note5" style="color:red"></p>
+						<p id="note6" style="color:red"></p>
+						<p id="note7" style="color:red"></p>
+						<p id="note8" style="color:red"></p>
+						<p id="note9" style="color:red"></p>
+						<p id="note10" style="color:red"></p>
+						<p id="note11" style="color:red"></p>
+						<p id="note12" style="color:red"></p>
+
 						<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
@@ -232,9 +244,9 @@
 	$('.jurusan').on('change', function() {
 		var valueNilai = $(this).val();
 		if (valueNilai == 'ips') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead>	<tr>	<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>	<th scope="col">Semester 3</th>	<th scope="col">Semester 4</th>	<th scope="col">Semester 5</th>	</tr></thead><tbody>	<tr>	<th scope="row">B.inggris</th>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">Matematika</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">IPS</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl4" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl4" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl4" style="border: #fff;"></td>	</tr></tbody>				</table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;">	<thead>		<tr>		<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>		<th scope="col">Semester 3</th>		<th scope="col">Semester 4</th>		<th scope="col">Semester 5</th>		</tr>	</thead>	<tbody>	<tr>		<th scope="row">B.inggris</th>		<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester2" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester3" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">Matematika</th>		<td><input type="textbox" class="nilaisemester4" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester5" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester6" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">IPS</th>		<td><input type="textbox" class="nilaisemester10" placeholder="Masukkan Nilai Anda" name="sem3_nl4" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester11" placeholder="Masukkan Nilai Anda" name="sem4_nl4" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester12" placeholder="Masukkan Nilai Anda" name="sem5_nl4" style="border: #fff;"></td>		</tr>	</tbody></table>');
 		} else if (valueNilai == 'ipa') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead>	<tr>	<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>	<th scope="col">Semester 3</th>	<th scope="col">Semester 4</th>	<th scope="col">Semester 5</th>	</tr></thead><tbody>	<tr>	<th scope="row">B.inggris</th>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">Matematika</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">IPA</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl3" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl3" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl3" style="border: #fff;"></td>	</tr>	</tbody>				</table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;">	<thead>		<tr>		<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>		<th scope="col">Semester 3</th>		<th scope="col">Semester 4</th>		<th scope="col">Semester 5</th>		</tr>	</thead>	<tbody>	<tr>		<th scope="row">B.inggris</th>		<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester2" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester3" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">Matematika</th>		<td><input type="textbox" class="nilaisemester4" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester5" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester6" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">IPA</th>		<td><input type="textbox" class="nilaisemester7" placeholder="Masukkan Nilai Anda" name="sem3_nl3" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester8" placeholder="Masukkan Nilai Anda" name="sem4_nl3" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester9" placeholder="Masukkan Nilai Anda" name="sem5_nl3" style="border: #fff;"></td>		</tr>	</tbody></table>');
 		} else {
 			alert('Jurusan Tidak Terdaftar');
 		}
@@ -242,9 +254,108 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
 		var value = $(this).val();
 		if (value < 80) {
-			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan');
+			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
 		} else {
 			$('#note').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester2', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
+		} else {
+			$('#note2').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester3', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
+		} else {
+			$('#note3').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester4', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
+		} else {
+			$('#note4').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester5', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
+		} else {
+			$('#note5').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester6', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
+		} else {
+			$('#note6').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester7', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
+		} else {
+			$('#note7').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester8', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
+		} else {
+			$('#note8').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester9', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
+		} else {
+			$('#note9').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester10', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
+		} else {
+			$('#note10').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester11', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
+		} else {
+			$('#note11').hide();
+		}
+		// alert('a');
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester12', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
+		} else {
+			$('#note12').hide();
 		}
 		// alert('a');
 	});
