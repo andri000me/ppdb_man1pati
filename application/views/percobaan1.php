@@ -15,12 +15,13 @@
   <div class="container" style="width:100%; margin-top:10%;">
     <div class="row card">
       <nav class="navbar navbar-width bg-whit">
-        <div class="col-md-3" style=" margin-top:-5%;">
-          <img src="<?php echo base_url(); ?>assets/img/logo1.png" style="margin-left:10%; margin-buttom:-10%;">
+        <div class="col-md-3">
         </div>
         <div class="col-md-9">
           <p style="margin-left:30%; margin-top:-5%;">KARTU PENDAFTARAN PESERTA DIDIK BARU KELAS </p> <br>
+          <img src="<?php echo base_url(); ?>assets/img/logo1.png" style="margin-left:10%; margin-top:-30%;">
           <p style="margin-top:-2%; margin-left:33%;">UNGGULAN MAN 2 PATI TAHUN 2021/2022</p> <br>
+
         </div>
       </nav>
       <hr>
