@@ -13,7 +13,7 @@
 <div class="container">
 		<div class="kotak" style="margin-top:20px;">
 		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
-		<?= form_open_multipart(); ?>
+		
 			<div class="row">
 			<div class="col-md-6">
 				<table style="width: 100%;">
@@ -78,7 +78,8 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_kk" id="file_upload_kk">
+							<!-- <input type="file" class="btn btn-success col-md-12" name="file_upload_kk" id="file_upload_kk"> -->
+							<button type="submit" class="col-md-12 btn btn-success"  ><a href="<?= base_url() ?>upload/rapot/<?= $data['nm_file_kk'] ?>" style="color: white;" download>Downlad File</a></button>
 						</td>
 					</tr>
 					<tr>
@@ -86,7 +87,8 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_ak" id="file_upload_ak">
+							<!-- <input type="file" class="btn btn-success col-md-12" name="file_upload_ak" id="file_upload_ak"> -->
+							<button type="submit" class="col-md-12 btn btn-success" ><a href="<?= base_url() ?>upload/rapot/<?= $data['nm_file_ak'] ?>" style="color: white;" download>Downlad File</a></button>
 						</td>
 					</tr>
 					<tr>
@@ -94,18 +96,22 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload_foto" id="file_upload_foto">
+							<!-- <input type="file" class="btn btn-success col-md-12" name="file_upload_foto" id="file_upload_foto"> -->
+							<button type="submit" class="col-md-12 btn btn-success" ><a href="<?= base_url() ?>upload/rapot/<?= $data['nm_file_foto'] ?>" style="color: white;" download>Downlad File</a></button>
 						</td>
 					</tr>
 					<tr>
 						<th><label  style="margin-top: 10px;">Upload Raport :</label></th>
 					</tr>
 					<tr>
+						<img src="" alt="">
 						<td>
-							<input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload">
+							<!-- <input type="file" class="btn btn-success col-md-12" name="file_upload" id="file_upload"> -->
+							<button type="submit" class="col-md-12 btn btn-success" ><a href="<?= base_url() ?>upload/rapot/<?= $data['nm_file'] ?>" style="color: white;" download>Downlad File</a></button>
 						</td>
 					</tr>
-					
+
+					</script>
 					
 					</table>
 			</div>
@@ -201,7 +207,7 @@
 			
 	
 		</div>
-		<?= form_close(); ?>
+		
 		<!-- </form> -->
 		</div>
 	</div>
@@ -238,3 +244,10 @@
 .table tr td {	
 }
 </style>
+
+<script>
+	function download_file()
+	{
+
+	}
+</script>
