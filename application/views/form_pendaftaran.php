@@ -17,7 +17,7 @@
 </head>
 <body class="bg-success">
 	<div class="jdl">
-		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU JALUR PRESTASI<br> MAN 2 PATI <br> tahun ajaran 2021/2022</h1>
+		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS unggulan<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
 	</div>
 	<!--  -->
 	<?php 
@@ -93,7 +93,7 @@
 						<td><input type="text" name="agama" id="agama" class="form-control"></td>
 					</tr>
 					<tr>
-						<td><label>No Hp *</label></td>
+						<td><label>No Hp * <SMAll> (No WA) </SMAll></label></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="no_hp" id="no_hp" class="form-control"></td>
@@ -138,16 +138,16 @@
 					</tr>
 					<tr>
 						<td>
-							<select class="custom-select" name="jurusan" id="validationCustom04" required>
+							<select class="custom-select jurusan" name="jurusan" id="validationCustom04" required>
 								<option selected disabled value="">---Pilih Jurusan---</option>
-								<option name="ipa" id="ipa"> IPA </option>
-								<option name="ips" id="ips"> IPS </option>
+								<option name="ipa" id="ipa" value="ipa"> IPA </option>
+								<option name="ips" id="ips" value="ips"> IPS </option>
 							</select>
 
 						</td>
 					</tr>
 					<tr>
-						<th><label  style="margin-top: 10px;">Upload KK *</label></th>
+						<th><label  style="margin-top: 10px;">Upload KK *<SMAll>(format file .PDF,.JPG,.PNG) max size 5MB </SMAll></label></th>
 					</tr>
 					<tr>
 						<td>
@@ -155,7 +155,7 @@
 						</td>
 					</tr>
 					<tr>
-						<th><label  style="margin-top: 10px;">Upload Akte Kelahiran *</label></th>
+						<th><label  style="margin-top: 10px;">Upload Akte Kelahiran * <SMAll>(format file .PDF,.JPG,.PNG) max size 5MB </SMAll></label></th>
 					</tr>
 					<tr>
 						<td>
@@ -163,7 +163,7 @@
 						</td>
 					</tr>
 					<tr>
-						<th><label  style="margin-top: 10px;">Upload Foto 3x4 *</label></th>
+						<th><label  style="margin-top: 10px;">Upload Foto 3x4 * <SMAll>(format file .PDF,.JPG,.PNG) max size 5MB </SMAll></label></th>
 					</tr>
 					<tr>
 						<td>
@@ -171,7 +171,7 @@
 						</td>
 					</tr>
 					<tr>
-						<th><label  style="margin-top: 10px;">Upload Raport *</label></th>
+						<th><label  style="margin-top: 10px;">Upload Raport * <SMAll>(format file .PDF,.JPG,.PNG) max size 5MB </SMAll></label></th>
 					</tr>
 					<tr>
 						<td>
@@ -184,44 +184,12 @@
 			</div>
 
 			<div class="col-md-12 table-responsive">
-			<table class="table table-bordered" style="margin-top: 20px;">
-					<thead>
-						<tr>
-						<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>
-						<th scope="col">Semester 3</th>
-						<th scope="col">Semester 4</th>
-						<th scope="col">Semester 5</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-						<th scope="row">B.inggris</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>
-						</tr>
-						<tr>
-						<th scope="row">Matematika</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>
-						</tr>
-						<tr>
-						<th scope="row">IPA</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl3" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl3" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl3" style="border: #fff;"></td>
-						</tr>
-						<tr>
-						<th scope="row">IPS</th>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem3_nl4" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem4_nl4" style="border: #fff;"></td>
-						<td><input type="textbox" placeholder="Masukkan Nilai Anda" name="sem5_nl4" style="border: #fff;"></td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="daftarNilai" class="daftarNilai">
+				
+				</div>
+				<p id="note" style="color:red"></p>
 				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
-				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  ></td>
+				<input type="submit" class="btn btn-success float-right" name="simpan" value="Daftar"  ></td>
 				<a href="" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
 
 			</div>
@@ -249,10 +217,32 @@
     </div>
   </footer>
 </body>
- <script src="<?php echo base_url();?>assets/lib/jquery/jquery.min.js"></script>
+ <!-- <script src="<?php echo base_url();?>assets/lib/jquery/jquery.min.js"></script> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert-dev.js"></script>
+<script>
+	$('.jurusan').on('change', function() {
+		var valueNilai = $(this).val();
+		if (valueNilai == 'ips') { 
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead>	<tr>	<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>	<th scope="col">Semester 3</th>	<th scope="col">Semester 4</th>	<th scope="col">Semester 5</th>	</tr></thead><tbody>	<tr>	<th scope="row">B.inggris</th>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">Matematika</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">IPS</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl4" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl4" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl4" style="border: #fff;"></td>	</tr></tbody>				</table>');
+		}else if(valueNilai == 'ipa'){
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead>	<tr>	<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>	<th scope="col">Semester 3</th>	<th scope="col">Semester 4</th>	<th scope="col">Semester 5</th>	</tr></thead><tbody>	<tr>	<th scope="row">B.inggris</th>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl1" style="border: #fff;"></td>	<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl1" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">Matematika</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl2" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl2" style="border: #fff;"></td>	</tr>	<tr>	<th scope="row">IPA</th>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem3_nl3" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem4_nl3" style="border: #fff;"></td>	<td><input type="textbox"  class="nilaisemester" placeholder="Masukkan Nilai Anda" name="sem5_nl3" style="border: #fff;"></td>	</tr>	</tbody>				</table>');
+		}else{
+			alert('Jurusan Tidak Terdaftar');
+		}
+	});
+	$('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
+		var value = $(this).val();
+		if (value < 80) {
+			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan');
+		}else {
+			$('#note').hide();
+		}
+		// alert('a');
+	});
+</script>
 
 
 </html>	

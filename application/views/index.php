@@ -82,7 +82,9 @@
                 <h3 style="color: #fff;">MAN 2 PATI</h3>
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
                 <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
+                 
               </div>
+              
             </div>
           </div>
 
@@ -95,11 +97,12 @@
                 <h3 style="color: #fff;">TAHUN PELAJARAN 2021-2022</h3>
                 <a href="<?php echo site_url('Mastercontrol/fpd');?>"> <button type="button" class="btn btn-success mt-5">pendaftaran</button></a>
               </div>
+              
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man3.jpeg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man6.jpg" alt=""></div>
             <div class="carousel-container">
              <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
@@ -111,7 +114,7 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man4.jpeg" alt=""></div>
+            <div class="carousel-background"><img src="<?php echo base_url();?>assets/img/man7.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h3 style="color: #fff;font-weight: bold;">PENERIMAAN PESERTA DIDIK BARU</h3>
@@ -173,7 +176,8 @@
 
         </div>
       </div>
-    </section><!-- #featured-services -->
+    </section>
+    <!-- #featured-services -->
 
     <!--==========================
       About Us Section
@@ -425,7 +429,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>No Hp / WA</h3>
-              <p><a>pak Sunarno : 081325651645</a></p>
+              <p><a>pak Sunaryo : 081325651645</a></p>
               <p><a>Bu Rizka : 0813867129696</a></p>
             </div>
           </div>
