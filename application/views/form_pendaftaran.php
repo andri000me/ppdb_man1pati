@@ -26,7 +26,7 @@
                     
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                 <strong>Data</strong><?=  $this->session->flashdata('flash'); ?>, cilahkan click cetak untuk mencetak 
-								<a href="#">Cetak</a>
+								<a href="">Cetak</a> <button click="open_kartu()" >Cetak</button>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -46,7 +46,7 @@
 				<?php 
 				// $hr="PENDF";
 				// $no=0001;
-
+					// $no_id = $kode - 1;
 				// $why = $hr.$no++;
 				?>
 					<tr>
@@ -221,8 +221,11 @@
 					</tbody>
 				</table>
 				<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
-				<input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  ></td>
-				<a href="" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
+				<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
+				<button type="submit" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="open_kartu()" >Simpan</button>
+			
+				</td>
+				<a href="<?= site_url(); ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
 
 			</div>
 			
@@ -243,7 +246,7 @@
       <div class="copyright">
        
       <div style="margin-top: 50px; margin-left:40%;" >
-        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
+        &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">A </a>| <a href="https://github.com/roufq" target="_blank">A</a> | <a href="https://creativedev.id" target="_blank">creative</a>
       </div>
       </div>
     </div>
@@ -253,6 +256,46 @@
 <script src="<?php echo base_url();?>assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert.min.js"></script>
 <script src="<?php echo base_url();?>assets/dist/sweetalert-dev.js"></script>
+
+<!-- get data -->
+<script>
+
+
+	function open_kartu(){
+	var id=$('#id_pendaftaran').val();
+	// var id = document.getElementById("id_pendaftaran");
+	
+	// buka_struk();x
+	// window.open(''+id1);
+	
+	
+	var yakin = confirm("Anda sudah terdaftar, click ok untuk mencetak kartu");
+
+	if (yakin) {
+		window.open('<?= base_url('Mastercontrol/cetak_kartu/'); ?>'+id);
+	} else {
+		document.write("Baiklah, tetap di sini saja ya :)");
+	}
+
+	}
+	
+// 'id_pendaftaran' => $id_pendaftaran,
+// 				'nm_lengkap' => $nm_lengkap,
+// 				'tmp_lahir' => $tmp_lahir,
+// 				'tgl_lahir' => $tgl_lahir,
+// 				'jns_kelamin' => $jns_kelamin,
+// 				'agm' => $agm,
+// 				'no_hp' => $no_hp,
+// 				'nm_ortu' => $nm_ortu,
+// 				'no_hp_ortu' => $no_hp_ortu,
+// 				'asl_sekolah' => $asl_sekolah,
+// 				'email' => $email,
+// 				'almt' => $almt,
+	
+// }
+
+</script>
+<!-- ./get data -->
 
 
 </html>	

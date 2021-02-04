@@ -173,7 +173,7 @@ class Model_pendaftaran extends CI_model{
             "almt" => $this->input->post('alamat',true),
             // "email" => $this->input->post('email', true),
             // "nm_file" => $this->input->post('file_name',true),
-            "nm_file" => $this-> _uploadFile(),
+            // "nm_file" => $this-> _uploadFile(),
             // "nm_file" => $berkas,
             "jurusan" => $this->input->post('jurusan',true),
             "sem3_nl1" => $this->input->post('sem3_nl1',true),
@@ -207,6 +207,11 @@ class Model_pendaftaran extends CI_model{
     {
         return $this->db->get_where('pendaftaran1', ['id' => $id])->row_array(); //menampilkan data berdasarkan id
     }
+
+    public function getid_pendaftaranById($id)
+    {
+        return $this->db->get_where('pendaftaran1',['id_pendaftaran' => $id])->row_array();
+    }
     // close get data by id
 
     // get code
@@ -232,99 +237,10 @@ class Model_pendaftaran extends CI_model{
     
     // get
 
-
-    // save upload close
-
-    // save upload all on one
-    private function _uploadAll()
-    {
-        $config['upload_path'] = './upload/all/';
-        $config['allowed_types'] = 'png|pdf|jpg|gif';
-        $config['overwrite'] = true;
-    }
-    // ./save upload all on one
-    private function _uploadFile()
-    {
-        $config['upload_path']          = './upload/data/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        // $config['file_name']            = $this->id_pendaftaran;
-        $config['overwrite']			= true;
-        $config['max_size']             = 5024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
-
-        $this->load->library('upload', $config);
-
-        if ($this->upload->do_upload('file_upload')) {
-            // return $this->upload->data("file_upload");
-            return $this->input->post('file_name');
-        }
-        
-        return "default.jpg";
+    public function cek_data($table, $where){
+        return $this->db->get_where($table, $where);
     }
 
-
-    private function _uploadFile_kk()
-    {
-        $config['upload_path']          = './upload/data/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        // $config['file_name']            = $this->id_pendaftaran;
-        $config['overwrite']			= true;
-        $config['max_size']             = 5024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
-
-        $this->load->library('upload', $config);
-
-        if ($this->upload->do_upload('file_upload_kk')) {
-            // return $this->upload->data("file_upload_kk");
-            return $this->input->post('file_name');
-        }
-        
-        return "default.jpg";
-    }
-
-
-    private function _uploadFile_ak()
-    {
-        $config['upload_path']          = './upload/data/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        // $config['file_name']            = $this->id_pendaftaran;
-        $config['overwrite']			= true;
-        $config['max_size']             = 5024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
-
-        $this->load->library('upload', $config);
-
-        if ($this->upload->do_upload('file_upload_ak')) {
-            // return $this->upload->data("file_upload_ak");
-            return $this->input->post('file_name');
-        }
-        
-        return "default.jpg";
-    }
-
-
-    private function _uploadFile_foto()
-    {
-        $config['upload_path']          = './upload/data/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        // $config['file_name']            = $this->id_pendaftaran;
-        $config['overwrite']			= true;
-        $config['max_size']             = 5024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
-
-        $this->load->library('upload', $config);
-
-        if ($this->upload->do_upload('file_upload_foto')) {
-            // return $this->upload->data("file_upload_foto");
-            return $this->input->post('file_name');
-        }
-        
-        return "default.jpg";
-    }
 
 
 }
