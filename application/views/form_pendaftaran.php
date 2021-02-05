@@ -54,7 +54,7 @@
 								<td><label>ID Pendaftaran *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $kode; ?>" readonly class="form-control"></td>
+								<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $kode.'-'.date('His') ?>" readonly class="form-control"></td>
 							</tr>
 
 							<tr>
@@ -247,7 +247,7 @@
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
-		var message = 'Hai ' + nama + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022 \n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\n<?php echo base_url(); ?>/Mastercontrol/cetak_kartu/' + phone + '\n\nTerimakasih atas partisipasinya.';
+		var message = 'Hai ' + nama + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022 \n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\n<?php echo base_url(); ?>/Mastercontrol/cetak_kartu/' + id_pendaftaran + '\n\nTerimakasih atas partisipasinya.';
 		swal.queue([{
 			title: 'Konfirmasi',
 			text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
