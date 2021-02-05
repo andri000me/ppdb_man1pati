@@ -41,7 +41,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" style="background: rgba(44, 167, 20, 0.261);" class="header-scrolled">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
@@ -51,7 +51,7 @@
       </div>
 
       <nav id="nav-menu-container" style="margin-top: -30px;">
-        <ul class="nav-menu">
+        <ul class="nav-menu bg-success">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Tentang MAN 2 Pati</a></li>
           <li><a href="#informasi">Informasi</a></li>
@@ -414,8 +414,7 @@
         <div class="section-header">
           <h3>Kontak Kami</h3>
           <p>Untuk informasi yang terkait bisa menghubungi kontak dibawah ini</p>
-          <p><a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt" target="_blank">Join link gruop</a></p>
-
+          <p> <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt" target="_blank"> <button type="button" class="btn btn-success">JOIN GRUP </button></a><SMAll> <br> Untuk calon siswa baru silahkan join WA group</SMAll></p>
 
         </div>
 

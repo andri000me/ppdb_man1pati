@@ -135,8 +135,8 @@ h6 {
   z-index: 997;
 }
 
-#header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+#header .header-scrolled {
+  background: rgba(54, 167, 32, 0.9);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
