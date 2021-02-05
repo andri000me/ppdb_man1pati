@@ -247,7 +247,7 @@
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
-		var message = 'Halo dek '+nama+', \n Saya ucapkan selamat bergabung di keluarga besar MAN 1 PATI \n\n Jangan lupa ya ID Pendaftaran kamu '+id_pendaftaran+' berikut juga kakak lampirkan link kartu seleksi kamu yah, kamu bisa klik link di bawah untuk melihat kartu kamu \n\n <?php echo base_url(); ?>Mastercontrol/cetak_kartu/'+id_pendaftaran+'\n\n Sekali lagi selamat bergabung, nanti kalau ada pertanyaan bisa tanyakan lewat whatsapp ini yah ^_^';
+		var message = 'Hai '+nama+', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022 \n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\n<?php echo base_url(); ?>/Mastercontrol/cetak_kartu/'+phone+'\n\nTerimakasih atas partisipasinya.';
 		swal.queue([{
             title: 'Konfirmasi',
             text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
