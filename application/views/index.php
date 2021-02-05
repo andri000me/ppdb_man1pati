@@ -414,6 +414,9 @@
         <div class="section-header">
           <h3>Kontak Kami</h3>
           <p>Untuk informasi yang terkait bisa menghubungi kontak dibawah ini</p>
+          <p><a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt" target="_blank">Join link gruop</a></p>
+
+
         </div>
 
         <div class="row contact-info">
