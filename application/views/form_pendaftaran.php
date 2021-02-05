@@ -247,17 +247,17 @@
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
-		var message = 'Hai '+nama+', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022 \n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\n<?php echo base_url(); ?>/Mastercontrol/cetak_kartu/'+phone+'\n\nTerimakasih atas partisipasinya.';
+		var message = 'Hai ' + nama + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022 \n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\n<?php echo base_url(); ?>/Mastercontrol/cetak_kartu/' + phone + '\n\nTerimakasih atas partisipasinya.';
 		swal.queue([{
-            title: 'Konfirmasi',
-            text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
-            icon: 'warning',
-            confirmButtonText: 'Proses',
-            showLoaderOnConfirm: true,
-            preConfirm: async function () {
-                $('#swal2-title').text('Proccessing...');
-                $('#swal2-content').text('Please wait, this progress will take a few minutes');
-                
+			title: 'Konfirmasi',
+			text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+			icon: 'warning',
+			confirmButtonText: 'Proses',
+			showLoaderOnConfirm: true,
+			preConfirm: async function() {
+				$('#swal2-title').text('Proccessing...');
+				$('#swal2-content').text('Please wait, this progress will take a few minutes');
+
 				await $.ajax({
 					url: 'http://206.189.46.208/waapi/sendMessage?token=asdHusa37',
 					type: 'POST',
@@ -266,21 +266,21 @@
 						phone: phone,
 						message: message
 					},
-					success: function(result){
-						
-							$("#daftar").trigger("click");
-						
+					success: function(result) {
+
+						$("#daftar").trigger("click");
+
 					},
-					error: function(error){
-						
-							$("#daftar").trigger("click");
-						
-	                }
-	            });
+					error: function(error) {
+
+						$("#daftar").trigger("click");
+
+					}
+				});
 
 
-            }
-        }]);
+			}
+		}]);
 	});
 
 	$('.jurusan').on('change', function() {
@@ -297,8 +297,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -306,8 +308,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note2').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -315,8 +319,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note3').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -324,8 +330,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note4').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -333,8 +341,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note5').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -342,8 +352,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note6').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -351,8 +363,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note7').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -360,8 +374,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note8').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -369,8 +385,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note9').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -378,8 +396,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note10').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -387,8 +407,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note11').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
@@ -396,8 +418,10 @@
 		var value = $(this).val();
 		if (value < 80) {
 			$('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
+			$("#pre-daftar").hide();
 		} else {
 			$('#note12').hide();
+			$("#pre-daftar").show();
 		}
 		// alert('a');
 	});
