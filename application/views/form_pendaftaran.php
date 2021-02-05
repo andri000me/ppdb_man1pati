@@ -296,6 +296,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note').show();
 			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
 			$("#pre-daftar").hide();
 		} else {
@@ -307,6 +308,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester2', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note2').show();
 			$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
 			$("#pre-daftar").hide();
 		} else {
@@ -318,6 +320,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester3', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note3').show();
 			$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
 			$("#pre-daftar").hide();
 		} else {
@@ -329,6 +332,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester4', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note4').show();
 			$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
 			$("#pre-daftar").hide();
 		} else {
@@ -340,6 +344,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester5', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note5').show();
 			$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
 			$("#pre-daftar").hide();
 		} else {
@@ -351,6 +356,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester6', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note6').show();
 			$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
 			$("#pre-daftar").hide();
 		} else {
@@ -362,6 +368,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester7', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note7').show();
 			$('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
 			$("#pre-daftar").hide();
 		} else {
@@ -373,6 +380,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester8', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note8').show();
 			$('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
 			$("#pre-daftar").hide();
 		} else {
@@ -384,6 +392,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester9', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note9').show();
 			$('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
 			$("#pre-daftar").hide();
 		} else {
@@ -395,6 +404,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester10', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note10').show();
 			$('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
 			$("#pre-daftar").hide();
 		} else {
@@ -406,6 +416,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester11', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note11').show();
 			$('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
 			$("#pre-daftar").hide();
 		} else {
@@ -417,6 +428,7 @@
 	$('.daftarNilai').on('keyup', '.table .nilaisemester12', function() {
 		var value = $(this).val();
 		if (value < 80) {
+			$('#note12').show();
 			$('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
 			$("#pre-daftar").hide();
 		} else {
