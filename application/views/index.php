@@ -41,7 +41,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header" style="background: rgba(44, 167, 20, 0.261);" class="header-scrolled">
+  <header id="header" style="background: rgba(27, 75, 17, 0.589);" class="header-scrolled">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
@@ -67,8 +67,8 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
-    <div class="intro-container bg-success">
+  <section id="intro" class="bg-success">
+    <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
         <ol class="carousel-indicators"></ol>
