@@ -51,7 +51,7 @@
       </div>
 
       <nav id="nav-menu-container" style="margin-top: -30px;">
-        <ul class="nav-menu bg-success">
+        <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Tentang MAN 2 Pati</a></li>
           <li><a href="#informasi">Informasi</a></li>
@@ -67,7 +67,7 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="bg-success">
+  <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
