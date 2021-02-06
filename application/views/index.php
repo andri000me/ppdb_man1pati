@@ -41,7 +41,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header" style="background: rgba(27, 75, 17, 0.589);" class="header-scrolled">
+  <header id="header" style=" background: rgba(0, 0, 0, 0.746);" class="header-scrolled">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
@@ -219,7 +219,7 @@
                 <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100%;margin-top: -5px;">
                   <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Nama : MAN 2 Pati</p>
                   <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">NPSN : 20363139</p>
-                  <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Alamat : Jl.Ratu Kalinyamat Kabupaten Pati </p>
+                  <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Alamat : Jl. Ratu Kalinyamat Gg. Melati II. Tayu kabupaten Pati </p>
                   <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Kode Pos : 59155</p>
                   <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Desa : Tayu Wetan</p>
                   <p style="font-size: 14px;  line-height: 30px;  color: #fff;margin-bottom: 0;">Kecamatan : Tayu</p>
@@ -425,7 +425,7 @@
               <i class="ion-ios-location-outline"></i>
               <h3>Alamat</h3>
               <address>
-                <p><a>Jl.Ratu Kalinyamat Kabupaten Pati 59155</a></p>
+                <p><a>Jl. Ratu Kalinyamat Gg. Melati II. Tayu kabupaten Pati 59155</a></p>
               </address>
             </div>
           </div>

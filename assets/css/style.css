@@ -136,7 +136,7 @@ h6 {
 }
 
 #header .header-scrolled {
-  background: rgba(21, 65, 12, 0.439);
+  background: rgba(0, 0, 0, 0.946);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -187,8 +187,8 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  /* background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(0, 0, 0.23), rgba(255, 255, 255, 0)),  url(https://bg.jpg); */
-  background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(255, 255, 255, 0)),  url(https://bg.jpg);
+  background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(0, 0, 0, 0.535), rgba(255, 255, 255, 0)),  url(https://bg.jpg);
+  /* background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(255, 255, 255, 0)),  url(https://bg.jpg); */
   position: absolute;
   height: 100%;
   width: 100%;
