@@ -50,11 +50,11 @@
 							// $no_id = $kode - 1;
 							// $why = $hr.$no++;
 							?>
-							<tr>
+							<!-- <tr>
 								<td><label>ID Pendaftaran *</label></td>
-							</tr>
+							</tr> -->
 							<tr>
-								<td><input type="text" name="id_pendaftaran" id="id_pendaftaran" value="<?= $kode . '-' . date('His') ?>" readonly class="form-control"></td>
+								<td><input type="hidden" name="id_pendaftaran" id="id_pendaftaran" value="<?= $kode . '-' . date('His') ?>" readonly class="form-control"></td>
 							</tr>
 
 							<tr>

@@ -123,7 +123,7 @@
 		}
 	</style>
 </head>
-<body>
+<body  >
 	<div class="card">
 		<div class="row header">
 			<div class="col-img" style="float: left;">
