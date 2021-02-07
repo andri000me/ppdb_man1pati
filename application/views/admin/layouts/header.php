@@ -127,11 +127,11 @@
                                 <i class="fa fa-file"></i><span> Data Pendaftar</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo site_url('gelombang/index'); ?>">
                                 <i class="fa fa-file"></i><span> Data Gelombang</span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
                 <!-- /.sidebar -->
