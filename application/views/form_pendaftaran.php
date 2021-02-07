@@ -259,7 +259,7 @@
 				$('#swal2-content').text('Please wait, this progress will take a few minutes');
 
 				await $.ajax({
-					url: 'http://206.189.46.208/waapi/sendMessage?token=asdHusa37',
+					url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
 					type: 'POST',
 					data: {
 						type: 'chat',
@@ -444,7 +444,7 @@
 	function open_kartu() {
 		var id = $('#id_pendaftaran').val();
 		// var id = document.getElementById("id_pendaftaran");
-		window.open('<?= base_url('Mastercontrol/cetak_kartu/'); ?>' + id);
+		window.open('<?= base_url('Mastercontrol/fpd/'); ?>');
 		// buka_struk();x
 		// window.open(''+id1);
 
