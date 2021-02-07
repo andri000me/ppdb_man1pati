@@ -444,7 +444,7 @@
 	function open_kartu() {
 		var id = $('#id_pendaftaran').val();
 		// var id = document.getElementById("id_pendaftaran");
-		window.open('<?= base_url('Mastercontrol/cetak_kartu/'); ?>' + id);
+		window.open('<?= base_url('Mastercontrol/fpd/'); ?>');
 		// buka_struk();x
 		// window.open(''+id1);
 
