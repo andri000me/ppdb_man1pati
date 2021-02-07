@@ -468,7 +468,7 @@
           <a href="https://www.youtube.com/channel/UCDF_eIcMHER1B1zKKizRynA" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
         </div>
         <div style="margin-top: 20px;">
-          &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">Alief Arrafi </a>| <a href="https://github.com/roufq" target="_blank">Ahmad Rouf</a> | <a href="https://creativedev.id" target="_blank">creative</a>
+          &copy; Copyright <strong></strong><a href="https://github.com/HR77scu" target="_blank">A </a>| <a href="https://github.com/roufq" target="_blank">A</a> | <a href="https://creativedev.id" target="_blank">creative</a>
         </div>
       </div>
     </div>
