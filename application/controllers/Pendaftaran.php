@@ -47,5 +47,16 @@ class Pendaftaran extends CI_Controller {
         $this->session->set_flashdata('flash','Sudah di hapus');
         redirect('Pendaftaran/index');
     }
+
+    // get laporan pdf
+    public function laporan()
+    {
+        $this->load->model('Model_pendaftaran');
+        $data['dataall'] = $this->Model_pendaftaran->getAlldata();
+        $this->load->library('pdf');
+        $this->pdf->setPaper('A4','potrait');
+        $this->pdf->filename = "laporan-pendaftaran.pdf";
+        $this->pdf->load_view('laporan-pendaftaran', $data);
+    }
 }
 ?>
