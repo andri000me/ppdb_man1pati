@@ -40,7 +40,7 @@
                                          <ol class="breadcrumb pull-right">
                                         <!-- <a href="<?php echo site_url('Control/sws');?>"><button class="btn btn-danger" type="button"><i class="fa fa-cloud-download"></i> Export</button></a> -->
                                         <a href="<?= site_url() ?>Mastercontrol/fpd"><button class="btn btn-success" type="button"><i class="fa fa-plus"></i> Tambah Data</button></a>
-                                        <a href="<?= site_url() ?>Pendaftaran/Laporan"><button class="btn btn-primary" type="button"><i class="fa fa-file" ></i>Exsport Pdf</button></a>
+                                        <!-- <a href="<?= site_url() ?>Pendaftaran/Laporan"><button class="btn btn-primary" type="button"><i class="fa fa-file" ></i>Exsport Pdf</button></a> -->
                                       </ol>
                                      </div>
                                 </div>  
