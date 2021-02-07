@@ -129,15 +129,11 @@
                             <i class="fa fa-file"></i><span> Data Pendaftar</span>
                         </a>
                     </li>
-                    <!-- <li>
-                            <a href="<?php echo site_url('gelombang/index'); ?>">
-                                <i class="fa fa-file"></i><span> Data Gelombang</span>
-                            </a>
-                        </li> -->
                 </ul>
             </section>
             <!-- /.sidebar -->
         </aside>
+
 
         <!-- Right side column. Contains the navbar and content of the page -->
         <aside class="right-side">

@@ -8,7 +8,7 @@
 		}	
 		.card{
 			width: 60%;
-			height: 380px;
+			height: 400px;
 			background-color: white;
 			border: 1px solid black
 		}
@@ -67,7 +67,7 @@
 		{
 			.card{
 				width: 100%;
-				height: 380px;
+				height: 400px;
 				background-color: white;
 			}
 			.col-img{
@@ -185,10 +185,13 @@
 			</div>
 		</div>
 		<hr class="hr2">
+		<br>
 		<div class="row" >
 			<div class="col-1"  >
+			<br>
 				<p >Selamat anda telah mendaftar sebagai calon peserta didik MAN2 pati jalur kelas unggulan tahun pelajaran 2021/2022.</p>
 				<p>NB. Untuk info lebih lanjut bisa hubungi Pak Sunaryo : 081325651645 atau Bu Rizka : 0813867129696 </p>
+			
 			</div>
 
 		</div>
