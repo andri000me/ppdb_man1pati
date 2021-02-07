@@ -21,7 +21,7 @@
 			} else{
 				$data['kode'] = $this->Model_pendaftaran->kode();
 				$this->Model_pendaftaran->StorePendaftaran1();
-				$this->session->set_flashdata('flash','Berhasil di tambah');
+				$this->session->set_flashdata('flash','Berhasil di simpan');
 				// redirect('Mastercontrol/fpd');
 				redirect('Mastercontrol/fpd', $data);
 			}
