@@ -59,4 +59,3 @@ class Pendaftaran extends CI_Controller {
         $this->pdf->load_view('laporan-pendaftaran', $data);
     }
 }
-?>

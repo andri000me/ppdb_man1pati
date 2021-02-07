@@ -187,7 +187,7 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(0, 0, 0, 0.535), rgba(255, 255, 255, 0)),  url(https://bg.jpg);
+  background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(0, 0, 0, 0.385), rgba(255, 255, 255, 0)),  url(https://bg.jpg);
   /* background: linear-gradient(rgba(57, 252, 63, 0.289), rgba(255, 255, 255, 0)),  url(https://bg.jpg); */
   position: absolute;
   height: 100%;
