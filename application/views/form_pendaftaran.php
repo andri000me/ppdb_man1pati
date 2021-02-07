@@ -27,7 +27,7 @@
 	?>
 
 		<div class="alert alert-warning alert-dismissible fade show" role="alert">
-			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>
+			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>,  Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -205,7 +205,7 @@
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
 						<button type="button" id="pre-daftar" class="btn btn-success float-right">Daftar</button>
-						<button hidden="" id="daftar" type="submit" class="btn btn-success float-right" name="simpan" value="Simpan" onclick="open_kartu()">Daftar</button>
+						<button hidden="" id="daftar" type="submit" class="btn btn-success float-right" name="simpan" value="Simpan">Daftar</button>
 
 						</td>
 						<a href="<?= site_url(); ?>" class="btn btn-primary float-right" style="margin-right: 1%;">Kembali</a>
