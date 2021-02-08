@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://ppdb.smkwikrama1jepara.sch.id/';
-$config['base_url'] = 'http://localhost/ppdb_man1pati/';
+$config['base_url'] = 'http://ppdb_man1pati.test/';
 
 date_default_timezone_set('Asia/Jakarta');
 

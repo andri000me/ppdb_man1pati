@@ -10,6 +10,10 @@
 		function index(){
 			$this->load->view('index');
 		}
+
+		function check(){
+			echo "string";
+		}
 		// tampilkan form_pendaftaran dan simpan data
 		function fpd(){
 

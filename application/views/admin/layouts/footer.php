@@ -27,16 +27,90 @@
         <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js" type="text/javascript"></script>
         <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js " type="text/javascript"></script>
         <script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="<?php echo base_url();?>assets/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
         <script src="<?php echo base_url();?>assets/js/AdminLTE/app.js" type="text/javascript"></script> 
         <script type="text/javascript">
+            $('#custom-text').hide();
+            $('#message').hide();
+            $('#type-message').on('change', function() {
+                var typeMessage = $(this).val();
+                var messageId = $('#messageId').val();
+                var messageName = $('#messageName').val();
+
+                if (typeMessage == 0) {
+                    $('#custom-text').hide();
+                    var message = 'Hai '+ messageName +', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/'+ messageId +' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
+                }else if(typeMessage == 1) {
+                    $('#custom-text').hide();
+                    var message = 'Verifikasi data anda gagal.';
+                }else if(typeMessage == 2) {
+                    $('#custom-text').show();
+                    // var message = $('#custom-text').text();
+                }else {
+                    var message = 'Not Found';
+                    alert('Not Fount');
+                }
+
+                $('#message').text(message);
+            });
+
+            $('#send-message').on('click', function() {
+                var type = $('#type-message').val();
+
+                if (type == 2) {
+                    var message = $('#custom-text').val();
+                }else {
+                    var message = $('#message').val();
+                }
+
+                // alert(message);
+                var phone = $('#messageNumber').val();
+                swal.queue([{
+                    title: 'Konfirmasi',
+                    text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+                    icon: 'warning',
+                    confirmButtonText: 'Proses',
+                    showLoaderOnConfirm: true,
+                    preConfirm: async function() {
+                        $('#swal2-title').text('Proccessing...');
+                        $('#swal2-content').text('Anda yakin ingin mengirim pesan ke');
+
+                        await $.ajax({
+                            url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+                            type: 'POST',
+                            data: {
+                                type: 'chat',
+                                phone: phone,
+                                message: message
+                            },
+                            success: function(result) {
+
+                                alert('sukses di kirim');
+
+                            },
+                            error: function(error) {
+
+                                Swal.fire(
+                                  'Terkirim!',
+                                  'Silahkan cek whatsapp anda untuk memastikan bahwa pesan sudah terkirim secara sempurna',
+                                  'success'
+                                )
+
+                            }
+                        });
+                    }
+                }]);
+            });
+
+
             function pil(){
-        if($("#pill").val()=="Pilihan Ganda"){
-            $("#pilg").show();
-        }else{
-            $("#pilg").hide();
-        }
-    }
+                if($("#pill").val()=="Pilihan Ganda"){
+                    $("#pilg").show();
+                }else{
+                    $("#pilg").hide();
+                }
+            }
 
 
         </script>  

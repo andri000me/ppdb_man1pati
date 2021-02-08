@@ -10,6 +10,12 @@
     </ol>
 </section>
 
+<div hidden="">
+	<input type="Text" id="messageId" value="<?= $data['id_pendaftaran'] ?>">
+	<input type="Text" id="messageName" value="<?= $data['nm_lengkap'] ?>">
+	<input type="Text" id="messageNumber" value="<?= $data['no_hp'] ?>">
+</div>
+
 <div class="container">
 		<div class="kotak" style="margin-top:20px;">
 		<!-- <form action="" method="post" enctype="multipart/form-data"> -->
@@ -201,7 +207,26 @@
                         </tr>
 					</tbody>
 				</table>
-                <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary " style="margin-bottom: 20px;">Kembali</a>
+                <!-- <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary " style="margin-bottom: 20px;">Kembali</a> -->
+                <div class="row">
+                	<div class="col-md-6" style="padding-bottom: 10px">
+                		<textarea class="form-control" id="custom-text" placeholder="Isikan Kustom Text untuk di Kirim ke calon siswa, gunakan (\n) untuk enter atau membuat baris baru"></textarea>
+                	</div>
+                </div>	
+                <div class="row">
+                	<div class="col-md-3">
+		                <select class="form-control" id="type-message">
+		                	<option>Pilih Jenis Pengiriman</option>
+		                	<option value="0">Verifikasi Sukses</option>
+		                	<option value="1">Verifikasi Gagal</option>
+		                	<option value="2">Custom Text</option>
+		                </select>
+                	</div>
+                	<div class="col-md-3">
+                		<textarea class="form-control" id="message"></textarea>
+		                <button type="button" id="send-message" class="btn btn-success " style="margin-bottom: 20px;">Send Notification</button>
+                	</div>
+                </div>	
 
 			</div>
 			
@@ -246,8 +271,5 @@
 </style>
 
 <script>
-	function download_file()
-	{
-
-	}
+	
 </script>

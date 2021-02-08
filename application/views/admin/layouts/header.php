@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-=======
     <head>
         <meta charset="UTF-8">
         <title>PPDB | Dashboard</title>
@@ -28,7 +26,6 @@
         <link href="<?php echo base_url();?>assets/css/AdminLTE.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
   <link href="<?php echo base_url();?>assets/img/logo1.png" rel="icon">
->>>>>>> e7a51f53088257f4e4ea799b1615a278a4c38f29
 
 <head>
     <meta charset="UTF-8">

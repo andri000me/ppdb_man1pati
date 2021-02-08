@@ -19,7 +19,7 @@
 
 <body class="bg-success">
 	<div class="jdl">
-		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS unggulan<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
+		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS UNGGULAN<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
 	</div>
 	<!--  -->
 	<?php
@@ -27,7 +27,7 @@
 	?>
 
 		<div class="alert alert-warning alert-dismissible fade show" role="alert">
-			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>,  Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
+			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>, Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -278,8 +278,6 @@
 
 					}
 				});
-
-
 			}
 		}]);
 	});
@@ -306,115 +304,220 @@
 		var nilaisemester7 = $('.daftarNilai .table .nilaisemester7').val();
 		var nilaisemester8 = $('.daftarNilai .table .nilaisemester8').val();
 		var nilaisemester9 = $('.daftarNilai .table .nilaisemester9').val();
-		var nilaisemester10 = $('.daftarNilai .table .nilaisemeste10').val();
+		var nilaisemester10 = $('.daftarNilai .table .nilaisemester10').val();
 		var nilaisemester11 = $('.daftarNilai .table .nilaisemester11').val();
 		var nilaisemester12 = $('.daftarNilai .table .nilaisemester12').val();
 
 		if(nilaisemester < 80){
-			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
+			// $('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
 			$('#pre-daftar').hide();
 		}else if(nilaisemester2 < 80) {
 			if (nilaisemester2 != '') {
-				$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
+				// $('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester3 < 80) {
 			if (nilaisemester3 != '') {
-				$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
+				// $('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester4 < 80) {
 			if (nilaisemester4 != '') {
-				$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
+				// $('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester5 < 80) {
 			if (nilaisemester5 != '') {
-				$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
+				// $('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester6 < 80) {
 			if (nilaisemester6 != '') {
-				$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
+				// $('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester7 < 80) {
 			if (nilaisemester7 != '') {
-				$('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
+				// $('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester8 < 80) {
 			if (nilaisemester8 != '') {
-				$('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
+				// $('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester9 < 80) {
 			if (nilaisemester9 != '') {
-				$('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
+				// $('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester10 < 80) {
 			if (nilaisemester10 != '') {
-				$('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
+				// $('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester11 < 80) {
 			if (nilaisemester11 != '') {
-				$('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
+				// $('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
 				$('#pre-daftar').hide();
 			}
 		}else if(nilaisemester12 < 80) {
 			if (nilaisemester12 != '') {
-				$('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
+				// $('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
 				$('#pre-daftar').hide();
 			}
 		}else{
-			if(nilaisemester > 80){
-				$('#note').hide();	
-			}
-			if(nilaisemester2 > 80) {
-				$('#note2').hide();	
-			}
-			if(nilaisemester3 > 80) {
-				$('#note3').hide();	
-			}
-			if(nilaisemester4 > 80) {
-				$('#note4').hide();	
-			}
-			if(nilaisemester5 > 80) {
-				$('#note5').hide();	
-			}
-			if(nilaisemester6 > 80) {
-				$('#note6').hide();	
-			}
-			if(nilaisemester7 > 80) {
-				$('#note7').hide();	
-			}
-			if(nilaisemester8 > 80) {
-				$('#note8').hide();	
-			}
-			if(nilaisemester9 > 80) {
-				$('#note9').hide();	
-			}
-			if(nilaisemester10 > 80) {
-				$('#note10').hide();	
-			}
-			if(nilaisemester11 > 80) {
-				$('#note11').hide();	
-			}
-			if(nilaisemester12 > 80) {
-				$('#note12').hide();
-				
-			}else{
-				// $('#pre-daftar').show();
-			}
+			
 
 			$('#pre-daftar').show();
 		}
-
 	}
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note').show();
+	// 		$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester2', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note2').show();
+	// 		$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note2').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester3', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note3').show();
+	// 		$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note3').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester4', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note4').show();
+	// 		$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note4').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester5', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note5').show();
+	// 		$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note5').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester6', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 0) {
+	// 		$('#note6').show();
+	// 		$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note6').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester7', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note7').show();
+	// 		$('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note7').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester8', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note8').show();
+	// 		$('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note8').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester9', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note9').show();
+	// 		$('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note9').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester10', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note10').show();
+	// 		$('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note10').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester11', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note11').show();
+	// 		$('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note11').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
+	// 	// alert('a');
+	// });
+	// $('.daftarNilai').on('keyup', '.table .nilaisemester12', function() {
+	// 	var value = $(this).val();
+	// 	if (value < 80) {
+	// 		$('#note12').show();
+	// 		$('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
+	// 		$("#pre-daftar").hide();
+	// 	} else {
+	// 		$('#note12').hide();
+	// 		$("#pre-daftar").show();
+	// 	}
 
-	console.log(nilaisemester);
+	// }
+
+	// console.log(nilaisemester);
 	// $('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
 	// 	// var nilaisemester2 = $('.daftarNilai .table .nilaisemester2');
 	// 	// alert(nilaisemester2);
