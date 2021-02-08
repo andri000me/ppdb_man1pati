@@ -17,39 +17,6 @@ class Model_pendaftaran extends CI_model{
     // input data
     public function StorePendaftaran1()
     {
-        //  /* Endpoint */
-        // $url = 'http://206.189.46.208:8001/waapi/sendMessage?token=asdHusa37';
-   
-        // /* Data */
-        // $data = [
-        //     'type' => 'chat', // type: chat/group
-        //     'phone' => '089506373551', // receiver chat number
-        //     'message' =>'Test API By WaCenter'
-        // ];
-
-        // /* eCurl */
-        // $curl = curl_init();
-   
-        // /* Set JSON data to POST */
-        // curl_setopt_array($curl, [
-        //     CURLOPT_RETURNTRANSFER => true,
-        //     CURLOPT_URL            => $url,
-        //     CURLOPT_POST           => 1,
-        //     CURLOPT_POSTFIELDS     => $data
-        // ]);
-            
-        // /* Define content type */
-        // curl_setopt($curl, CURLOPT_HTTPHEADER, array(''));
-            
-        // /* Return json */
-        // // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            
-        // /* make request */
-        // $result = curl_exec($curl);
-             
-        // /* close curl */
-        // // curl_close($curl);
-
         // vardat
         $id_pendaftaran = $this->input->post('id_pendaftaran');
         $nm_lengkap = $this->input->post('nama_lengkap');
@@ -149,6 +116,43 @@ class Model_pendaftaran extends CI_model{
         $sem5_nl3 =$this->input->post('sem5_nl3');
         $sem5_nl4 =$this->input->post('sem5_nl4');
         // close vardat
+
+        if ($jurusan == 'ips') {
+            if($sem3_nl4 < 80) {
+                echo "gagal disimpan"; die();
+            }else if($sem4_nl4 < 80) {
+                echo "gagal disimpan"; die();
+            }else if($sem5_nl4 < 80) {
+                echo "gagal disimpan"; die();
+            }
+
+        }else if($jurusan == 'ipa'){
+            if($sem3_nl3 < 80) {
+                echo "gagal disimpan 3"; die();
+            }else if($sem4_nl3 < 80) {
+                echo "gagal disimpan"; die();
+            }else if($sem5_nl3 < 80) {
+                echo "gagal disimpan"; die();
+            }
+        }else {
+            echo "Jurusan tidak terdaftar"; die();
+        }
+
+        if ($sem3_nl1 < 80) {
+            echo "gagal disimpan 1"; die();
+        }else if($sem3_nl2 < 80) {
+            echo "gagal disimpan 2"; die();
+        }else if($sem4_nl1 < 80) {
+            echo "gagal disimpan"; die();
+        }else if($sem4_nl2 < 80) {
+            echo "gagal disimpan"; die();
+        }else if($sem5_nl1 < 80) {
+            echo "gagal disimpan"; die();
+        }else if($sem5_nl2 < 80) {
+            echo "gagal disimpan"; die();
+        }else {
+
+        }
 
         $data = array(
             'id_pendaftaran' => $id_pendaftaran,
