@@ -16,6 +16,10 @@ class Pendaftaran extends CI_Controller {
         $this->load->view('admin/layouts/footer');
     }
 
+    public function try() {
+        // echo "string1";
+    }
+
     public function detail($id)
     {
         $data['data'] = $this->Model_pendaftaran->getpendaftaran1ById($id);
@@ -62,16 +66,15 @@ class Pendaftaran extends CI_Controller {
     // update fild status
     public function status_update($id)
     {
-        $data['data'] = $this->Model_pendaftaran->getpendaftara1ById($id);
-        if($this->form_validation->run() == FALSE){
-            $this->load->view('admin/layouts.header');
-            $this->load->view('admin/pendaftara/edit',$data);
-            $this->load->view('admin/layouts/footer');
-        }else{
-            $this->Model_pendaftaran->edit_status();
-            $this->session->set_flashdata('flash','Berhasil di edit');
-            redirect('pendaftaran/index');
+        // $data['data'] = $this->Model_pendaftaran->getpendaftaran1ById('72');
+        // echo json_decode($data['data']);
+        // if($this->form_validation->run() == FALSE){
+        //     echo "gagal";
+        // }else{
+            $this->Model_pendaftaran->edit_status($id);
+            // $this->session->set_flashdata('flash','Berhasil di edit');
+            // redirect('pendaftaran/index');
             // echo "berhasil";
-        }
+        // }
     }
 }

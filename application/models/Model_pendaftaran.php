@@ -384,9 +384,10 @@ class Model_pendaftaran extends CI_model{
         return $this->db->get_where($table, $where);
     }
 
-    public function edit_status()
+    public function edit_status($id)
     {
         $status  = $this->input->post('status');
+        $this->input->post('id');
         $data = array(
             'status' => $status,
         );

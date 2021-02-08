@@ -51,21 +51,34 @@ if ($this->session->flashdata('flash')) {
                                     <th>Nama Lengkap</th>
                                     <th>no hp</th>
                                     <th>asal sekolah</th>
+                                    <th>status</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                $no = 0;
-                                foreach ($data as $row) {
+                                    $no = 0;
+                                    foreach ($data as $row) {
                                     $no++;
-                                    ?>
+                                    if ($row['status'] == 'Validate - Success') {
+                                        $colorCode = '5cb85c';
+                                    }else if('Validate - Failed') {
+                                        $colorCode = 'f0ad4e';
+                                    }else if('Validate - Send Custom Message') {
+                                        $colorCode = '5bc0de';
+                                    }else if('0'){
+                                        $colorCode = 'd9534f';
+                                    }else {
+                                        $colorCode = 'f7f7f7';
+                                    }
+                                ?>
                                     <tr>
                                         <td><?= $no; ?></td>
                                         <td><?= $row['id_pendaftaran']; ?></td>
                                         <td><?= $row['nm_lengkap']; ?></td>
                                         <td><?= $row['no_hp'] ?></td>
                                         <td><?= $row['asl_sekolah'] ?></td>
+                                        <td><span class="badge" style="background-color:#<?= $colorCode ?>"><?= $row['status'] ?></span></td>
                                         <td>
                                             <a href="<?= base_url('pendaftaran/detail/'); ?><?= $row['id'] ?>" class="btn btn-sm btn-primary">Detail</a>
                                             <a href="<?= base_url('pendaftaran/edit/'); ?><?= $row['id'] ?>" class="btn btn-sm btn-warning">Edit</a>

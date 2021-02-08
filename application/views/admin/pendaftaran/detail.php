@@ -11,6 +11,7 @@
 </section>
 
 <div hidden="">
+	<input type="Text" id="databaseId" value="<?= $data['id'] ?>">
 	<input type="Text" id="messageId" value="<?= $data['id_pendaftaran'] ?>">
 	<input type="Text" id="messageName" value="<?= $data['nm_lengkap'] ?>">
 	<input type="Text" id="messageNumber" value="<?= $data['no_hp'] ?>">

@@ -65,7 +65,20 @@
                 }
 
                 // alert(message);
+                var messageId = $('#messageId').val();
                 var phone = $('#messageNumber').val();
+
+                if (type == 0) {
+                    var status = 'Validate - Success';
+                }else if(type == 1) {
+                    var status = 'Validate - Failed';
+                }else if(type == 2) {
+                    var status = 'Validate - Send Custom Message';
+                }else {
+                    var status = 'Status Not Found'
+                }
+
+                var databaseId = $('#databaseId').val();
                 swal.queue([{
                     title: 'Konfirmasi',
                     text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
@@ -90,12 +103,25 @@
 
                             },
                             error: function(error) {
+                                $.ajax({
+                                    url: '<?php echo base_url();?>Pendaftaran/status_update/'+databaseId,
+                                    type: 'POST',
+                                    data: {
+                                        id: databaseId,
+                                        status: status
+                                    },
+                                    success: function(result) {
+                                        Swal.fire(
+                                          'Terkirim!',
+                                          'Silahkan cek whatsapp anda untuk memastikan bahwa pesan sudah terkirim secara sempurna',
+                                          'success'
+                                          )
+                                    },
+                                    error: function(result) {
+                                    },
+                                });
 
-                                Swal.fire(
-                                  'Terkirim!',
-                                  'Silahkan cek whatsapp anda untuk memastikan bahwa pesan sudah terkirim secara sempurna',
-                                  'success'
-                                )
+                                
 
                             }
                         });
