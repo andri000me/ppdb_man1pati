@@ -58,4 +58,20 @@ class Pendaftaran extends CI_Controller {
         $this->pdf->filename = "laporan-pendaftaran.pdf";
         $this->pdf->load_view('laporan-pendaftaran', $data);
     }
+
+    // update fild status
+    public function status_update($id)
+    {
+        $data['data'] = $this->Model_pendaftaran->getpendaftara1ById($id);
+        if($this->form_validation->run() == FALSE){
+            $this->load->view('admin/layouts.header');
+            $this->load->view('admin/pendaftara/edit',$data);
+            $this->load->view('admin/layouts/footer');
+        }else{
+            $this->Model_pendaftaran->edit_status();
+            $this->session->set_flashdata('flash','Berhasil di edit');
+            redirect('pendaftaran/index');
+            // echo "berhasil";
+        }
+    }
 }
