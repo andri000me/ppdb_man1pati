@@ -19,7 +19,7 @@
 
 <body class="bg-success">
 	<div class="jdl">
-		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS unggulan<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
+		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS UNGGULAN<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
 	</div>
 	<!--  -->
 	<?php
@@ -27,7 +27,7 @@
 	?>
 
 		<div class="alert alert-warning alert-dismissible fade show" role="alert">
-			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>,  Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
+			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>, Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -277,8 +277,6 @@
 
 					}
 				});
-
-
 			}
 		}]);
 	});
@@ -295,7 +293,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note').show();
 			$('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
 			$("#pre-daftar").hide();
@@ -307,7 +305,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester2', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note2').show();
 			$('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
 			$("#pre-daftar").hide();
@@ -319,7 +317,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester3', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note3').show();
 			$('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
 			$("#pre-daftar").hide();
@@ -331,7 +329,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester4', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note4').show();
 			$('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
 			$("#pre-daftar").hide();
@@ -343,7 +341,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester5', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note5').show();
 			$('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
 			$("#pre-daftar").hide();
@@ -355,7 +353,7 @@
 	});
 	$('.daftarNilai').on('keyup', '.table .nilaisemester6', function() {
 		var value = $(this).val();
-		if (value < 80) {
+		if (value < 0) {
 			$('#note6').show();
 			$('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
 			$("#pre-daftar").hide();
