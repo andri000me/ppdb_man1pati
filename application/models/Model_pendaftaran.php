@@ -149,6 +149,8 @@ class Model_pendaftaran extends CI_model{
         $sem5_nl3 =$this->input->post('sem5_nl3');
         $sem5_nl4 =$this->input->post('sem5_nl4');
         // close vardat
+        // update
+        $status = $this->input->post('status');
 
         $data = array(
             'id_pendaftaran' => $id_pendaftaran,
@@ -180,6 +182,7 @@ class Model_pendaftaran extends CI_model{
             'sem5_nl2' => $sem5_nl2,
             'sem5_nl3' => $sem5_nl3,
             'sem5_nl4' => $sem5_nl4,
+            'status' => $status,
         );
 
         $this->db->insert('pendaftaran1', $data);
@@ -190,38 +193,13 @@ class Model_pendaftaran extends CI_model{
     // update data
     public function update()
     {
-        // true untuk menghindari sqlinject
-        $data = [
-            "id_pendaftaran" => $this->input->post('id_pendaftaran',true),
-            "nm_lengkap" => $this->input->post('nama_lengkap',true),
-            "tmp_lahir" => $this->input->post('tempat_lahir',true),
-            "tgl_lahir" => $this->input->post('tanggal_lahir',true),
-            "jns_kelamin" => $this->input->post('jenis_kelamin',true),
-            "agm" => $this->input->post('agama',true),
-            "no_hp" => $this->input->post('no_hp',true),
-            "nm_ortu" => $this->input->post('nama_ortu',true),
-            "no_hp_ortu" => $this->input->post('no_hportu',true),
-            "asl_sekolah" => $this->input->post('asal_smp',true),
-            "email" => $this->input->post('email',true),
-            "almt" => $this->input->post('alamat',true),
-            // "email" => $this->input->post('email', true),
-            // "nm_file" => $this->input->post('file_name',true),
-            // "nm_file" => $this-> _uploadFile(),
-            // "nm_file" => $berkas,
-            "jurusan" => $this->input->post('jurusan',true),
-            "sem3_nl1" => $this->input->post('sem3_nl1',true),
-            "sem3_nl2" => $this->input->post('sem3_nl2',true),
-            "sem3_nl3" => $this->input->post('sem3_nl3',true),
-            "sem3_nl4" => $this->input->post('sem3_nl4',true),
-            "sem4_nl1" => $this->input->post('sem4_nl1',true),
-            "sem4_nl2" => $this->input->post('sem4_nl2',true),
-            "sem4_nl3" => $this->input->post('sem4_nl3',true),
-            "sem4_nl4" => $this->input->post('sem4_nl4',true),
-            "sem5_nl1" => $this->input->post('sem5_nl1',true),
-            "sem5_nl2" => $this->input->post('sem5_nl2',true),
-            "sem5_nl3" => $this->input->post('sem5_nl3',true),
-            "sem5_nl4" => $this->input->post('sem5_nl4',true)
-        ];
+
+        $status = $this->input->post('status');
+
+        $data = array(
+
+            'status' => $status,
+        );
         $this->db->where('id', $this->input->post('id'));
         $this->db->update('pendaftaran1', $data);
     }
