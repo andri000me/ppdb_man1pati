@@ -399,37 +399,37 @@
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
 		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input.\n\nSilahkan Join ke group PPDB MAN2PATI\n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt\n\n#MAN2PATI_BERSAHAJA';
-		// swal.queue([{
-		// 	title: 'Konfirmasi',
-		// 	text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
-		// 	icon: 'warning',
-		// 	confirmButtonText: 'Proses',
-		// 	showLoaderOnConfirm: true,
-		// 	preConfirm: async function() {
-		// 		$('#swal2-title').text('Proccessing...');
-		// 		$('#swal2-content').text('Please wait, this progress will take a few minutes');
+		swal.queue([{
+			title: 'Konfirmasi',
+			text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+			icon: 'warning',
+			confirmButtonText: 'Proses',
+			showLoaderOnConfirm: true,
+			preConfirm: async function() {
+				$('#swal2-title').text('Proccessing...');
+				$('#swal2-content').text('Please wait, this progress will take a few minutes');
 
-		// 		await $.ajax({
-		// 			url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
-		// 			type: 'POST',
-		// 			data: {
-		// 				type: 'chat',
-		// 				phone: phone,
-		// 				message: message
-		// 			},
-		// 			success: function(result) {
+				await $.ajax({
+					url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+					type: 'POST',
+					data: {
+						type: 'chat',
+						phone: phone,
+						message: message
+					},
+					success: function(result) {
 
-		// 				$("#daftar").trigger("click");
+						$("#daftar").trigger("click");
 
-		// 			},
-		// 			error: function(error) {
+					},
+					error: function(error) {
 
-		// 				$("#daftar").trigger("click");
+						$("#daftar").trigger("click");
 
-		// 			}
-		// 		});
-		// 	}
-		// }]);
+					}
+				});
+			}
+		}]);
 	});
 
 	$('.jurusan').on('change', function() {
