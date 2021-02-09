@@ -131,82 +131,108 @@
 						<th scope="col">Semester 3</th>
 						<th scope="col">Semester 4</th>
 						<th scope="col">Semester 5</th>
+						<th scope="col">Rata Rata</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-						<th scope="row">B.inggris</th>
-                        <td>
-                            <div>
-                                <p><?= $data['sem3_nl1'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem4_nl1'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem5_nl1'] ?></p>
-                            </div>
-                        </td>						
-                        </tr>
+							<th scope="row">B.inggris</th>
+							<td>
+								<div>
+									<p><?= $data['sem3_nl1'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem4_nl1'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem5_nl1'] ?></p>
+								</div>
+							</td>	
+							<td>
+								<div>
+									<p><?= $data['rata_bing'] ?></p>
+								</div>
+							</td>						
+						</tr>
 						<tr>
-						<th scope="row">Matematika</th>
-						<td>
-                            <div>
-                                <p><?= $data['sem3_nl2'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem4_nl2'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem5_nl2'] ?></p>
-                            </div>
-                        </td>		
-                        </tr>
+							<th scope="row">Matematika</th>
+							<td>
+								<div>
+									<p><?= $data['sem3_nl2'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem4_nl2'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem5_nl2'] ?></p>
+								</div>
+							</td>	
+							<td>
+								<div>
+									<p><?= $data['rata_mat'] ?></p>
+								</div>
+							</td>	
+						</tr>	
 						<tr>
-						<th scope="row">IPA</th>
-						<td>
-                            <div>
-                                <p><?= $data['sem3_nl3'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem4_nl3'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem5_nl3'] ?></p>
-                            </div>
-                        </td>		
-                        </tr>
+							<th scope="row">IPA</th>
+							<td>
+								<div>
+									<p><?= $data['sem3_nl3'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem4_nl3'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem5_nl3'] ?></p>
+								</div>
+							</td>		
+							<td>
+								<div>
+									<p><?= $data['rata_ipa'] ?></p>
+								</div>
+							</td>
+						</tr>
 						<tr>
-						<th scope="row">IPS</th>
-						<td>
-                            <div>
-                                <p><?= $data['sem3_nl4'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem4_nl4'] ?></p>
-                            </div>
-                        </td>						
-                        <td>
-                            <div>
-                                <p><?= $data['sem5_nl4'] ?></p>
-                            </div>
-                        </td>		
-                        </tr>
+							<th scope="row">IPS</th>
+							<td>
+								<div>
+									<p><?= $data['sem3_nl4'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem4_nl4'] ?></p>
+								</div>
+							</td>						
+							<td>
+								<div>
+									<p><?= $data['sem5_nl4'] ?></p>
+								</div>
+							</td>	
+							<td>
+								<div>
+									<p><?= $data['rata_ips'] ?></p>
+								</div>
+							</td>	
+						</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5">Total Rata Rata Ananda <?= $data['nm_lengkap'] ?> adalah <?= $data['totalRataRata'] ?></td>
+						</tr>
+					</tfoot>
 				</table>
                 <!-- <a href="<?= base_url() ?>pendaftaran/index" class="btn btn-primary " style="margin-bottom: 20px;">Kembali</a> -->
                 <div class="row">
