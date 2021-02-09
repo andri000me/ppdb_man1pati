@@ -377,6 +377,16 @@
 			});
 			return false;
 		}
+
+		var raport = $('#file_upload').prop('files')[0];
+		if (raport.type == 'application/pdf') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File Raport anda melebihi batas (5Mb)',
+			});
+			return false;
+		}
 	}
 	$('#pre-daftar').on('click', function(e) {
 		// alert(validator());
@@ -388,7 +398,7 @@
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
-		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input :)';
+		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input.\n\nSilahkan Join ke group PPDB MAN2PATI\n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt\n\n#MAN2PATI_BERSAHAJA';
 		// swal.queue([{
 		// 	title: 'Konfirmasi',
 		// 	text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
