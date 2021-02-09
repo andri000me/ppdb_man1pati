@@ -245,8 +245,24 @@
 <!-- <script src="<?php echo base_url(); ?>assets/dist/sweetalert-dev.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-	$('#pre-daftar').prop('disabled', true);
-	$('#pre-daftar').on('click', function() {
+	// $('#pre-daftar').prop('disabled', true);
+
+	function validator() {
+		if ($('#nama_lengkap').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Nama Belum di isi',
+			});
+			return false;
+		}
+	}
+	$('#pre-daftar').on('click', function(e) {
+		// alert(validator());
+		if(validator() == false) {
+			return false;
+		}
+		// return false;
 		var phone = $('#no_hp').val();
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
@@ -344,8 +360,8 @@
 
 		$('#table-footer').show();
 		$('#table-footer').css(table_footer);
-		$('#textRataRata').text('Total Rata Rata Anda '+rataRata);
-		$('#totalRataRata').val(rataRata);
+		$('#textRataRata').text('Total Rata Rata Anda '+Math.round(rataRata));
+		$('#totalRataRata').val(Math.round(rataRata));
 	}
 
 	function totalRataRata() {
@@ -405,8 +421,8 @@
 		var totalNilai = parseInt(nilaiBing1) + parseInt(nilaiBing2) + parseInt(nilaiBing3);
 		var rataRata = parseInt(totalNilai) / 3;
 		if (nilaiBing3 != '') {
-			$('#rata_bing').val(rataRata);
-			$('#rata_bing1').val(rataRata);
+			$('#rata_bing').val(Math.round(rataRata));
+			$('#rata_bing1').val(Math.round(rataRata));
 		}
 
 		// totalRataRata();
@@ -420,8 +436,8 @@
 		var totalNilai = parseInt(nilaiMat1) + parseInt(nilaiMat2) + parseInt(nilaiMat3);
 		var rataRata = parseInt(totalNilai) / 3;
 		if (nilaiMat3 != '') {
-			$('#rata_mat').val(rataRata);
-			$('#rata_mat1').val(rataRata);
+			$('#rata_mat').val(Math.round(rataRata));
+			$('#rata_mat1').val(Math.round(rataRata));
 		}
 		// totalRataRata();
 	}
@@ -433,8 +449,8 @@
 		var totalNilai = parseInt(nilaiIps1) + parseInt(nilaiIps2) + parseInt(nilaiIps3);
 		var rataRata = parseInt(totalNilai) / 3;
 		if (nilaiIps3 != '') {
-			$('#rata_ips').val(rataRata);
-			$('#rata_ips1').val(rataRata);
+			$('#rata_ips').val(Math.round(rataRata));
+			$('#rata_ips1').val(Math.round(rataRata));
 		}
 		// totalRataRata();
 	}
@@ -446,8 +462,8 @@
 		var totalNilai = parseInt(nilaiIpa1) + parseInt(nilaiIpa2) + parseInt(nilaiIpa3);
 		var rataRata = parseInt(totalNilai) / 3;
 		if (nilaiIpa3 != '') {
-			$('#rata_ipa').val(rataRata);
-			$('#rata_ipa1').val(rataRata);
+			$('#rata_ipa').val(Math.round(rataRata));
+			$('#rata_ipa1').val(Math.round(rataRata));
 		}
 		// totalRataRata();
 	}
