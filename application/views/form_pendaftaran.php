@@ -203,8 +203,8 @@
 						<p id="note11" style="color:red"></p>
 						<p id="note12" style="color:red"></p> -->
 
-						<p>*NP : Nilai hanya bisa di input 80 keatas*</p>
-						<p>*NP : Bila nilai anda dibawah 80 maka anda tidak dapat mendaftar.*</p>
+						
+						
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
 						<button  type="button" id="pre-daftar" class="btn btn-success float-right">Daftar</button>
@@ -256,6 +256,88 @@
 			});
 			return false;
 		}
+		if ($('#tempat_lahir').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Tempat Lahir Belum di isi',
+			});
+			return false;
+		}
+		if ($('#tanggal_lahir').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Tanggal Lahir Belum di isi',
+			});
+			return false;
+		}
+		if ($('#agama').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Agama Belum di isi',
+			});
+			return false;
+		}
+		if ($('#no_hp').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'No Hp Belum di isi',
+			});
+			return false;
+		}
+		if ($('#nama_ortu').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Nama Orang Tua Belum di isi',
+			});
+			return false;
+		}
+		if ($('#no_hportu').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'No Hp Orang Tua Belum di isi',
+			});
+			return false;
+		}
+		if ($('#email').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Email Belum di isi',
+			});
+			return false;
+		}
+		if ($('#asal_smp').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Asal SMP Belum di isi',
+			});
+			return false;
+		}
+		if ($('#alamat').val() == '') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Alamat Belum di isi',
+			});
+			return false;
+		}
+
+		// var size = $('#file_upload_kk').files[0];
+		// 	Swal.fire({
+		// 		icon: 'info',
+		// 		title: 'Oops...',
+		// 		text: 'Foto KK lebih dari 5 MB'+size.size,
+		// 	});
+		// if (.size > 5000000) {
+		// 	return false;
+		// }
 	}
 	$('#pre-daftar').on('click', function(e) {
 		// alert(validator());
@@ -304,9 +386,9 @@
 	$('.jurusan').on('change', function() {
 		var valueNilai = $(this).val();
 		if (valueNilai == 'ips') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPS</th><td><input type="textbox" id="nilaiIps1" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem3_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps2" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem4_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps3" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem5_nl4" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ips1" class="rata_ips1" placeholder="Nilai Rata Rata" name="rata_ips1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td><button type="button" id="checkRata" onclick="checkrata()" class="btn btn-success"> Check rata rata</button></td><td colspan="4" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPS</th><td><input type="textbox" id="nilaiIps1" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem3_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps2" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem4_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps3" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem5_nl4" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ips1" class="rata_ips1" placeholder="Nilai Rata Rata" name="rata_ips1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td><button type="button" id="checkRata" onclick="checkrata()" class="btn btn-success"> Check rata rata</button></td><td colspan="4" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table><p>*NP : Pastikan nilai total rata rata anda diatas 80 untuk bisa mendaftar</p>');
 		} else if (valueNilai == 'ipa') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPA</th><td><input type="textbox" id="nilaiIpa1" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem3_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa2" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem4_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa3" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem5_nl3" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ipa1" class="rata_ipa1" placeholder="Nilai Rata Rata" name="rata_ipa1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td><button type="button" id="checkRata" onclick="checkrata()" class="btn btn-success"> Check rata rata</button></td><td colspan="4" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPA</th><td><input type="textbox" id="nilaiIpa1" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem3_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa2" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem4_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa3" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem5_nl3" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ipa1" class="rata_ipa1" placeholder="Nilai Rata Rata" name="rata_ipa1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td><button type="button" id="checkRata" onclick="checkrata()" class="btn btn-success"> Check rata rata</button></td><td colspan="4" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table><p>*NP : Pastikan nilai total rata rata anda diatas 80 untuk bisa mendaftar</p>');
 		} else {
 			alert('Jurusan Tidak Terdaftar');
 		}
@@ -339,18 +421,26 @@
 		}
 
 		if (rataRata > 80 && rataRata < 100) {
-			$('#note').hide();
+			$('#note').show();
+			$('#note').css({"color": "#5cb85c"})
+			$('#note').text('Nb. Rata Rata Anda Telah Memenuhi Syarat');
+			Swal.fire({
+				icon: 'success',
+				title: 'Selamat...',
+				text: 'Karena nilai total rata rata diatas 80, maka anda bisa mendaftar menjadi calon siswa di MAN 2 PATI',
+				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
+			});
 			var table_footer = {"background-color": "#5cb85c"}
 			$('#pre-daftar').prop('disabled', false);
 		}else if(rataRata < 80) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Waah...',
-				text: 'Maaf banget ya, sistem mendeteksi kalau total nilai rata rata kamu masih di bawah 80',
+				text: 'Maaf banget ya, sistem mendeteksi kalau nilai total rata rata kamu masih di bawah 80',
 				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
-			})
+			});
 			$('#note').show();
-			$('#note').text('Rata Rata Anda Tidak Memenuhi Syarat');
+			$('#note').text('Nb. Rata Rata Anda Tidak Memenuhi Syarat');
 			var table_footer = {"background-color": "#d9534f"};
 			$('#pre-daftar').prop('disabled', true);
 		}else {
