@@ -338,8 +338,8 @@
 			return false;
 		}
 
-		if (.size > 5000000) {
-			var file = $('#file_upload_kk').prop('files')[0];
+		var kk = $('#file_upload_kk').prop('files')[0];
+		if (kk.size > 5000000) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Oops...',
@@ -348,8 +348,8 @@
 			return false;
 		}
 
-		if (.size > 5000000) {
-			var file = $('#file_upload_ak').prop('files')[0];
+		var ak = $('#file_upload_ak').prop('files')[0];
+		if (ak.size > 5000000) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Oops...',
@@ -358,8 +358,8 @@
 			return false;
 		}
 
-		if (.size > 5000000) {
-			var file = $('#file_upload_foto').prop('files')[0];
+		var foto = $('#file_upload_foto').prop('files')[0];
+		if (foto.size > 5000000) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Oops...',
@@ -368,8 +368,8 @@
 			return false;
 		}
 
-		if (.size > 5000000) {
-			var file = $('#file_upload').prop('files')[0];
+		var raport = $('#file_upload').prop('files')[0];
+		if (raport.size > 5000000) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Oops...',
