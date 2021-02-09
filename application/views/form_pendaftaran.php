@@ -329,15 +329,54 @@
 			return false;
 		}
 
-		// var size = $('#file_upload_kk').files[0];
-		// 	Swal.fire({
-		// 		icon: 'info',
-		// 		title: 'Oops...',
-		// 		text: 'Foto KK lebih dari 5 MB'+size.size,
-		// 	});
-		// if (.size > 5000000) {
-		// 	return false;
-		// }
+		if ($('#totalRataRata').val() < 80) {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'Total Rata Rata anda tidak memenuhi syarat',
+			});
+			return false;
+		}
+
+		var kk = $('#file_upload_kk').prop('files')[0];
+		if (kk.size > 5000000) {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File Kartu Keluarga anda melebihi batas (5Mb)',
+			});
+			return false;
+		}
+
+		var ak = $('#file_upload_ak').prop('files')[0];
+		if (ak.size > 5000000) {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File Akte Kelahiran anda melebihi batas (5Mb)',
+			});
+			return false;
+		}
+
+		var foto = $('#file_upload_foto').prop('files')[0];
+		if (foto.size > 5000000) {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File Foto Diri anda melebihi batas (5Mb)',
+			});
+			return false;
+		}
+
+		var raport = $('#file_upload').prop('files')[0];
+		if (raport.size > 5000000) {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File Raport anda melebihi batas (5Mb)',
+			});
+			return false;
+		}
 	}
 	$('#pre-daftar').on('click', function(e) {
 		// alert(validator());
@@ -350,37 +389,37 @@
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
 		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input :)';
-		swal.queue([{
-			title: 'Konfirmasi',
-			text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
-			icon: 'warning',
-			confirmButtonText: 'Proses',
-			showLoaderOnConfirm: true,
-			preConfirm: async function() {
-				$('#swal2-title').text('Proccessing...');
-				$('#swal2-content').text('Please wait, this progress will take a few minutes');
+		// swal.queue([{
+		// 	title: 'Konfirmasi',
+		// 	text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+		// 	icon: 'warning',
+		// 	confirmButtonText: 'Proses',
+		// 	showLoaderOnConfirm: true,
+		// 	preConfirm: async function() {
+		// 		$('#swal2-title').text('Proccessing...');
+		// 		$('#swal2-content').text('Please wait, this progress will take a few minutes');
 
-				await $.ajax({
-					url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
-					type: 'POST',
-					data: {
-						type: 'chat',
-						phone: phone,
-						message: message
-					},
-					success: function(result) {
+		// 		await $.ajax({
+		// 			url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+		// 			type: 'POST',
+		// 			data: {
+		// 				type: 'chat',
+		// 				phone: phone,
+		// 				message: message
+		// 			},
+		// 			success: function(result) {
 
-						$("#daftar").trigger("click");
+		// 				$("#daftar").trigger("click");
 
-					},
-					error: function(error) {
+		// 			},
+		// 			error: function(error) {
 
-						$("#daftar").trigger("click");
+		// 				$("#daftar").trigger("click");
 
-					}
-				});
-			}
-		}]);
+		// 			}
+		// 		});
+		// 	}
+		// }]);
 	});
 
 	$('.jurusan').on('change', function() {
