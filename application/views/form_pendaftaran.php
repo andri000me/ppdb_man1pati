@@ -379,11 +379,12 @@
 		}
 
 		var raport = $('#file_upload').prop('files')[0];
-		if (raport.type == 'application/pdf') {
+		// alert(raport.type);
+		if (raport.type != 'application/pdf') {
 			Swal.fire({
 				icon: 'info',
 				title: 'Oops...',
-				text: 'File Raport anda melebihi batas (5Mb)',
+				text: 'File raport harus PDF',
 			});
 			return false;
 		}
