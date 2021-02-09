@@ -470,7 +470,7 @@
 			// var rataRata = '[Gagal Menghitung] - Silahkan periksa nilai anda lagi';
 		}
 
-		if (rataRata > 80 && rataRata < 100) {
+		if (rataRata >= 80 && rataRata < 100) {
 			$('#note').show();
 			$('#note').css({"color": "#5cb85c"})
 			$('#note').text('Nb. Rata Rata Anda Telah Memenuhi Syarat');
