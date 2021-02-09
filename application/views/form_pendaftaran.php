@@ -61,19 +61,19 @@
 								<td><label>Nama Lengkap *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control"></td>
+								<td><input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>Tempat Lahir *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control"></td>
+								<td><input type="text" name="tempat_lahir" id="tempat_lahir" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>Tanggal Lahir *</label></td>
 							</tr>
 							<tr>
-								<td><input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control"></td>
+								<td><input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control" value="09/09/1009"></td>
 							</tr>
 							<tr>
 								<td><label>Jenis Kelamin *</label></td>
@@ -82,7 +82,7 @@
 								<td>
 									<select class="custom-select" name="jenis_kelamin" id="validationCustom04" required>
 										<option selected disabled value="">---Jenis Kelamin---</option>
-										<option name="jk" value="L" id="jk"> Laki-Laki </option>
+										<option name="jk" selected="" value="L" id="jk"> Laki-Laki </option>
 										<option name="jk" value="P" id="jk"> Perempuan </option>
 									</select>
 								</td>
@@ -91,26 +91,26 @@
 								<td><label>Agama *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="agama" id="agama" class="form-control"></td>
+								<td><input type="text" name="agama" id="agama" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>No Hp * <SMAll> (No WA) </SMAll></label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="no_hp" id="no_hp" class="form-control"></td>
+								<td><input type="text" name="no_hp" id="no_hp" class="form-control" value="089506373551"></td>
 							</tr>
 
 							<tr>
 								<td><label>Nama Orang Tua/Wali *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="nama_ortu" id="nama_ortu" class="form-control"></td>
+								<td><input type="text" name="nama_ortu" id="nama_ortu" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>No Hp Ortu *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="no_hportu" id="no_hportu" class="form-control"></td>
+								<td><input type="text" name="no_hportu" id="no_hportu" class="form-control" value="1223"></td>
 							</tr>
 						</table>
 					</div>
@@ -120,19 +120,19 @@
 								<td><label>Email *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="email" id="email" class="form-control"></td>
+								<td><input type="text" name="email" id="email" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>Asal SMP/MTs *</label></td>
 							</tr>
 							<tr>
-								<td><input type="text" name="asal_smp" id="asal_smp" class="form-control"></td>
+								<td><input type="text" name="asal_smp" id="asal_smp" class="form-control" value="mbuh"></td>
 							</tr>
 							<tr>
 								<td><label>Alamat *</label></td>
 							</tr>
 							<tr>
-								<td><textarea class="form-control" name="alamat" id="alamat"></textarea></td>
+								<td><textarea class="form-control" name="alamat" id="alamat">mboh</textarea></td>
 							</tr>
 							<tr>
 								<th><label for="validationCustom04">Jurusan *</label></th>
@@ -141,7 +141,7 @@
 								<td>
 									<select class="custom-select jurusan" name="jurusan" id="validationCustom04" required>
 										<option selected disabled value="">---Pilih Jurusan---</option>
-										<option name="ips" id="ips" value="ips"> IPS </option>
+										<option name="ips" selected="" id="ips" value="ips"> IPS </option>
 										<option name="ipa" id="ipa" value="ipa"> IPA </option>
 									</select>
 
@@ -185,6 +185,8 @@
 					</div>
 
 					<div class="col-md-12 table-responsive">
+						
+
 						<div id="daftarNilai" class="daftarNilai">
 
 						</div>
@@ -285,93 +287,198 @@
 	$('.jurusan').on('change', function() {
 		var valueNilai = $(this).val();
 		if (valueNilai == 'ips') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;">	<thead>		<tr>		<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>		<th scope="col">Semester 3</th>		<th scope="col">Semester 4</th>		<th scope="col">Semester 5</th>		</tr>	</thead>	<tbody>	<tr>		<th scope="row">B.inggris</th>		<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester2" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester3" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl1" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">Matematika</th>		<td><input type="textbox" class="nilaisemester4" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester5" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester6" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl2" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">IPS</th>		<td><input type="textbox" class="nilaisemester10" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl4" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester11" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl4" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester12" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl4" style="border: #fff;"></td>		</tr>	</tbody></table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPS</th><td><input type="textbox" id="nilaiIps1" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem3_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps2" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem4_nl4" style="border: #fff;"></td><td><input type="textbox" id="nilaiIps3" placeholder="Masukkan Nilai Anda" onkeyup="ips()" name="sem5_nl4" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ips1" class="rata_ips1" placeholder="Nilai Rata Rata" name="rata_ips1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td colspan="5" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table>');
 		} else if (valueNilai == 'ipa') {
-			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;">	<thead>		<tr>		<th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th>		<th scope="col">Semester 3</th>		<th scope="col">Semester 4</th>		<th scope="col">Semester 5</th>		</tr>	</thead>	<tbody>	<tr>		<th scope="row">B.inggris</th>		<td><input type="textbox" class="nilaisemester" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester2" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl1" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester3" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl1" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">Matematika</th>		<td><input type="textbox" class="nilaisemester4" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester5" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl2" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester6" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl2" style="border: #fff;"></td>		</tr>		<tr>		<th scope="row">IPA</th>		<td><input type="textbox" class="nilaisemester7" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem3_nl3" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester8" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem4_nl3" style="border: #fff;"></td>		<td><input type="textbox" class="nilaisemester9" placeholder="Masukkan Nilai Anda" onkeyup="checkNilai()" name="sem5_nl3" style="border: #fff;"></td>		</tr>	</tbody></table>');
+			$('#daftarNilai').html('<table class="table table-bordered" style="margin-top: 20px;"><thead><tr><th scope="col"><input type="textbox" value="NIlai" style="border: #fff;" ></th><th scope="col">Semester 3</th><th scope="col">Semester 4</th><th scope="col">Semester 5</th><th scope="col">Rata - Rata</th></tr></thead><tbody><tr><th scope="row">B.inggris</th><td><input type="textbox" id="nilaiBing1" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem3_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing2" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem4_nl1" style="border: #fff;"></td><td><input type="textbox" id="nilaiBing3" placeholder="Masukkan Nilai Anda" onkeyup="bing()" name="sem5_nl1" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled id="rata_bing1" class="rata_bing1" placeholder="Nilai Rata Rata" name="rata_bing1" style="border: #fff;"></td></tr><tr><th scope="row">Matematika</th><td><input type="textbox" id="nilaiMat1" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem3_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat2" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem4_nl2" style="border: #fff;"></td><td><input type="textbox" id="nilaiMat3" placeholder="Masukkan Nilai Anda" onkeyup="mat()" name="sem5_nl2" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_mat1" class="rata_mat1" placeholder="Nilai Rata Rata" name="rata_mat1" style="border: #fff;"></td></tr><tr><th scope="row">IPA</th><td><input type="textbox" id="nilaiIpa1" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem3_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa2" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem4_nl3" style="border: #fff;"></td><td><input type="textbox" id="nilaiIpa3" placeholder="Masukkan Nilai Anda" onkeyup="ipa()" name="sem5_nl3" style="border: #fff;"></td><td style="background-color: #E3E3E3"><input type="textbox" disabled="" id="rata_ipa1" class="rata_ipa1" placeholder="Nilai Rata Rata" name="rata_ipa1" style="border: #fff;"></td></tr></tbody><tfoot><tr id="table-footer"><td colspan="5" id="textRataRata"></td><input type="text" hidden="" id="totalRataRata" name="totalRataRata"><input type="textbox" hidden="" id="rata_bing" class="rata_bing" placeholder="Nilai Rata Rata" name="rata_bing" style="border: #fff;"><input type="textbox" hidden="" id="rata_mat" class="rata_mat" placeholder="Nilai Rata Rata" name="rata_mat" style="border: #fff;"><input type="textbox" hidden="" id="rata_ips" class="rata_ips" placeholder="Nilai Rata Rata" name="rata_ips" style="border: #fff;"><input type="textbox" hidden="" id="rata_ipa" class="rata_ipa" placeholder="Nilai Rata Rata" name="rata_ipa" style="border: #fff;"></tr></tfoot></table>');
 		} else {
 			alert('Jurusan Tidak Terdaftar');
 		}
 	});
 
+	$('#table-footer').hide();
 
-	function checkNilai() {
-		var nilaisemester = $('.daftarNilai .table .nilaisemester').val();
-		var nilaisemester2 = $('.daftarNilai .table .nilaisemester2').val();
-		var nilaisemester3 = $('.daftarNilai .table .nilaisemester3').val();
-		var nilaisemester4 = $('.daftarNilai .table .nilaisemester4').val();
-		var nilaisemester5 = $('.daftarNilai .table .nilaisemester5').val();
-		var nilaisemester6 = $('.daftarNilai .table .nilaisemester6').val();
-		var nilaisemester7 = $('.daftarNilai .table .nilaisemester7').val();
-		var nilaisemester8 = $('.daftarNilai .table .nilaisemester8').val();
-		var nilaisemester9 = $('.daftarNilai .table .nilaisemester9').val();
-		var nilaisemester10 = $('.daftarNilai .table .nilaisemester10').val();
-		var nilaisemester11 = $('.daftarNilai .table .nilaisemester11').val();
-		var nilaisemester12 = $('.daftarNilai .table .nilaisemester12').val();
+	function totalRataRata() {
+		var jurusan = $('.jurusan').val();
+		var rataBing1 = $('#rata_bing1').val();
+		var rataMat1 = $('#rata_mat1').val();
+		var rataIps1 = $('#rata_ips1').val();
+		var rataIpa1 = $('#rata_ipa1').val();
 
-		if(nilaisemester < 80){
-			// $('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
-			$('#pre-daftar').hide();
-		}else if(nilaisemester2 < 80) {
-			if (nilaisemester2 != '') {
-				// $('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
-				$('#pre-daftar').hide();
+		// alert(parseInt(rataBing1));
+		if (jurusan == 'ips') {
+			var totalRata = parseInt(rataBing1) + parseInt(rataMat1) + parseInt(rataIps1);
+			var totalRataRata = parseInt(totalRata) / 3;
+		}else if(jurusan == 'ipa') {
+			var totalRata = parseInt(rataBing1) + parseInt(rataMat1) + parseInt(rataIpa1);
+			var totalRataRata = parseInt(totalRata) / 3;
+		}else {
+			var totalRata = 99990;
+			var totalRataRata = 9;
+		}
+		// confirm(totalRata);
+
+		if (totalRataRata > 80 && totalRataRata < 100) {
+			var table_footer = {"background-color": "#5cb85c"}
+		}else if(totalRataRata < 80) {
+			var table_footer = {"background-color": "#d9534f"}
+		}else {
+			var table_footer = {"background-color": "#f0ad4e"}
+		}
+
+		if (jurusan == 'ips') {
+
+			if (rataBing1 != '' && rataMat1 != '' && rataIps1 != '') {
+				$('#table-footer').show();
+				$('#table-footer').css(table_footer);
+				$('#textRataRata').text('Total Rata Rata Anda '+totalRataRata);
+				$('#totalRataRata').val(totalRataRata);
 			}
-		}else if(nilaisemester3 < 80) {
-			if (nilaisemester3 != '') {
-				// $('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester4 < 80) {
-			if (nilaisemester4 != '') {
-				// $('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester5 < 80) {
-			if (nilaisemester5 != '') {
-				// $('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester6 < 80) {
-			if (nilaisemester6 != '') {
-				// $('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester7 < 80) {
-			if (nilaisemester7 != '') {
-				// $('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester8 < 80) {
-			if (nilaisemester8 != '') {
-				// $('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester9 < 80) {
-			if (nilaisemester9 != '') {
-				// $('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester10 < 80) {
-			if (nilaisemester10 != '') {
-				// $('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester11 < 80) {
-			if (nilaisemester11 != '') {
-				// $('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
-				$('#pre-daftar').hide();
-			}
-		}else if(nilaisemester12 < 80) {
-			if (nilaisemester12 != '') {
-				// $('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
-				$('#pre-daftar').hide();
+		}else if(jurusan == 'ipa') {
+			if (rataBing1 != '' && rataMat1 != '' && rataIpa1 != '') {
+				$('#table-footer').show();
+				$('#table-footer').css(table_footer);
+				$('#textRataRata').text('Total Rata Rata Anda '+totalRataRata);
+				$('#totalRataRata').val(totalRataRata);
 			}
 		}else{
+			alert('Check form jurusan anda');
+		}
+
+	}
+
+	function bing() {
+		var nilaiBing1 = $('#nilaiBing1').val();
+		var nilaiBing2 = $('#nilaiBing2').val();
+		var nilaiBing3 = $('#nilaiBing3').val();
+
+		var totalNilai = parseInt(nilaiBing1) + parseInt(nilaiBing2) + parseInt(nilaiBing3);
+		var rataRata = parseInt(totalNilai) / 3;
+		if (nilaiBing3 != '') {
+			$('#rata_bing').val(rataRata);
+			$('#rata_bing1').val(rataRata);
+		}
+
+		totalRataRata();
+		
+	}
+	function mat() {
+		var nilaiMat1 = $('#nilaiMat1').val();
+		var nilaiMat2 = $('#nilaiMat2').val();
+		var nilaiMat3 = $('#nilaiMat3').val();
+
+		var totalNilai = parseInt(nilaiMat1) + parseInt(nilaiMat2) + parseInt(nilaiMat3);
+		var rataRata = parseInt(totalNilai) / 3;
+		if (nilaiMat3 != '') {
+			$('#rata_mat').val(rataRata);
+			$('#rata_mat1').val(rataRata);
+		}
+		totalRataRata();
+	}
+	function ips() {
+		var nilaiIps1 = $('#nilaiIps1').val();
+		var nilaiIps2 = $('#nilaiIps2').val();
+		var nilaiIps3 = $('#nilaiIps3').val();
+
+		var totalNilai = parseInt(nilaiIps1) + parseInt(nilaiIps2) + parseInt(nilaiIps3);
+		var rataRata = parseInt(totalNilai) / 3;
+		if (nilaiIps3 != '') {
+			$('#rata_ips').val(rataRata);
+			$('#rata_ips1').val(rataRata);
+		}
+		totalRataRata();
+	}
+	function ipa() {
+		var nilaiIpa1 = $('#nilaiIpa1').val();
+		var nilaiIpa2 = $('#nilaiIpa2').val();
+		var nilaiIpa3 = $('#nilaiIpa3').val();
+
+		var totalNilai = parseInt(nilaiIpa1) + parseInt(nilaiIpa2) + parseInt(nilaiIpa3);
+		var rataRata = parseInt(totalNilai) / 3;
+		if (nilaiIpa3 != '') {
+			$('#rata_ipa').val(rataRata);
+			$('#rata_ipa1').val(rataRata);
+		}
+		totalRataRata();
+	}
+
+	// function checkNilai() {
+	// 	var nilaisemester = $('.daftarNilai .table .nilaisemester').val();
+	// 	var nilaisemester2 = $('.daftarNilai .table .nilaisemester2').val();
+	// 	var nilaisemester3 = $('.daftarNilai .table .nilaisemester3').val();
+	// 	var nilaisemester4 = $('.daftarNilai .table .nilaisemester4').val();
+	// 	var nilaisemester5 = $('.daftarNilai .table .nilaisemester5').val();
+	// 	var nilaisemester6 = $('.daftarNilai .table .nilaisemester6').val();
+	// 	var nilaisemester7 = $('.daftarNilai .table .nilaisemester7').val();
+	// 	var nilaisemester8 = $('.daftarNilai .table .nilaisemester8').val();
+	// 	var nilaisemester9 = $('.daftarNilai .table .nilaisemester9').val();
+	// 	var nilaisemester10 = $('.daftarNilai .table .nilaisemester10').val();
+	// 	var nilaisemester11 = $('.daftarNilai .table .nilaisemester11').val();
+	// 	var nilaisemester12 = $('.daftarNilai .table .nilaisemester12').val();
+
+	// 	if(nilaisemester < 80){
+	// 		// $('#note').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 3');
+	// 		$('#pre-daftar').hide();
+	// 	}else if(nilaisemester2 < 80) {
+	// 		if (nilaisemester2 != '') {
+	// 			// $('#note2').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 4');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester3 < 80) {
+	// 		if (nilaisemester3 != '') {
+	// 			// $('#note3').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel B.inggris Semester 5');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester4 < 80) {
+	// 		if (nilaisemester4 != '') {
+	// 			// $('#note4').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 3');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester5 < 80) {
+	// 		if (nilaisemester5 != '') {
+	// 			// $('#note5').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 4');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester6 < 80) {
+	// 		if (nilaisemester6 != '') {
+	// 			// $('#note6').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel Matemastika Semester 5');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester7 < 80) {
+	// 		if (nilaisemester7 != '') {
+	// 			// $('#note7').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 3');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester8 < 80) {
+	// 		if (nilaisemester8 != '') {
+	// 			// $('#note8').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 4');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester9 < 80) {
+	// 		if (nilaisemester9 != '') {
+	// 			// $('#note9').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPA Semester 5');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester10 < 80) {
+	// 		if (nilaisemester10 != '') {
+	// 			// $('#note10').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 3');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester11 < 80) {
+	// 		if (nilaisemester11 != '') {
+	// 			// $('#note11').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 4');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else if(nilaisemester12 < 80) {
+	// 		if (nilaisemester12 != '') {
+	// 			// $('#note12').text('Nilai Anda Tidak Sesuai Dengan Katentuan di mapel IPS Semester 5');
+	// 			$('#pre-daftar').hide();
+	// 		}
+	// 	}else{
 			
 
-			$('#pre-daftar').show();
-		}
-	}
+	// 		$('#pre-daftar').show();
+	// 	}
+	// }
 	// $('.daftarNilai').on('keyup', '.table .nilaisemester', function() {
 	// 	var value = $(this).val();
 	// 	if (value < 0) {

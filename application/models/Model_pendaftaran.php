@@ -30,6 +30,13 @@ class Model_pendaftaran extends CI_model{
         $asl_sekolah = $this->input->post('asal_smp');
         $email = $this->input->post('email');
         $almt = $this->input->post('alamat');
+
+        $status = '0';
+        $rata_bing = $this->input->post('rata_bing');
+        $rata_mat = $this->input->post('rata_mat');
+        $rata_ips = $this->input->post('rata_ips');
+        $rata_ipa = $this->input->post('rata_ipa');
+        $totalRataRata = $this->input->post('totalRataRata');
         // save file(upload)
 
         $nm_file = $_FILES['file_upload'];
@@ -117,43 +124,14 @@ class Model_pendaftaran extends CI_model{
         $sem5_nl4 =$this->input->post('sem5_nl4');
         // close vardat
         // update
-        $status = $this->input->post('status');
+        // $status = $this->input->post('status');
 
-        if ($jurusan == 'ips') {
-            if($sem3_nl4 < 80) {
-                echo "gagal disimpan"; die();
-            }else if($sem4_nl4 < 80) {
-                echo "gagal disimpan"; die();
-            }else if($sem5_nl4 < 80) {
-                echo "gagal disimpan"; die();
-            }
 
-        }else if($jurusan == 'ipa'){
-            if($sem3_nl3 < 80) {
-                echo "gagal disimpan 3"; die();
-            }else if($sem4_nl3 < 80) {
-                echo "gagal disimpan"; die();
-            }else if($sem5_nl3 < 80) {
-                echo "gagal disimpan"; die();
-            }
-        }else {
-            echo "Jurusan tidak terdaftar"; die();
-        }
+        // echo $rata_bing.' - '.$rata_mat.' - '.$rata_ips.' - '.$rata_ipa.' - '.$totalRataRata;die();
 
-        if ($sem3_nl1 < 80) {
-            echo "gagal disimpan 1"; die();
-        }else if($sem3_nl2 < 80) {
-            echo "gagal disimpan 2"; die();
-        }else if($sem4_nl1 < 80) {
-            echo "gagal disimpan"; die();
-        }else if($sem4_nl2 < 80) {
-            echo "gagal disimpan"; die();
-        }else if($sem5_nl1 < 80) {
-            echo "gagal disimpan"; die();
-        }else if($sem5_nl2 < 80) {
-            echo "gagal disimpan"; die();
-        }else {
-
+        if ($totalRataRata < 80) {
+            echo "Rata Rata tidak memebuhi kriteria";
+            die();
         }
 
         $data = array(
@@ -186,6 +164,11 @@ class Model_pendaftaran extends CI_model{
             'sem5_nl2' => $sem5_nl2,
             'sem5_nl3' => $sem5_nl3,
             'sem5_nl4' => $sem5_nl4,
+            'rata_bing'         => $rata_bing,
+            'rata_mat'          => $rata_mat,
+            'rata_ips'          => $rata_ips,
+            'rata_ipa'          => $rata_ipa,
+            'totalRataRata'   => $totalRataRata,
             'status' => $status,
         );
 
