@@ -16,9 +16,7 @@ class Pendaftaran extends CI_Controller {
         $this->load->view('admin/layouts/footer');
     }
 
-    public function try() {
-        // echo "string1";
-    }
+    
 
     public function detail($id)
     {

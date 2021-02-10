@@ -377,6 +377,17 @@
 			});
 			return false;
 		}
+
+		var raport = $('#file_upload').prop('files')[0];
+		// alert(raport.type);
+		if (raport.type != 'application/pdf') {
+			Swal.fire({
+				icon: 'info',
+				title: 'Oops...',
+				text: 'File raport harus PDF',
+			});
+			return false;
+		}
 	}
 	$('#pre-daftar').on('click', function(e) {
 		// alert(validator());
@@ -388,38 +399,38 @@
 		var nama = $('#nama_lengkap').val();
 		var id_pendaftaran = $('#id_pendaftaran').val();
 
-		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input :)';
-		// swal.queue([{
-		// 	title: 'Konfirmasi',
-		// 	text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
-		// 	icon: 'warning',
-		// 	confirmButtonText: 'Proses',
-		// 	showLoaderOnConfirm: true,
-		// 	preConfirm: async function() {
-		// 		$('#swal2-title').text('Proccessing...');
-		// 		$('#swal2-content').text('Please wait, this progress will take a few minutes');
+		var message = 'Hai ' + nama + ', Terimakasih telah mendaftar di PPDB MAN 2 PATI \n\nData anda akan segera di verifikasi oleh panitia, anda akan menerima notifikasi dari hasil verifikasi data yang anda input.\n\nSilahkan Join ke group PPDB MAN2PATI\n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt\n\n#MAN2PATI_BERSAHAJA';
+		swal.queue([{
+			title: 'Konfirmasi',
+			text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+			icon: 'warning',
+			confirmButtonText: 'Proses',
+			showLoaderOnConfirm: true,
+			preConfirm: async function() {
+				$('#swal2-title').text('Proccessing...');
+				$('#swal2-content').text('Please wait, this progress will take a few minutes');
 
-		// 		await $.ajax({
-		// 			url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
-		// 			type: 'POST',
-		// 			data: {
-		// 				type: 'chat',
-		// 				phone: phone,
-		// 				message: message
-		// 			},
-		// 			success: function(result) {
+				await $.ajax({
+					url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+					type: 'POST',
+					data: {
+						type: 'chat',
+						phone: phone,
+						message: message
+					},
+					success: function(result) {
 
-		// 				$("#daftar").trigger("click");
+						$("#daftar").trigger("click");
 
-		// 			},
-		// 			error: function(error) {
+					},
+					error: function(error) {
 
-		// 				$("#daftar").trigger("click");
+						$("#daftar").trigger("click");
 
-		// 			}
-		// 		});
-		// 	}
-		// }]);
+					}
+				});
+			}
+		}]);
 	});
 
 	$('.jurusan').on('change', function() {
@@ -459,7 +470,7 @@
 			// var rataRata = '[Gagal Menghitung] - Silahkan periksa nilai anda lagi';
 		}
 
-		if (rataRata > 80 && rataRata < 100) {
+		if (rataRata >= 80 && rataRata < 100) {
 			$('#note').show();
 			$('#note').css({"color": "#5cb85c"})
 			$('#note').text('Nb. Rata Rata Anda Telah Memenuhi Syarat');
