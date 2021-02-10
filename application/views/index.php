@@ -434,8 +434,8 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>No Hp / WA</h3>
-              <p><a>pak Sunaryo : 081325651645</a></p>
-              <p><a>Bu Rizka : 0813867129696</a></p>
+              <p><a href="https://api.whatsapp.com/send/?phone=081325651645&text&app_absent=0">pak Sunaryo : 081325651645</a></p>
+              <p><a href="https://api.whatsapp.com/send/?phone=081386712696&text&app_absent=0">Bu Rizka : 081386712696</a></p>
             </div>
           </div>
 

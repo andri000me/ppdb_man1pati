@@ -486,7 +486,7 @@
 			Swal.fire({
 				icon: 'info',
 				title: 'Waah...',
-				text: 'Maaf banget ya, sistem mendeteksi kalau nilai total rata rata kamu masih di bawah 80',
+				text: 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80 <br> Selamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 diman 2 pati',
 				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
 			});
 			$('#note').show();
