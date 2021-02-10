@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ppdb " name="keywords">
   <meta content="Pendaftaran Peserta Didik Baru 2019-2020 " name="description">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- Favicons -->
   <link href="<?php echo base_url(); ?>assets/img/logo1.png" rel="icon">
   <link href="<?php echo base_url(); ?>assets/img/logo1.png" rel="icon">
@@ -494,6 +494,7 @@
   <script src="<?php echo base_url(); ?>assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="<?php echo base_url(); ?>assets/contactform/contactform.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
   <!-- Template Main Javascript File -->
   <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
