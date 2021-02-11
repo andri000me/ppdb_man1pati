@@ -289,9 +289,9 @@
             <h3>Informasi</h3>
             <p>Informasi yang perlu di ketahui </p>
           </header>
-
+              
           <div class="row">
-
+              <a href=""></a>
             <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
               <h4 class="title"><a>Peserta didik Unggulan</a></h4>
