@@ -191,22 +191,19 @@
         </header>
 
         <div class="row">
-          <div class="col-lg-4 box" style="background-color: #337ab7;height: 300px;">
-
+          <div class="col-md-4 box" style="background-color: #337ab7;height: 300px;">
             <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI PEMINATAN</h3>
-            <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
-            </div>
             <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. IPA (Ilmu Pengetahuan Alam)</p>
             <p style="color: #fff;margin-left: 10px;">2. IPS (Ilmu Pengetahuan Sosial)</p>
           </div>
-          <div class="col-lg-4 box">
+
+          <div class="col-md-4 box">
             <a href="<?php echo base_url(); ?>assets/img/man5.jpeg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
           </div>
 
-          <div class="col-lg-4 box">
+          <div class="col-md-4 box">
             <a href="<?php echo base_url(); ?>assets/img/man1.jpg"><img src="<?php echo base_url(); ?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
           </div>
-
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-md-12">
@@ -289,9 +286,9 @@
             <h3>Informasi</h3>
             <p>Informasi yang perlu di ketahui </p>
           </header>
-              
+
           <div class="row">
-              <a href=""></a>
+            <a href=""></a>
             <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
               <h4 class="title"><a>Peserta didik Unggulan</a></h4>
@@ -434,8 +431,8 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>No Hp / WA</h3>
-              <p><a>pak Sunaryo : 081325651645</a></p>
-              <p><a>Bu Rizka : 0813867129696</a></p>
+              <p><a href="https://api.whatsapp.com/send/?phone=081325651645&text&app_absent=0">pak Sunaryo : 081325651645</a></p>
+              <p><a href="https://api.whatsapp.com/send/?phone=081386712696&text&app_absent=0">Bu Rizka : 081386712696</a></p>
             </div>
           </div>
 

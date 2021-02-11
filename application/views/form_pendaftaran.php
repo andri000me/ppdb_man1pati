@@ -22,9 +22,9 @@
 		<h1>FORM PENDAFTARAN PESERTA DIDIK BARU KELAS UNGGULAN<br> MAN 2 PATI <br>TAHUN AJARAN 2021/2022</h1>
 	</div>
 	<!--  -->
-	<?php
-	if ($this->session->flashdata('flash')) {
-	?>
+	<!-- <?php
+			if ($this->session->flashdata('flash')) {
+			?>
 
 		<div class="alert alert-warning alert-dismissible fade show" role="alert">
 			<strong>Data</strong><?= $this->session->flashdata('flash'); ?>, Terimakasih telah mendaftar MAN2 Pati. Silahkan <a href="https://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt">join WA group JOIN</a>
@@ -34,8 +34,8 @@
 		</div>
 
 	<?php
-	}
-	?>
+			}
+	?> -->
 	<!--  -->
 	<div class="container">
 		<div class="kotak">
@@ -82,7 +82,7 @@
 								<td>
 									<select class="custom-select" name="jenis_kelamin" id="validationCustom04" required>
 										<option selected disabled value="">---Jenis Kelamin---</option>
-										<option name="jk"  value="L" id="jk"> Laki-Laki </option>
+										<option name="jk" value="L" id="jk"> Laki-Laki </option>
 										<option name="jk" value="P" id="jk"> Perempuan </option>
 									</select>
 								</td>
@@ -185,7 +185,7 @@
 					</div>
 
 					<div class="col-md-12 table-responsive">
-						
+
 
 						<div id="daftarNilai" class="daftarNilai">
 
@@ -203,11 +203,11 @@
 						<p id="note11" style="color:red"></p>
 						<p id="note12" style="color:red"></p> -->
 
-						
-						
+
+
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
-						<button  type="button" id="pre-daftar" class="btn btn-success float-right">Daftar</button>
+						<a href="<?php echo site_url('Mastercontrol/notifikasi'); ?>"><button type="button" id="pre-daftar" class="btn btn-success float-right"> Daftar</button></a>
 						<button hidden="" id="daftar" type="submit" class="btn btn-success float-right" name="simpan" value="Simpan">Daftar</button>
 
 						</td>
@@ -391,7 +391,7 @@
 	}
 	$('#pre-daftar').on('click', function(e) {
 		// alert(validator());
-		if(validator() == false) {
+		if (validator() == false) {
 			return false;
 		}
 		// return false;
@@ -445,17 +445,18 @@
 	});
 
 	$('#table-footer').hide();
-	function checkrata(){
-		var jurusan 	= 	$('.jurusan').val();
-		var rataBing1 	= 	$('#rata_bing1').val();
-		var rataMat1 	= 	$('#rata_mat1').val();
-		var rataIps1 	= 	$('#rata_ips1').val();
-		var rataIpa1 	= 	$('#rata_ipa1').val();
+
+	function checkrata() {
+		var jurusan = $('.jurusan').val();
+		var rataBing1 = $('#rata_bing1').val();
+		var rataMat1 = $('#rata_mat1').val();
+		var rataIps1 = $('#rata_ips1').val();
+		var rataIpa1 = $('#rata_ipa1').val();
 
 		if (jurusan == 'ips') {
 			var totalRata = parseInt(rataBing1) + parseInt(rataMat1) + parseInt(rataIps1);
 			var rataRata = totalRata / 3;
-		}else {
+		} else {
 			var totalRata = parseInt(rataBing1) + parseInt(rataMat1) + parseInt(rataIpa1);
 			var rataRata = totalRata / 3;
 		}
@@ -472,7 +473,9 @@
 
 		if (rataRata >= 80 && rataRata < 100) {
 			$('#note').show();
-			$('#note').css({"color": "#5cb85c"})
+			$('#note').css({
+				"color": "#5cb85c"
+			})
 			$('#note').text('Nb. Rata Rata Anda Telah Memenuhi Syarat');
 			Swal.fire({
 				icon: 'success',
@@ -480,36 +483,42 @@
 				text: 'Karena nilai total rata rata diatas 80, maka anda bisa mendaftar menjadi calon siswa di MAN 2 PATI',
 				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
 			});
-			var table_footer = {"background-color": "#5cb85c"}
+			var table_footer = {
+				"background-color": "#5cb85c"
+			}
 			$('#pre-daftar').prop('disabled', false);
-		}else if(rataRata < 80) {
+		} else if (rataRata < 80) {
 			Swal.fire({
 				icon: 'info',
 				title: 'Waah...',
-				text: 'Maaf banget ya, sistem mendeteksi kalau nilai total rata rata kamu masih di bawah 80',
+				text: 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80 <br> Selamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 diman 2 pati',
 				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
 			});
 			$('#note').show();
 			$('#note').text('Nb. Rata Rata Anda Tidak Memenuhi Syarat');
-			var table_footer = {"background-color": "#d9534f"};
+			var table_footer = {
+				"background-color": "#d9534f"
+			};
 			$('#pre-daftar').prop('disabled', true);
-		}else {
-			var table_footer = {"background-color": "#f0ad4e"};
+		} else {
+			var table_footer = {
+				"background-color": "#f0ad4e"
+			};
 			$('#pre-daftar').prop('disabled', true);
-		}	
+		}
 
 		$('#table-footer').show();
 		$('#table-footer').css(table_footer);
-		$('#textRataRata').text('Total Rata Rata Anda '+Math.round(rataRata));
+		$('#textRataRata').text('Total Rata Rata Anda ' + Math.round(rataRata));
 		$('#totalRataRata').val(Math.round(rataRata));
 	}
 
 	function totalRataRata() {
-		var jurusan 	= 	$('.jurusan').val();
-		var rataBing1 	= 	$('#rata_bing1').val();
-		var rataMat1 	= 	$('#rata_mat1').val();
-		var rataIps1 	= 	$('#rata_ips1').val();
-		var rataIpa1 	= 	$('#rata_ipa1').val();
+		var jurusan = $('.jurusan').val();
+		var rataBing1 = $('#rata_bing1').val();
+		var rataMat1 = $('#rata_mat1').val();
+		var rataIps1 = $('#rata_ips1').val();
+		var rataIpa1 = $('#rata_ipa1').val();
 
 		// alert(parseInt(rataBing1));
 		// 	var totalRata = parseInt(rataBing1) + parseInt(rataMat1);
@@ -566,8 +575,9 @@
 		}
 
 		// totalRataRata();
-		
+
 	}
+
 	function mat() {
 		var nilaiMat1 = $('#nilaiMat1').val();
 		var nilaiMat2 = $('#nilaiMat2').val();
@@ -581,6 +591,7 @@
 		}
 		// totalRataRata();
 	}
+
 	function ips() {
 		var nilaiIps1 = $('#nilaiIps1').val();
 		var nilaiIps2 = $('#nilaiIps2').val();
@@ -594,6 +605,7 @@
 		}
 		// totalRataRata();
 	}
+
 	function ipa() {
 		var nilaiIpa1 = $('#nilaiIpa1').val();
 		var nilaiIpa2 = $('#nilaiIpa2').val();
@@ -681,7 +693,7 @@
 	// 			$('#pre-daftar').hide();
 	// 		}
 	// 	}else{
-			
+
 
 	// 		$('#pre-daftar').show();
 	// 	}
