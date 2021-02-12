@@ -207,7 +207,7 @@
 
 
 						<!-- <input type="submit" class="btn btn-success float-right" name="simpan" value="Simpan"  > -->
-						<a href="<?php echo site_url('Mastercontrol/notifikasi'); ?>"><button type="button" id="pre-daftar" class="btn btn-success float-right"> Daftar</button></a>
+						<a><button type="button" id="pre-daftar" class="btn btn-success float-right"> Daftar</button></a>
 						<button hidden="" id="daftar" type="submit" class="btn btn-success float-right" name="simpan" value="Simpan">Daftar</button>
 
 						</td>
@@ -411,7 +411,7 @@
 				$('#swal2-content').text('Please wait, this progress will take a few minutes');
 
 				await $.ajax({
-					url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+					html: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
 					type: 'POST',
 					data: {
 						type: 'chat',
@@ -421,7 +421,7 @@
 					success: function(result) {
 
 						$("#daftar").trigger("click");
-
+						window.location.replace("<?php echo site_url('Mastercontrol/notifikasi'); ?>");
 					},
 					error: function(error) {
 
@@ -491,7 +491,7 @@
 			Swal.fire({
 				icon: 'info',
 				title: 'Waah...',
-				text: 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80 <br> Selamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 diman 2 pati',
+				html: 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80 <br> Selamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 diman 2 pati',
 				footer: '<a href="https://api.whatsapp.com/send/?phone=62895614720008&text&app_absent=0">Mau Chat Dengan Kami?</a>'
 			});
 			$('#note').show();
