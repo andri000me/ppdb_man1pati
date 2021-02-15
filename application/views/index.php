@@ -45,7 +45,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url(); ?>assets/img/logo_MAN2PATI.png" style="width:30%;"></a></h1>
+        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url(); ?>assets/img/MAN 2 PATI (1).png" style="width:30%;"></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
