@@ -50,7 +50,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE835"; die();
             }else{
                 $nm_file=$this->upload->data('file_name');
             }
@@ -67,7 +67,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_kk')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE836"; die();
             }else{
                 $nm_file_kk=$this->upload->data('file_name');
             }
@@ -84,7 +84,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_ak')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE837"; die();
             }else{
                 $nm_file_ak=$this->upload->data('file_name');
             }
@@ -101,7 +101,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_foto')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE838"; die();
             }else{
                 $nm_file_foto=$this->upload->data('file_name');
             }
@@ -206,7 +206,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE831"; die();
             }else{
                 $nm_file=$this->upload->data('file_name');
             }
@@ -223,7 +223,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_kk')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE832"; die();
             }else{
                 $nm_file_kk=$this->upload->data('file_name');
             }
@@ -240,7 +240,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_ak')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE833"; die();
             }else{
                 $nm_file_ak=$this->upload->data('file_name');
             }
@@ -257,7 +257,7 @@ class Model_pendaftaran extends CI_model{
             // $config['max_height']           = 768;
             $this->load->library('upload',$config);
             if(! $this->upload->do_upload('file_upload_foto')){
-                echo "gagal disimpan"; die();
+                echo "gagal disimpan code UE834"; die();
             }else{
                 $nm_file_foto=$this->upload->data('file_name');
             }

@@ -40,10 +40,10 @@
 
                 if (typeMessage == 0) {
                     $('#custom-text').hide();
-                    var message = 'Hai '+ messageName +', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/'+ messageId +' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
+                        var message = 'Hai '+ messageName +', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/'+ messageId +' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
                 }else if(typeMessage == 1) {
                     $('#custom-text').hide();
-                    var message = 'Verifikasi data anda gagal.';
+                    var message = 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80\n\nSelamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 di man 2 pati\n\n#MANPATI_BERSAHAJA';
                 }else if(typeMessage == 2) {
                     $('#custom-text').show();
                     // var message = $('#custom-text').text();
