@@ -191,19 +191,20 @@
         </header>
 
         <div class="row">
-          <div class="col-md-4 box" style="background-color: #337ab7;height: 300px;">
+          <div class="col-lg-4 box" style="background-color: #337ab7;height: 300px;">
             <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI PEMINATAN</h3>
             <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. IPA (Ilmu Pengetahuan Alam)</p>
             <p style="color: #fff;margin-left: 10px;">2. IPS (Ilmu Pengetahuan Sosial)</p>
           </div>
 
-          <div class="col-md-4 box">
-            <a href="<?php echo base_url(); ?>assets/img/man5.jpeg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
+          <div class="col-lg-4 box">
+            <a href="<?php echo base_url(); ?>assets/img/man5.jpg"><img src="<?php echo base_url(); ?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
+          </div>
+          <div class="col-lg-4 box">
+            <a href="<?php echo base_url(); ?>assets/img/man6.jpeg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
           </div>
 
-          <div class="col-md-4 box">
-            <a href="<?php echo base_url(); ?>assets/img/man1.jpg"><img src="<?php echo base_url(); ?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
-          </div>
+
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-md-12">
