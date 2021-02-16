@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ppdb " name="keywords">
   <meta content="Pendaftaran Peserta Didik Baru 2019-2020 " name="description">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- Favicons -->
   <link href="<?php echo base_url(); ?>assets/img/logo1.png" rel="icon">
   <link href="<?php echo base_url(); ?>assets/img/logo1.png" rel="icon">
@@ -45,7 +45,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url(); ?>assets/img/logo_MAN2PATI.png" style="width:30%;"></a></h1>
+        <h1><a href="#intro" class="scrollto"><img src="<?php echo base_url(); ?>assets/img/MAN 2 PATI (1).png" style="width:30%;"></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -191,20 +191,19 @@
         </header>
 
         <div class="row">
-          <div class="col-lg-4 box" style="background-color: #337ab7;height: 300px;">
-
+          <div class="col-md-4 box" style="background-color: #337ab7;height: 300px;">
             <h3 style="color: #fff;font-size: 20px;margin-top: 50px;margin-left: 10px;">KOMPETENSI PEMINATAN</h3>
-            <div class="jdl" style="border-bottom: 2px solid #fff;margin-left:10px;width: 100px;margin-top: -5px;">
-            </div>
             <p style="color: #fff;margin-top: 20px;margin-left: 10px;">1. IPA (Ilmu Pengetahuan Alam)</p>
             <p style="color: #fff;margin-left: 10px;">2. IPS (Ilmu Pengetahuan Sosial)</p>
           </div>
-          <div class="col-lg-4 box">
-            <a href="<?php echo base_url(); ?>assets/img/man5.jpeg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
+
+
+          <div class="col-md-4 box">
+            <a href="<?php echo base_url(); ?>assets/img/man1.jpg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
           </div>
 
-          <div class="col-lg-4 box">
-            <a href="<?php echo base_url(); ?>assets/img/man1.jpg"><img src="<?php echo base_url(); ?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;"></a>
+          <div class="col-md-4 box">
+            <a href="<?php echo base_url(); ?>assets/img/man5.jpeg"><img src="<?php echo base_url(); ?>assets/img/man6.jpeg" class="img-responsive" style="width:100%;height: 300px;">
           </div>
 
         </div>
@@ -291,7 +290,7 @@
           </header>
 
           <div class="row">
-
+            <a href=""></a>
             <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
               <h4 class="title"><a>Peserta didik Unggulan</a></h4>
@@ -494,6 +493,7 @@
   <script src="<?php echo base_url(); ?>assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="<?php echo base_url(); ?>assets/contactform/contactform.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
   <!-- Template Main Javascript File -->
   <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
