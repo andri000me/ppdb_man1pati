@@ -203,8 +203,6 @@
           <div class="col-lg-4 box">
             <a href="<?php echo base_url(); ?>assets/img/man6.jpeg"><img src="<?php echo base_url(); ?>assets/img/man5.jpeg" class="img-responsive" style="width:100%;height: 300px;">
           </div>
-
-
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-md-12">

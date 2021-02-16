@@ -23,8 +23,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://ppdb.smkwikrama1jepara.sch.id/';
+// $config['base_url'] = 'https://ppdb.smkwikrama1jepara.sch.id/';
 $config['base_url'] = 'http://localhost/ppdb_man1pati/';
+// $config['base_url'] = 'http://ppdb.man2pati.sch.id';
+
+// http://ppdb.man2pati.sch.id/
 
 date_default_timezone_set('Asia/Jakarta');
 

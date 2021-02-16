@@ -100,7 +100,7 @@
           <div class="row ">
             <a href=""></a>
             <div class="col-md-12 box wow bounceInUp" data-wow-duration="1.4s">
-              <p class="description">Selamat anda sudah terdaftar sebagai calon peserta didik baru kelas unggulan, tunggu verivikasi data anda akan dikirim melalui WA anda</p>
+              <p class="description">Selamat anda sudah terdaftar sebagai calon peserta didik baru kelas unggulan, tunggu verifkasi data anda akan dikirim melalui WA anda</p>
 
             </div>
           </div>

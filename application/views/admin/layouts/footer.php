@@ -33,108 +33,168 @@
     $('#custom-text').hide();
     $('#message').hide();
     $('#type-message').on('change', function() {
-        var typeMessage = $(this).val();
-        var messageId = $('#messageId').val();
-        var messageName = $('#messageName').val();
+                var typeMessage = $(this).val();
+                var messageId = $('#messageId').val();
+                var messageName = $('#messageName').val();
 
-        if (typeMessage == 0) {
-            $('#custom-text').hide();
-            var message = 'Hai ' + messageName + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/' + messageId + ' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
-        } else if (typeMessage == 1) {
-            $('#custom-text').hide();
-            var message = 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80\n\nSelamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 di man 2 pati\n\n#MANPATI_BERSAHAJA       ';
-        } else if (typeMessage == 2) {
-            $('#custom-text').show();
-            // var message = $('#custom-text').text();
-        } else {
-            var message = 'Not Found';
-            alert('Not Fount');
-        }
+                if (typeMessage == 0) {
+                    $('#custom-text').hide();
+                    var message = 'Hai ' + messageName + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/' + messageId + ' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
+                } else if (typeMessage == 1) {
+                    $('#custom-text').hide();
+                    $('#message').hide();
+                    $('#type-message').on('change', function() {
+                        var typeMessage = $(this).val();
+                        var messageId = $('#messageId').val();
+                        var messageName = $('#messageName').val();
 
-        $('#message').text(message);
-    });
+                        if (typeMessage == 0) {
+                            $('#custom-text').hide();
+                            var message = 'Hai ' + messageName + ', selamat anda sudah terdaftar menjadi calon peserta didik baru kelas unggulan MAN 2 PATI tahun 2021/2022\n\nUntuk konfirmasi pendaftaran silahkan masuk join group WhatsApp berikut: \n\nhttps://chat.whatsapp.com/JH03B22VLMVGQffp4Puekt \n\nDan berikut ini link untuk mencetak kartu pendaftaran anda. \n\nhttp://ppdb.man2pati.sch.id//Mastercontrol/cetak_kartu/' + messageId + ' \n\nTerimakasih atas partisipasinya.\n\n#MAN2PATI_BERSAHAJA';
+                        } else if (typeMessage == 1) {
+                            $('#custom-text').hide();
+                            var message = 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80\n\nSelamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 di man 2 pati\n\n#MANPATI_BERSAHAJA';
+                        } else if (typeMessage == 2) {
+                            $('#custom-text').show();
+                            // var message = $('#custom-text').text();
+                        } else {
+                            var message = 'Not Found';
+                            alert('Not Fount');
+                        }
 
-    $('#send-message').on('click', function() {
-        var type = $('#type-message').val();
+                        $('#message').text(message);
+                    });
 
-        if (type == 2) {
-            var message = $('#custom-text').val();
-        } else {
-            var message = $('#message').val();
-        }
+                    $('#send-message').on('click', function() {
+                                var type = $('#type-message').val();
 
-        // alert(message);
-        var messageId = $('#messageId').val();
-        var phone = $('#messageNumber').val();
+                                if (type == 2) {
+                                    var message = $('#custom-text').val();
+                                } else {
+                                    var message = $('#message').val();
+                                }
 
-        if (type == 0) {
-            var status = 'Validate - Success';
-        } else if (type == 1) {
-            var status = 'Validate - Failed';
-        } else if (type == 2) {
-            var status = 'Validate - Send Custom Message';
-        } else {
-            var status = 'Status Not Found'
-        }
+                                // alert(message);
+                                var messageId = $('#messageId').val();
+                                var phone = $('#messageNumber').val();
 
-        var databaseId = $('#databaseId').val();
-        swal.queue([{
-            title: 'Konfirmasi',
-            text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
-            icon: 'warning',
-            confirmButtonText: 'Proses',
-            showLoaderOnConfirm: true,
-            preConfirm: async function() {
-                $('#swal2-title').text('Proccessing...');
-                $('#swal2-content').text('Anda yakin ingin mengirim pesan ke');
+                                if (type == 0) {
+                                    var status = 'Validate - Success';
+                                } else if (type == 1) {
+                                    var status = 'Validate - Failed';
+                                } else if (type == 2) {
+                                    var status = 'Validate - Send Custom Message';
+                                } else {
+                                    var status = 'Status Not Found'
+                                }
 
-                await $.ajax({
-                    url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
-                    type: 'POST',
-                    data: {
-                        type: 'chat',
-                        phone: phone,
-                        message: message
-                    },
-                    success: function(result) {
+                                var databaseId = $('#databaseId').val();
+                                swal.queue([{
+                                                title: 'Konfirmasi',
+                                                text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+                                                icon: 'warning',
+                                                confirmButtonText: 'Proses',
+                                                showLoaderOnConfirm: true,
+                                                preConfirm: async function() {
+                                                    $('#swal2-title').text('Proccessing...');
+                                                    $('#swal2-content').text('Anda yakin ingin mengirim pesan ke');
 
-                        alert('sukses di kirim');
+                                                    await $.ajax({
+                                                            url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+                                                            var message = 'Mohon maaf anda belom di terima di jalur unggulan karena nilai rata-rata raport kurang dari 80\n\nSelamat anda dinyatakan diterima dijalur regguler. silahkan untuk daftar ulang pada tanggal 12-15 maret 2021 di man 2 pati\n\n#MANPATI_BERSAHAJA       ';
+                                                        }
+                                                        else if (typeMessage == 2) {
+                                                            $('#custom-text').show();
+                                                            // var message = $('#custom-text').text();
+                                                        } else {
+                                                            var message = 'Not Found';
+                                                            alert('Not Fount');
+                                                        }
 
-                    },
-                    error: function(error) {
-                        $.ajax({
-                            url: '<?php echo base_url(); ?>Pendaftaran/status_update/' + databaseId,
-                            type: 'POST',
-                            data: {
-                                id: databaseId,
-                                status: status
-                            },
-                            success: function(result) {
-                                Swal.fire(
-                                    'Terkirim!',
-                                    'Silahkan cek whatsapp anda untuk memastikan bahwa pesan sudah terkirim secara sempurna',
-                                    'success'
-                                )
-                            },
-                            error: function(result) {},
-                        });
+                                                        $('#message').text(message);
+                                                    });
+
+                                                $('#send-message').on('click', function() {
+                                                    var type = $('#type-message').val();
+
+                                                    if (type == 2) {
+                                                        var message = $('#custom-text').val();
+                                                    } else {
+                                                        var message = $('#message').val();
+                                                    }
+
+                                                    // alert(message);
+                                                    var messageId = $('#messageId').val();
+                                                    var phone = $('#messageNumber').val();
+
+                                                    if (type == 0) {
+                                                        var status = 'Validate - Success';
+                                                    } else if (type == 1) {
+                                                        var status = 'Validate - Failed';
+                                                    } else if (type == 2) {
+                                                        var status = 'Validate - Send Custom Message';
+                                                    } else {
+                                                        var status = 'Status Not Found'
+                                                    }
+
+                                                    var databaseId = $('#databaseId').val();
+                                                    swal.queue([{
+                                                        title: 'Konfirmasi',
+                                                        text: "Mohon Teliti data anda sebelum mengklik tombol 'Proses'",
+                                                        icon: 'warning',
+                                                        confirmButtonText: 'Proses',
+                                                        showLoaderOnConfirm: true,
+                                                        preConfirm: async function() {
+                                                            $('#swal2-title').text('Proccessing...');
+                                                            $('#swal2-content').text('Anda yakin ingin mengirim pesan ke');
+
+                                                            await $.ajax({
+                                                                url: 'http://206.189.46.208/waapi/sendMessage?token=033hbkrxYgIZt6li8BtF2qQwlUXt6C9dyDEa8DJJRxrm0',
+                                                                type: 'POST',
+                                                                data: {
+                                                                    type: 'chat',
+                                                                    phone: phone,
+                                                                    message: message
+                                                                },
+                                                                success: function(result) {
+
+                                                                    alert('sukses di kirim');
+
+                                                                },
+                                                                error: function(error) {
+                                                                    $.ajax({
+                                                                        url: '<?php echo base_url(); ?>Pendaftaran/status_update/' + databaseId,
+                                                                        type: 'POST',
+                                                                        data: {
+                                                                            id: databaseId,
+                                                                            status: status
+                                                                        },
+                                                                        success: function(result) {
+                                                                            Swal.fire(
+                                                                                'Terkirim!',
+                                                                                'Silahkan cek whatsapp anda untuk memastikan bahwa pesan sudah terkirim secara sempurna',
+                                                                                'success'
+                                                                            )
+                                                                        },
+                                                                        error: function(result) {},
+                                                                    });
 
 
 
-                    }
-                });
-            }
-        }]);
-    });
+                                                                }
+                                                            });
+                                                        }
+                                                    }]);
+                                                });
 
 
-    function pil() {
-        if ($("#pill").val() == "Pilihan Ganda") {
-            $("#pilg").show();
-        } else {
-            $("#pilg").hide();
-        }
-    }
+                                                function pil() {
+                                                    if ($("#pill").val() == "Pilihan Ganda") {
+                                                        $("#pilg").show();
+                                                    } else {
+                                                        $("#pilg").hide();
+                                                    }
+                                                }
 </script>
 <script type="text/javascript">
 
